@@ -1,0 +1,249 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "微软雅黑";
+	font-size: 14pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align:center;
+	background-color:#CCCCCC;
+}
+
+p{
+	text-indent:0em;
+	padding-top:0px;
+	margin-top:0px;
+}
+
+.more{
+	text-align:right;
+}
+
+.title{
+	font-size:12pt;
+	font-family:"微软雅黑";
+}
+
+.cleared{
+	clear:both;
+}
+
+.itemTitle{
+	font-size:14pt;
+	font-weight:bold;
+}
+
+.productItem{
+	padding:10px;
+	border-bottom-width:1px;
+	border-bottom-color:#666666;
+	border-bottom-style:dashed;
+	font-size:11pt;
+	text-align:left;
+}
+#container{
+	max-width:1024px;
+	min-width:1024px;
+	text-align:center;
+}
+
+#container #header{
+	height:110px;
+	background:#FFFFFF;
+}
+
+#container #header #logo{
+	background-image:url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	height:100px;
+	width:300px;
+	float:left;
+	padding-top:46px;
+	padding-left:10px;
+	background-position: left top;
+	font-size:9pt;
+	text-align:left;
+}
+
+#container #header #logo #partner{
+	border-style:dashed;
+	border-width:1px;
+	border-color:#DDDDDD;
+	height:55px;
+	width:250px;	
+}
+
+#container #header #concept{
+	font-size:20pt;
+	width:350px;
+	height:100px;
+	float:left;
+	text-align:center;
+	padding-top:20px;
+}
+
+#container #header #links{
+	float:right;
+	padding-top:10px;
+	text-align:left;
+	width:200px;
+}
+
+#container #header #links #currentproduct{
+	font-size:20pt;
+}
+
+#container #header #links #linkout{
+	font-size:9pt;
+}
+
+#container #header #links #buy{
+	font-size:9pt;
+	border-color:#999999;
+	border-width:1px;
+	border-style:solid;
+	width:100px;
+	padding:5px;
+}
+
+#container #menu{
+	height:42px;
+	background-color:#FFFFFF;
+	border-bottom-width:1px;
+	border-bottom-color:#666666;
+	border-bottom-style:solid;
+}
+
+.menuTab{
+	background-image:url(../images/menu_tab.jpg);
+	background-repeat: no-repeat;
+	height:41px;
+	width:115px;
+}
+
+.productMenuTab{
+	border-bottom-width:1px;
+	border-bottom-color:#FFFFFF;
+	border-bottom-style:solid;
+	text-align:right;
+}
+
+.currentProductMenuTab{
+	border-bottom-width:1px;
+	border-bottom-color:#FFFFFF;
+	border-bottom-style:solid;
+	background-color:#FFFFFF;
+	text-align:right;
+}
+
+
+#container #content{
+	background-color:#FFFFFF;
+}
+
+#container #content #intro{
+	background-color:#FFFFFF;
+}
+
+#container #content #intro #introimg{
+	background-color:#FFFFFF;
+	height:380px;
+	width:490px;
+	float:left;
+	border-width:1px;
+	border-style:solid;
+	border-color:#DDD;
+	margin:5px;
+	padding:5px;
+}
+
+#container #content #intro #introtext{
+	background-color:#FFFFFF;
+	height:380px;
+	width:490px;
+	float:right;
+	border-width:1px;
+	border-style:solid;
+	border-color:#DDD;
+	margin:5px;
+	font-size:12pt;
+	text-align:left;
+	padding:5px;
+}
+
+#container #content #productList{
+	background-color:#d7f0fa;
+	text-align: left;
+	padding-left:10px;
+
+}
+
+#container #content #productList #productintro{
+	height:30px;
+	font-size:12pt;
+	color:#000000;
+	padding-left:20px;
+	text-align:left;
+	background:#d7f0fa;
+	float:left;
+}
+
+#container #content #productList #productmenu{
+	float:left;
+	padding-left:20px;
+	width:100px;
+}
+#container #content #productList #productText{
+	height:580px;
+	font-size:12pt;
+	padding-left:20px;
+	text-align:left;
+	background:#FFFFFF;
+	float:left;
+	width:870px;
+}
+
+#container #content #productList #productText #productTextLeft{
+	font-size:12pt;
+	padding:10px;
+	text-align:left;
+	background:#FFFFFF;
+	float:left;
+	width:400px;
+}
+
+#container #content #productList #productText #productTextRight{
+	font-size:12pt;
+	padding:10px;
+	text-align:left;
+	background:#FFFFFF;
+	float:right;
+	width:400px;
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:silver;
+}
+
+
+#container #footer{
+	padding:5px;
+	line-height:1.5em;
+	height:50px;
+	background-color:#FFFFFF;
+	border-top-width:1px;
+	border-top-color:#999999;
+	border-top-style:solid;
+	font-size:11pt;
+	font-family:黑体;
+}
+
+a, a:hover, a:visited{
+	color:#333333;
+	border-bottom-width:1px;
+	border-bottom-style:dotted;
+	border-bottom-color:#999999;
+	text-decoration:none;
+}

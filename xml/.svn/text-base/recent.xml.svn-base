@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+<exam>gaokao</exam>
+
+<items>
+
+   <item>
+   <user_name>mikojordan</user_name>
+   <type>realtest</type>
+   <type_cn>真题训练</type_cn>
+   <serial_number>ST-1001-1</serial_number>
+   <score>95</score>
+   <date_time>2008-11-05 17:23:09  星期三</date_time>
+   </item>
+   
+   <item>
+   <user_name>tsusiz</user_name>
+   <type>realtest</type>
+   <type_cn>真题训练</type_cn>
+   <serial_number>ST-1001-2</serial_number>
+   <score>55</score>
+   <date_time>2008-11-05 17:23:09  星期三</date_time>
+   </item>
+      
+</items>
+
+</content>

@@ -1,0 +1,172 @@
+@charset "utf-8";
+/* CSS Document */
+
+#div_main_full{
+	width:955px;
+	min-height:700px;
+	padding-top:80px;
+	text-align:center;
+	background-image:url(../images/gaokao_1/ent/panel.png);
+	background-repeat:no-repeat;
+}
+
+.item_div{
+	float:left;
+	width:360px;
+	padding:3px;
+	height:280px;
+	background-image:url(../images/gaokao_1/ent/itempanel.jpg);
+	background-repeat:no-repeat;
+}
+
+#div_title_words{
+	background-image:url(../images/gaokao_1/ent/awordaday-title.gif);
+	background-repeat:no-repeat;
+	height:40px;
+}
+
+#div_title_news{
+	background-image:url(../images/gaokao_1/ent/dailynews-title.gif);
+	background-repeat:no-repeat;
+	height:40px;
+}
+
+#div_title_videos{
+	background-image:url(../images/gaokao_1/ent/videoclips-title.gif);
+	background-repeat:no-repeat;
+	height:40px;
+}
+
+#div_title_songs{
+	background-image:url(../images/gaokao_1/ent/englishsongs-title.gif);
+	background-repeat:no-repeat;
+	height:40px;
+}
+
+#div_title_which{
+	background-image:url(../images/gaokao_1/ent/whichone-title.gif);
+	background-repeat:no-repeat;
+	height:40px;
+}
+
+#div_words_content{
+	width:200px;
+}
+
+#div_news_content{
+	width:200px;
+}
+
+#div_songs_content{
+	width:200px;
+}
+
+#div_videos_content{
+	width:200px;
+}
+
+#div_which_content{
+	width:200px;
+}
+
+#thumb-news{
+	background-image:url(../images/gaokao_1/ent/dailynews-thumb.gif);
+	background-repeat:no-repeat;
+	float:left;
+	width:110px;
+	height:130px;
+}
+
+#thumb-songs{
+	background-image:url(../images/gaokao_1/ent/englishsongs-thumb.gif);
+	background-repeat:no-repeat;
+	float:left;	
+	width:110px;
+	height:130px;
+}
+
+#thumb-words{
+	background-image:url(../images/gaokao_1/ent/awordaday-thumb.gif);
+	background-repeat:no-repeat;
+	float:left;
+	width:110px;
+	height:130px;
+}
+
+#thumb-videos{
+	background-image:url(../images/gaokao_1/ent/videoclips-thumb.gif);
+	background-repeat:no-repeat;	
+	float:left;
+	width:110px;
+	height:130px;
+}
+
+#thumb-which{
+	background-image:url(../images/gaokao_1/ent/whichone-thumb.gif);
+	background-repeat:no-repeat;
+	float:left;
+	width:110px;
+	height:130px;		
+}
+
+.item-right {
+	text-align:left;
+	float:left;	
+	width:200px;	
+	padding:0 0 0 0px;
+	overflow: hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.item-right ul {
+		list-style:none;
+		color:#15a4d0;					
+		font-size:14px;
+		line-height:24px;
+		height:130px;
+}
+					
+.item-right ul li a {
+		color:#15a4d0;
+		border-bottom:1px #15a4d0 dotted;
+}
+					
+.item-right ul li a:link {
+		color:#15a4d0;
+		border-bottom:1px #15a4d0 dotted;
+}
+					
+.item-right ul li a:visited {
+		color:#15a4d0;
+		border-bottom:1px #15a4d0 dotted;
+}
+					
+.item-right ul li a:hover {
+		color:#333;
+		border-bottom:1px #15a4d0 solid;
+		background:#E8FBFF;
+}
+					
+.item-current{
+		height:50px;
+}
+
+.navpage{
+	float:left;
+	border-width:1px;
+	border-color:#EEEEEE;
+	border-style:solid;
+	margin:1px;
+	font-size:12px;
+}
+
+.navpage_current{
+	float:left;
+	border-width:1px;
+	border-color:#FFCC00;
+	background-color:#FFFF00;
+	border-style:solid;
+	margin:1px;
+	font-size:12px;
+}

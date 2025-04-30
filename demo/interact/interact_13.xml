@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+
+<item id="fetch">
+
+		<property>
+			<name>checkbalance</name>
+			<value>/st/demo/xml/checkbalance.xml</value>
+		</property>
+		<property>
+			<name>xmlmaterial</name>
+			<value>/st/demo/xml/13.xml</value>
+		</property>
+		
+		<property>
+			<name>load</name>
+			<value>/st/demo/xml/checkdatas.xml</value>
+		</property>
+		
+				<property>
+		  <name>reviewmaterial</name>
+		  <value>/lib/fetchreviewmaterial.xml</value>
+		</property>
+
+		<property><!--提交用户做题结果（xml格式） -->
+			<name>submit</name>
+			<value>/lib/submitresult.html</value>
+		</property>
+		
+		<property>
+			<name>save</name>
+			<value>/lib/mybingo/savedatas.html</value>
+		</property>
+</item>
+
+<item id="directions">
+  <property>
+   <name>listening_follow_up</name>
+   <value>/share/xml/directions/listening_directions_new.xml</value>
+  </property>
+  <property>
+   <name>vocabulary_follow_up</name>
+     <value>/share/xml/directions/voc_directions.xml</value>
+  </property>
+ </item>
+ 
+ <item id="word_list">
+  <property>
+   <name>wordlist0.2</name>
+   <value>/share/xml/word_level/wordlist0.2.xml</value>
+  </property>
+  <property>
+   <name>wordlist0.4</name>
+   <value>/share/xml/word_level/wordlist0.4.xml</value>
+  </property>
+  <property>
+   <name>wordlist0.5</name>
+   <value>/share/xml/word_level/wordlist0.5.xml</value>
+  </property>
+ </item>	
+	
+<item id="firsttest">
+		<property>
+				<name>xmlmaterial</name>
+				<value></value>				
+		</property>
+			<property>
+				<name>submit</name>
+				<value></value>				
+		</property>
+	</item>
+	
+<item id="upload">
+ 		<property><!--提交用户上传语音地址 -->
+			<name>object</name>
+			<value>/lib/mybingo/uploadfile.html</value>
+		</property>
+		<property><!--域名 -->
+			<name>domain</name>
+			<value>www.english1490.com</value>
+		</property>
+		<property><!--端口 -->
+			<name>port</name>
+			<value>80</value>
+		</property>
+		  <property>
+     <name>check</name>
+     <value>/lib/viewotherspeakingrecord.xml</value>
+  </property>
+</item>
+
+
+
+<!--阅读相关的链接-->
+<item id="reading_follow_up_utils">
+ <property>
+     <name>sentenceexaplain</name>
+     <value>/lib/getsentenceexplain.xml</value>
+   </property>
+    <property>
+     <name>askgenway</name>
+     <value>/lib/misc/askgenway.html</value> 
+   </property>
+</item>
+
+<item id="vocabulary_follow_up_utils">
+  <property>
+  <name>gofish</name>
+			<value>/lib/fun/gofishserialnumber.html</value>
+		</property>
+		<property>
+		<name>vocabularybook</name>
+			<value>/lib/vocbook/index.do</value>
+		</property>		
+</item>
+
+</urls>

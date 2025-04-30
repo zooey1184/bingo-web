@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+
+<item id="new_simtest">
+
+		<property>
+			<name>checkbalance</name>
+			<value>/st/demo/xml/checkbalance.xml</value>
+		</property>
+		<property>
+			<name>xmlmaterial</name>
+			<value>/st/demo/xml/cloze.xml</value>
+		</property>
+		
+		<property>
+			<name>load</name>
+			<value>/st/demo/xml/checkdatas.xml</value>
+		</property>
+</item>
+
+</urls>

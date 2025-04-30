@@ -1,0 +1,55 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/datatable/assets
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+skins
+dir
+
+datatable.css
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+fdabe4320a1f008ecb549b9da4a14dd1
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+datatable-core.css
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+775ad9a60374317695ec09a5ac965e2a
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

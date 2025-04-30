@@ -1,0 +1,52 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/reset-fonts
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+reset-fonts.css
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+36eff0c83d2aa7f38db9f291a6d2fe1a
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+README
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+c0024cf8b5af801a3e8316c7fa308080
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

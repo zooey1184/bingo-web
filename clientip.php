@@ -1,0 +1,2 @@
+<?REMOTE_ADDR => $REMOTE_ADDR ?> 
+<?=REMOTE_ADDR?>

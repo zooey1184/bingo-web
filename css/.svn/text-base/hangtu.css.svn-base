@@ -1,0 +1,106 @@
+@CHARSET "UTF-8";
+.main_div{
+	background-image: url(../images/special/hangtu/background.jpg);
+	width:1014px;
+	align:center;
+	position: absolute;
+	left: 110px;
+	height:1000px;
+}
+
+.content_div{  
+	width:820px;
+	background-image: url(../images/special/hangtu/intro_shadow.jpg);
+	margin-right:6px;
+}
+
+.intro_outer_div{
+	margin-left:9px;
+	margin-right:6px;	
+	background-color:#FFFFFF;	
+	height:306px;
+}
+
+.main_footer{
+	background-color:#FFFFFF;	
+}
+
+.intro_inner_div{
+	width:624px;
+	text-align:left;
+}
+
+.intro_up_div{
+	width:826px;
+}
+
+.down_div{
+    width:820px;
+}
+
+.arrow_div{		
+	text-align:left;
+	margin-left:30px;
+	float:left;
+}
+
+.enter_div{
+float:left;
+position:relative;
+top:100px;
+left:30px;
+}
+
+
+.line_up{
+	background-image:url(../images/special/hangtu/enter_up_line.jpg);
+	width:560px;
+	height:10px;		
+}
+
+.line_down{
+	background-image:url(../images/special/hangtu/enter_up_line.jpg);
+	width:560px;
+	height:10px;
+	margin-top:-9px;		
+}
+
+
+.enter_middle{
+  height:150px;
+  width:590px;
+}
+
+.middle_left{
+  float:left;
+  background-image:url(../images/special/hangtu/enter_left_line.jpg);
+  height:150px;
+  margin-top:-5px;
+  padding-bottom:16px;
+  width:10px;
+ 
+}
+
+.middle_right{
+  float:right;
+  background-image:url(../images/special/hangtu/enter_left_line.jpg);
+  height:150px; 
+  width:10px; 
+}
+
+.lib_logo{
+margin-left:30px;
+float:left;
+margin-top:-45px;
+}
+
+.link{
+margin-top:40px;
+margin-left:10px;
+float:left;
+height:61px;
+}
+
+#enter_link{
+	
+}

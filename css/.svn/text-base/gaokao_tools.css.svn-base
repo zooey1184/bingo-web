@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+#div_main_full{
+	width:1000px;
+	background-color:#FFFFFF;
+	float:right;
+	text-align:left;
+}
+
+#firsttest {
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color: #FFFFFF;
+	width:790px;
+	margin:3px;
+	float:left;
+}
+
+#firsttest_list{
+	width:190px;
+	float:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color: #FFFFFF;
+	margin:3px;
+	font-family:"宋体","Arial Black";
+}
+
+#vocbook{
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color:#FFFFFF;
+	width:790px;
+	margin:3px;
+	float:left;
+}
+#vocbook_list{
+	width:190px;
+	float:right;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color: #FFFFFF;
+	margin:3px;
+	font-family:"宋体";
+}
+
+#xiaoyu_list{
+	width:190px;
+	float:right;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color: #FFFFFF;
+	margin:3px;
+	font-family:"宋体";
+}
+
+#vocgame{
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color:#FFFFFF;
+	width:790px;
+	margin:3px;
+	float:left;
+}
+
+#vocgame_list{
+	width:190px;
+	float:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#DDDDDD;
+	background-color: #FFFFFF;
+	margin:3px;
+}
+
+div.top_list{
+	background-image:url(../images/gaokao_1/item_5.png);
+	background-repeat:no-repeat;
+	padding-left:60px;
+	padding-top:15px;
+	height:40px;
+	font-family:"幼圆";
+	
+}
+div.item_title_firsttest{
+	background-image: url(../images/gaokao_1/item_2.png);
+	background-repeat:no-repeat;
+	height:40px;
+	text-align:left;
+	padding-left:60px;
+	padding-top:15px;
+	font-family:"幼圆";
+}
+
+div.item_title_vocbook{
+	background-image: url(../images/gaokao_1/item_2.png);
+	background-repeat:no-repeat;
+	height:40px;
+	text-align:left;
+	padding-left:60px;
+	padding-top:15px;
+	font-family:"幼圆";
+}
+
+div.item_title_vocgame{
+	background-image: url(../images/gaokao_1/item_2.png);
+	background-repeat:no-repeat;
+	height:40px;
+	text-align:left;
+	padding-left:60px;
+	padding-top:15px;
+	font-family:"幼圆";
+}
+
+.introduction{
+	font-family:"宋体";
+	text-align:left;
+}
+
+#div_firsttest_voc{
+	background-image: url(../images/gaokao_1/tools/eva_09.gif);
+	background-repeat: no-repeat;
+	width:210px;
+	height:160px;
+	padding-top:100px;
+	text-align:left;
+	padding-left:10px;
+	padding-right:20px;
+}
+
+#div_firsttest_listening{
+	background-image: url(../images/gaokao_1/tools/eva_11.gif);
+	background-repeat: no-repeat;
+	width:210px;
+	height:160px;
+	padding-top:100px;
+	text-align:left;
+	padding-left:10px;
+	padding-right:20px;
+}
+
+#div_firsttest_reading{
+	background-image: url(../images/gaokao_1/tools/eva_13.gif);
+	background-repeat: no-repeat;
+	width:210px;
+	height:160px;
+	padding-top:100px;
+	padding-left:10px;
+	padding-right:20px;
+	text-align:left;
+}
+#firsttest_table{
+	font-family:"宋体";
+}
+
+div.div_splitter{
+	height:20px;
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#0000FF;
+	background:#6ac0de;
+	clear:both;
+}
+

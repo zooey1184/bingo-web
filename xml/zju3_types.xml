@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content exam="zju3">
+
+<category>
+   <name>真题</name>
+   <content_div>realtest</content_div>
+   <type>realtest</type>
+</category>
+
+<category>
+   <name>模拟题</name>
+   <content_div>simtest</content_div>
+   <type>simtest</type>
+</category>
+
+<category>
+   <name>短对话</name>
+   <content_div>shortconv</content_div>
+   <type>shortconv</type>
+</category>
+
+<category>
+   <name>篇章听力</name>
+   <content_div>passagelistening</content_div>
+   <type>passagelistening</type>
+</category>
+
+<category>
+   <name>词汇</name>
+   <content_div>vocabulary</content_div>
+   <type>vocabulary</type>
+</category>
+
+<category>
+   <name>语法</name>
+   <content_div>structure</content_div>
+   <type>structure</type>
+</category>
+
+<category>
+   <name>阅读理解</name>
+   <content_div>mutiplechoice</content_div>
+   <type>mutiplechoice</type>
+</category>
+
+<category>
+   <name>英译汉</name>
+   <content_div>translation_passage</content_div>
+   <type>translation_passage</type>
+</category>
+
+<category>
+   <name>汉译英</name>
+   <content_div>translation_sentence</content_div>
+   <type>translation_sentence</type>
+</category>
+</content>

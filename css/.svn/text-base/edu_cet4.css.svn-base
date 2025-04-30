@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+#div_content{
+	width:800px;
+	background-color:#FFFFFF;
+	min-heght:500px;
+}
+
+#right_div {
+	float:right;
+	width:580px;
+	padding-top:0px;
+	min-height:500px;	
+	background-color:#FFFFFF;
+	background-image:url(../images/gaokao_1/topic_bg.png);
+	background-repeat: repeat-x;
+	border-left-width:4px;
+	border-left-style:solid;
+	border-left-color:#FFFFFF;
+}
+
+#div_topic,#products_category,#category_div{
+	width:198px;
+	float:left;
+	background-image:url(../images/gaokao_1/topic_bg.png);
+	background-repeat: repeat-x;
+	font-size:11px;
+	text-align:left;
+	min-height:300px;
+	background-position:0px 30px;
+}
+
+
+#materials_div{
+	padding:5px;
+	background-color:#FFFFFF;
+}
+
+.topic_header{
+	width:298px;
+	height:40px;
+	background-image:url(../images/gaokao_1/topic_bg_header_198.png);
+	background-repeat: no-repeat;
+}
+
+.left_menu_item{
+	height:42px;
+	background-image:url(../images/gaokao_1/test/item_logo.png);
+	background-repeat: no-repeat;
+	text-decoration:none;
+	padding-left:50px;
+	padding-top:5px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#33CCCC;
+	font-family:"宋体";
+	font-size:11pt;
+}
+
+#testHeader {
+	font-size:14pt;
+	font-family:"幼圆";
+	background-image: url(../images/gaokao_1/ability/item_bg.png);
+	background-repeat: repeate-x;
+	border-top-color:#000099;
+	border-top-width:1px;
+	border-top-style:solid;
+	height:40px;
+	color:#FFFFFF;
+	text-align:left;
+}
+
+.todo_item{
+	padding:10px;
+	clear:both;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#EEEEEE;
+	height:80px;
+}
+
+.serialNumber{
+	float:left;
+	width:100px;
+}
+
+.test_introduction{
+	font-style:italic;
+	font-family:"Times New Roman";
+	width:300px;
+	padding:10px;
+	float:left;
+}
+
+.finish_time{
+	font-style:normal;
+	font-family:"幼圆";
+	font-size:13pt;
+	color:#000099;
+}
+
+.link_out{
+	float:left;
+	width:90px;
+}
+
+.detailTest{
+	padding-bottom:10px;	
+	padding-top:10px;
+	
+}
+
+.noitems{
+	text-align:center;
+}
+
+.highlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+.clickhighlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+.button_current_true{
+	border-width:1px;
+	border-style:solid;
+	border-color:#FFCC00;
+	background:#FFFF00;
+	width:20px;
+	height:20px;
+	margin:10px;
+	float:left;
+	cursor:hand;
+}
+
+.button_current_false{
+	border-width:1px;
+	border-style:dashed;
+	border-color:#999999;
+	width:20px;
+	height:20px;
+	float:left;
+	margin:10px;
+	cursor:hand;
+}
+
+.count{
+	font-family:"幼圆";
+	font-size:13pt;
+	float:left;
+	margin:10px;
+}
+
+.navs{
+	width:50%;
+	text-align:center;
+	
+}

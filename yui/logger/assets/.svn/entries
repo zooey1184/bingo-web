@@ -1,0 +1,55 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/logger/assets
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+logger.css
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+5185f5b2c0d0b15aca0ffb34661f8858
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+skins
+dir
+
+logger-core.css
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+f55428415d557c4780aa339746b25b55
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

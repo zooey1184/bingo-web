@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+	
+	#container{
+		padding:30px;
+	}
+	body{
+		font-size:80%;
+	}
+	.title{
+		font-size:18pt;
+		font-family:"微软雅黑";
+		padding-bottom:30px;
+		padding-left:20px;
+	}
+	
+	.sub_title{
+		font-size:14pt;
+		font-family:"微软雅黑";
+	}
+	
+	
+	.inline_title{
+		font-size:18pt;
+		font-family:"微软雅黑";
+		color:#FFCC00;
+	}
+	.link{
+		font-size:8pt;
+		text-decoration:underline;
+	}
+	
+	#content{
+		width:500px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#000099;
+		
+	}
+	
+	.next{
+		width:400px;
+		text-align:left;
+		border-bottom-color:#333333;
+		border-bottom-width:1px;
+		border-bottom-style:dotted;
+		padding:20px;
+		
+	}
+	
+	#buy{
+		width:500px;
+		border-width:1px;
+		border-style:solid;
+		border-color:#000099;
+		padding-bottom:10px;
+	}
+	.banner{
+		background-color:#33CCFF;
+		padding:5px;
+		font-size:14pt;
+		font-family:微软雅黑;
+		border-style:solid;
+		border-width:1px;
+		border-color:#000099;
+	}
+</style>
+</head>
+
+<body>
+<div id="container">
+
+<div class="title">购买冰果产品</div> 
+
+<div id="content">
+  <div class="banner"><span class="sub_title">您即将享受的冰果服务：</span></div>
+  
+  <span class="inline_title">大学英语A计划</span></p>
+  <div style="padding-left:20px">
+  <p>只需25元，可以享受5个月的冰果英语学习</p>
+  <p>只需50元，您可以享受12个月的冰果英语学习</p>
+  </div>
+</div>
+<br /><br />
+<div id="buy">
+<div class="banner">支付</div>
+	<div class="next">
+	<span class="sub_title">我有学习卡</span><br /><br />
+    卡号：<input type="text" /> <br />
+    密码：<input type="text" /> <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="充卡"/>
+    </div>
+
+<div class="next">
+	<span class="sub_title">我想网银购买</span>
+    <ul style="list-style-type:none">
+    	<li><a href="">购买50元冰果服务</a></li>
+    	<li><a href="">购买25元冰果服务</a></li>
+    </ul>
+    支持银行：中国工商银行，中国建设银行，中国农业银行，中国银行，招商银行，交通银行，中国民生银行，兴业银行，深圳发展银行，北京银行，华夏银行，广东发展银行，浦发银行，中国光大银行，广州市商业银行
+</div>
+
+<div class="next">
+	<span class="sub_title">支付宝支付</span>
+    <ul style="list-style-type:none">
+    	<li><a href="">购买50元冰果服务</a></li>
+    	<li><a href="">购买25元冰果服务</a></li>
+    </ul>
+</div>
+
+<div class="next">
+	<span class="sub_title">联系客服：</span>
+    <ul style="list-style-type:none">
+    	<li>电话：0571-28991078</li>
+    	<li>QQ：996091820</li>
+        <li>MSN: bingoenglish@hotmail.com </li>
+    </ul>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

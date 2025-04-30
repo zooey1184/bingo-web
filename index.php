@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>冰果英语</title>
+    <script src="/st/js/jquery-1.2.6.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/st/js/login_st2.js"></script>
+    <script type="text/javascript" src="/st/js/index_st2.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="main">
+
+    
+
+	<div id="top">
+    	<div id="top_container">
+        	<div id="top_container_logo"></div>
+			<div id="top_container_login">
+					<div id="div_account"></div>
+    		</div>
+            <div id="top_container_logo_txt"></div>
+            <div class="cleared"></div>
+            <div id="top_container_menu">
+            	<div id="top_container_menu_inner">
+                    <div class="top_menu_item"><a class="module_menu" href="/st2/index.php">首  页</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/st/index/test.html">备  考</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/st/index/tools.html">水平自测</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/st/index/voc.html">词  汇</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/st/index/ent.html">休闲娱乐</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/lib/freeaccount/index/index.do">我的帐号</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/content/html/news/">新  闻</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/content/html/photo/">图  文</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/content/html/video/">视  频</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/content/html/funny/">有  趣</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="/content/special/index.php">专  题</a></div>
+                    <div class="top_menu_item"><a class="module_menu" href="http://bingoenglish.com/blog/Huffmans/" target="_blank">外教博客</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+    	<div id="div_school_info"></div>
+    	<div id="content_container">
+        <div id="div_content"></div>
+                <div id="content_panel_menu">
+                    <div class="content_panel_menu_top"></div>
+                    <div class="content_panel_menu_item"><span class="service service_1"> </span><span class="service_name"><a href="/st/ability.html">听说读写译 能力全面提高</a></span></div>
+   <!--                 <div class="content_panel_menu_item"><span class="service service_2"></span><span class="service_name"><a href="/st/zj3.html">大学英语三级</a></span></div> -->
+                    <div class="content_panel_menu_item"><span class="service service_3"></span><span class="service_name"><a href="/st/cet4.html">大学英语四级</a></span></div>
+                    <div class="content_panel_menu_item"><span class="service service_4"></span><span class="service_name"><a href="/st/cet6.html">大学英语六级</a></span></div>
+                    <div class="content_panel_menu_item"><span class="service service_5"></span><span class="service_name"><a href="/st/graduate.html">研究生英语</a></span></div>
+                    <div class="content_panel_menu_item"></div>
+                    <div class="content_panel_menu_item"></div>
+                    <div class="content_panel_menu_bottom"></div>
+                </div>
+          <div id="content_panel_1"><img src="immg/panel_1_all.jpg" width="655" height="332" border="0" usemap="#Map" />
+            <map name="Map" id="Map">
+              <area shape="rect" coords="50,28,279,158" href="/st/eva/listening_eva.html" target="_self" />
+              <area shape="rect" coords="314,44,541,184" href="/st/eva/voc_eva.html" target="_self" />
+              <area shape="rect" coords="142,243,268,270" href="/lib/cet4/doneTest.do?reviewEnabled=false&amp;serialNumber=ST-2081-291&amp;exam=cet4" target="_blank" />
+              <area shape="rect" coords="140,272,271,294" href="/lib/cet6/doneTest.do?reviewEnabled=false&amp;serialNumber=ST-2081-397&amp;exam=cet6" target="_blank" />
+              <area shape="poly" coords="349,247" href="#" />
+              <area shape="circle" coords="332,278,20" href="/st/cet4/test.html?target=writing" target="_self" />
+            </map>
+          </div>
+          <div id="content_panel_2">
+          	<div id='pic_news_div'>
+				<div class='pic_news_header'><div class='header_content'>&nbsp;&nbsp;News </div><div class='more'><a href='/content/html/photo/'><img src='/st/images/index_1/more.gif' border=0/></a></div></div>
+			</div>
+            
+          </div>
+<div class="cleared"></div>
+<div id="content_panel_3">
+                	<div id="eva_1"></div>
+        <div id="eva_2" onclick="goURL('/st/eva/voc_eva.html')" title="词汇测试"></div>
+        <div id="eva_3" onclick="goURL('/st/eva/reading_eva.html')"  title="阅读测试"></div>
+        <div id="eva_4" onclick="goURL('/st/eva/listening_eva.html')"  title="听力测试"></div>
+          </div>
+                <div id="content_panel_4">
+                <a href="http://www.bingoenglish.com/nce/" target="_blank"><img src="immg/nce.jpg" width="621" height="105" alt="新编大学英语" longdesc="http://www.bingoenglish.com/nce"/></a>
+                </div>
+
+      </div>
+    </div>
+    <div class="cleared"></div>
+    <div id="bottom">
+    	<div id="bottom_partner">
+        	<div id="bottom_parterner_1"><img src="immg/partner_0.jpg"/></div>
+            <div id="bottom_parterner_2"><img src="immg/partner_1.jpg"/></div>
+            <div id="bottom_parterner_3"><img src="immg/partner_2.jpg"/></div>
+            <div id="bottom_parterner_4"><img src="immg/partner_3.jpg"/></div>
+        </div>
+        <div class="cleared"></div>
+        <div id="bottom_copyright">
+关于我们 | 服务条款 | 使用帮助 | 建议意见 | 客服中心 <br/>
+浙ICP证B2-20140303号 浙ICP备06047992号<br/>
+版权所有© 2008 杭州增慧网络科技有限公司 保留所有权利.<br/>
+        </div>
+        <div id="bottom_police"><br/><br/>
+        	<a href="http://www.pingpinganan.gov.cn/web/index.aspx" target="_blank"><img src="immg/06ppaa_dbpic001.gif" border="0"/></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6385959-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>

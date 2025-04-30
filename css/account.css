@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container #content {
+	background:#FFFFFF;
+}
+
+
+#container #content #account{
+	width:980;
+	padding:5px;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+
+#container #content #products{
+	width:450px;
+	margin:5px;
+	padding:5px;
+	float:left;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+#container #content #comments{
+	width:450px;
+	margin:5px;
+	float:right;
+	padding:5px;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+#content-inner{
+	text-align:center;
+}
+.cleared{
+	clear:both;
+}
+
+.title{
+	font-size:15px;
+	font-family:"宋体";
+}
+
+.go{
+	color:#FFCC00;
+}
+
+#content-div-top{
+	text-align:left;
+	font-size:14pt;
+	font-color:#018181;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#EEEEEE;
+	margin-bottom:10px;
+}
+
+#content-div{
+	width:100%;
+	border-style:solid;
+	border-width:1px;
+	border-color:#EEEEEE;
+}
+
+#content{
+	text-align:left;
+}
+
+#nav_list{
+	list-style:none;
+	border-style:dashed;
+	border-width:1px;
+	border-color:#EEEEEE;
+	padding:10px;
+	width:120px;
+	text-align:left;
+}
+
+#nav_list li{
+	height:30px;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#018181;
+}
+
+a.accountlink{
+	text-decoration:none;
+	color:#000077;
+	font-family:"幼圆";
+	font-weight:bold;
+}
+
+a.accountlink:hover{
+	text-decoration:none;
+	color:#FF9900;
+	font-family:"幼圆";
+	font-weight:bold;
+}
+
+#bingoDiv{
+	width:100%;
+	text-align:left;
+}
+
+#personalInfoDiv{
+	text-align:left;
+}
+.buyItem{
+	border-color:#EEEEEE;
+	border-width:3px;
+	border-style:solid;
+}
+
+#orderForm{
+	width:500px;
+	padding:20px;
+	border-width:2px;
+	border-color:#CCCCCC;
+	border-style:solid;
+	text-align:center;
+	font-family:"宋体";
+	font-size:12pt;
+}
+
+#orderForm #orderFormTitle{
+	font-family:"黑体";
+	font-size:14pt;
+	text-align:left;
+}
+
+.list_block {
+	padding:10px;
+}
+
+.faq_answer{
+	border-width:1px;
+	border-style:dashed;
+	border-color:#999999;
+	padding:10px;
+}
+img{
+	border:0px;
+}
+
+#account_func_div{
+	width:200px;
+	min-height:500px;
+	float:left;
+}
+
+#account_content_div{
+	width:780px;
+	min-height:600px;
+	float:left;
+}
+
+#div_main_full{
+	width:1000px;
+	background:#FFFFFF;
+}
+
+#current_service_info{
+	text-align:left;
+	width:450px;
+	padding:10px;
+	margin:10px;
+}
+
+#service_1{
+	border-width:1px;
+	border-color:#DDDDDD;
+	border-style:solid;
+	padding:10px;
+	margin:10px;
+	height:150px
+}
+
+#service_2{
+	border-width:1px;
+	border-color:#DDDDDD;
+	border-style:solid;
+	padding:10px;
+	margin:10px;
+	height:150px
+}
+
+.m_service_info{
+	color:#FFFFFF;
+	font-family:"宋体";
+	background-color:#c60000;
+	padding:4px;
+}
+.card_pay{
+	border-style:solid;
+	border-width:1px;
+	border-color:#a5d4fd;
+	width:126px;
+	margin:10px;
+	float:left;
+	padding-top:90px;
+	background:transparent url(../images/gaokao_1/account/card.png) left top no-repeat;
+	cursor:hand;
+	text-align:center;
+}
+
+.online_pay{
+	border-style:solid;
+	border-width:1px;
+	border-color:#a5d4fd;
+	width:126px;
+	margin:10px;
+	padding-top:90px;
+	float:left;
+	background:transparent url(../images/gaokao_1/account/onlinecard.png)  left top no-repeat;
+	cursor:hand;
+	text-align:center;
+}
+
+#buyed_items{
+	border-width:1px;
+	border-style:solid;
+	border-color:#a5d4fd;
+	display:block;
+	padding:10px;
+	margin:10px;
+	min-height:50px;
+	width:400px;
+}
+.buyed_item_title{
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#000099;
+	background:#000099;
+	color:#FFFFFF;
+	text-align:left;
+}
+
+.unbuyed_item_title{
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#000099;
+	background:#000099;
+	text-align:left;
+	color:#FFFFFF;
+}
+
+.link_out{
+		float:right;
+		width:100px;
+}
+.account_service{
+	width:300px;
+	float:left;
+}
+
+.buyed_itemhightlight{
+	background:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+.account_info{
+	width:200px;
+	float:right
+}
+.highlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+/* 注册页面等功能 css div格式*/
+#regmenu {
+	width:90%;
+	padding:10px;
+	text-align:right;	
+}
+#regmsg {
+	border:1px dashed #669900;
+	width:auto;	
+	padding:5px;
+	margin: 5px;
+	text-align:left;
+}
+
+#regcontainer {
+	background:#FFFFFF;
+	padding:10px;
+	margin-bottom:10px;
+}
+
+ul .regform {
+	clear:both;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background:transparent url(../images/icons/bg/ul_bk.gif) left bottom repeat-y;
+}
+
+ul.regform li{
+	clear:both;
+	width:100%;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background:transparent url(../images/icons/bg/li_bk.gif) left bottom repeat-y;
+}
+ul.regform li.title{
+	padding:20px 0 10px 0;
+	font-size:14px;
+	text-align:center;
+		color:#F60;
+	background:transparent url(../images/icons/bg/title_bk.gif) left top repeat-y;
+}
+ul.regform li .hint{
+	float:left;
+	width:160px;
+	font-size:14px;
+	text-align:right;
+	margin-right:5px;
+	line-height:28px;
+}
+ul.regform li .input{
+	float:left;
+	width:190px;
+}
+ul.regform li .info{
+	float:left;
+	width:300px;
+	margin:1px 0 5px;
+}
+
+ul.regform li .info .correct{
+	border:#669900 solid 1px;	
+	background:#ECF7D7 url(../images/icons/bullet/icon_ok.gif) no-repeat 4px 8px;
+	padding:4px 4px 4px 22px;
+	display:none;
+	
+}
+
+ul.regform li .info .focus{
+	border:#7DBEFF solid 1px;	
+	background:#E1F0FF url(../images/icons/bullet/littleinfo.png) no-repeat 4px 8px;
+	padding:4px 4px 4px 22px;
+}
+
+ul.regform li .info .error{
+	border:#FF3300 solid 1px;	
+	background:#FFE8DD url(../images/icons/bullet/icon_error.gif) no-repeat 4px 8px;
+	padding:4px 4px 4px 22px;
+	display:none;
+}
+
+p.submitbox{
+	text-align:center;
+	background:none;
+}
+p.submitbox input{
+	display:block;
+	height:30px;
+	background-color:#DADADA;
+	margin:10px auto 20px;
+}
+#check_username{
+	margin-top:5px;
+}
+
+#regcontent {
+	border:2px #669900 solid;
+	width:auto;
+	background:#FFFFFF;
+	text-align:left;
+	padding:1em;
+	margin:0px;
+}
+
+#regcontent a{
+	text-decoration:underline;
+}
+
+.usericon, .emailicon, .passicon {
+	background:none;
+	padding-left:25px;
+}
+
+.usericon {
+	padding-left:15px;
+	font-weight:bold;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background:url(../images/icons/bullet/user_icon.gif) no-repeat left center;
+}
+
+.emailicon {
+	background-image: url(../images/icons/bullet/email_icon.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.passicon {
+	background:url(../images/icons/bullet/pass_icon.gif) no-repeat left;
+}
+
+.navicon {
+	font-weight:bold;
+	padding-left: 25px;
+	background:url(../images/icons/bullet/nav_icon.gif) no-repeat left;	
+}
+
+.cleared {
+	clear:both;
+}
+.btnarea{
+	text-align:center;
+}
+
+#loginForm{
+	font-family:"宋体";
+	font-size:14px;
+	border-width:1px;
+	border-color:#65a7e6;
+	border-style:solid;
+	width:350px;
+	margin-top:20px;
+}
+#loginForm a{
+	color:#000099;
+}

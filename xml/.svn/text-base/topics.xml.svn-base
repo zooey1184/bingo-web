@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<topics>
+	<item>
+		<id>1</id>
+		<en_name>Great People and Important Events</en_name>
+		<ch_name>伟人纪事</ch_name>
+		<ch_long_name>伟人纪事，历史事件</ch_long_name>
+		<pic>/st/images/products/topic_list/1.png</pic>
+	</item>
+	<item>
+		<id>2</id>
+		<en_name>Home, Family and Daily Life</en_name>
+		<ch_name>家庭家人</ch_name>
+		<ch_long_name>家庭家人，日常生活</ch_long_name>
+		<pic>/st/images/products/topic_list/2.png</pic>
+	</item>
+	<item>
+		<id>3</id>
+		<en_name>Entertainment</en_name>
+		<ch_name>音乐电影</ch_name>
+		<ch_long_name>音乐电影，运动娱乐</ch_long_name>
+		<pic>/st/images/products/topic_list/3.png</pic>
+	</item>
+	<item>
+		<id>4</id>
+		<en_name>Travel, transport and Places</en_name>
+		<ch_name>交通旅游</ch_name>
+		<ch_long_name>交通旅游，地方名胜</ch_long_name>
+		<pic>/st/images/products/topic_list/4.png</pic>
+	</item>
+	<item>
+		<id>5</id>
+		<en_name>Services</en_name>
+		<ch_name>饭店银行</ch_name>
+		<ch_long_name>饭店银行，旅馆邮局</ch_long_name>
+		<pic>/st/images/products/topic_list/5.png</pic>
+	</item>
+	<item>
+		<id>6</id>
+		<en_name>Study and Education</en_name>
+		<ch_name>学习教育</ch_name>
+		<ch_long_name>学习教育，百年大计</ch_long_name>
+		<pic>/st/images/products/topic_list/6.png</pic>
+	</item>
+	<item>
+		<id>7</id>
+		<en_name>Climate and Environment</en_name>
+		<ch_name>天气气候</ch_name>
+		<ch_long_name>天气气候，生存环境</ch_long_name>
+		<pic>/st/images/products/topic_list/7.png</pic>
+	</item>
+	<item>
+		<id>8</id>
+		<en_name>Science and Technology</en_name>
+		<ch_name>科学技术</ch_name>
+		<ch_long_name>科学技术，发明创造</ch_long_name>
+		<pic>/st/images/products/topic_list/8.png</pic>
+	</item>
+	<item>
+		<id>9</id>
+		<en_name>Work and Career</en_name>
+		<ch_name>工作求职</ch_name>
+		<ch_long_name>工作求职，职业事业</ch_long_name>
+		<pic>/st/images/products/topic_list/9.png</pic>
+	</item>
+	<item>
+		<id>10</id>
+		<en_name>Health, Life Science and Psychology</en_name>
+		<ch_name>健康人生</ch_name>
+		<ch_long_name>健康人生，生命奥秘</ch_long_name>
+		<pic>/st/images/products/topic_list/10.png</pic>
+	</item>
+	<item>
+		<id>11</id>
+		<en_name>Social Relations and Social Issues</en_name>
+		<ch_name>人际关系</ch_name>
+		<ch_long_name>人际关系，社会问题</ch_long_name>
+		<pic>/st/images/products/topic_list/11.png</pic>
+	</item>
+	<item>
+		<id>12</id>
+		<en_name>Culture and Holidays</en_name>
+		<ch_name>文化生活</ch_name>
+		<ch_long_name>文化生活，节日庆贺</ch_long_name>
+		<pic>/st/images/products/topic_list/12.png</pic>
+	</item>
+	<item>
+		<id>13</id>
+		<en_name>Finance, Economy and Business</en_name>
+		<ch_name>金融经济</ch_name>
+		<ch_long_name>金融经济，企业生意</ch_long_name>
+		<pic>/st/images/products/topic_list/13.png</pic>
+	</item>
+	<item>
+		<id>14</id>
+		<en_name>Agriculture, Plants and Animals</en_name>
+		<ch_name>植物农业</ch_name>
+		<ch_long_name>植物农业，动物世界</ch_long_name>
+		<pic>/st/images/products/topic_list/14.png</pic>
+	</item>
+</topics>

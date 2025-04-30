@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "宋体",Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000000;
+	text-align:center;
+	background-image:url(../images/gaokao_1/bg_top.png);
+	background-repeat: repeat-x;
+	background-color:#c8e3f1;
+	padding-top:10px;
+}
+
+input{
+	border: 1px solid #D4D0C8;
+	font-size:12px;
+}
+input[type=text],input[type=password] 
+{
+	background-color:#FFFF88;
+	width: 120px;
+}
+input[type=checkbox],input[type=radio] 
+{
+	width: 20px;border: 0px;
+}
+input[type=button],input[type=submit] 
+{
+	background-color:#3b5888; border-color:#d8dfea #0e1f5b #0e1f5b #d8dfea; border-style:solid; border-width:1px; color:#fff; cursor:pointer; font-size:12px; padding:2px 15px; text-align:center; 
+}
+#container{
+	width:1000px;
+	background:#FFFFFF;
+	text-align:left;
+}
+
+#div_logo{
+	background-image:url(../images/gaokao_1/banner.png);
+	background-repeat: no-repeat;
+	height:134px;
+	width:1000px;
+}
+
+#div_top_nav{
+	color:#FFFFFF;
+	font-family:"宋体";
+	font-size:12px;
+	float:right;
+	padding-right:20px;
+	padding-top:5px;
+	height:30px;
+}
+
+#div_top_nav a{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+#logo_text{
+	height:20px;
+	float:left;
+	padding-top:100px;
+	padding-left:120px;
+	font-size:15px;
+}
+#div_account{
+	background-image:url(../images/gaokao_1/login-bar.png);
+	background-repeat: no-repeat;
+	height:30px;
+	padding-top:2px;
+	text-align:right;
+	font-family:"宋体";
+	font-size:12px;
+	over-flow:hidden;
+}
+
+#div_menu{
+	width:100%;
+	height:50px;
+	padding-top:2px;
+	color:#FFFFFF;
+	float:left;
+	border-left-width:1px;
+	border-left-color:#FFFFFF;
+	border-left-style:solid;
+	border-right-width:1px;
+	border-right-color:#FFFFFF;
+	border-right-style:solid;
+}
+
+#div_content{
+	width:1000px;
+	background-color:#FFFFFF;
+	min-heght:500px;
+}
+
+
+
+#footer{
+	background-image:url(../images/gaokao_1/bg_bottom.png);
+	height:304px;
+	line-height:20px;
+	width:100%;
+	padding:0px;
+}
+
+#footer_inner{
+	background-image:url(../images/gaokao_1/page_bottom.png);
+	background-repeat:no-repeat;
+	height:304px;
+	width:1000px;
+}
+
+#div_ent{
+	height:230px;
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content exam="cet6">
+
+<category>
+   <name>真题</name>
+   <content_div>realtest</content_div>
+   <type>realtest</type>
+</category>
+
+<category>
+   <name>模拟题</name>
+   <content_div>simtest</content_div>
+   <type>simtest</type>
+</category>
+
+<category>
+   <name>短对话</name>
+   <content_div>shortconv</content_div>
+   <type>shortconv</type>
+</category>
+
+<category>
+   <name>短文理解</name>
+   <content_div>passagelistening</content_div>
+   <type>passagelistening</type>
+</category>
+
+<category>
+   <name>短文听写</name>
+   <content_div>spotdictation</content_div>
+   <type>spotdictation</type>
+</category>
+
+<category>
+   <name>长对话</name>
+   <content_div>longerconv</content_div>
+   <type>longerconv</type>
+</category>
+
+<category>
+   <name>篇章阅读</name>
+   <content_div>mutiplechoice</content_div>
+   <type>mutiplechoice</type>
+</category>
+
+<category>
+   <name>短句问答</name>
+   <content_div>readingsaq</content_div>
+   <type>readingsaq</type>
+</category>
+
+<category>
+   <name>完型填空</name>
+   <content_div>cloze</content_div>
+   <type>cloze</type>
+</category>
+
+<category>
+   <name>翻译</name>
+   <content_div>translation_word</content_div>
+   <type>translation_word</type>
+</category>
+
+<category>
+   <name>写作</name>
+   <content_div>writing</content_div>
+   <type>writing</type>
+</category>
+
+<category>
+   <name>快速阅读</name>
+   <content_div>skimscan</content_div>
+   <type>skimscan</type>
+</category>
+
+<category>
+   <name>选词填空</name>
+   <content_div>readingfillblank</content_div>
+   <type>readingfillblank</type>
+</category>
+
+<category>
+   <name>改错</name>
+   <content_div>error</content_div>
+   <type>error</type>
+</category>
+</content>

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="/st/js/AC_RunActiveContent.js" language="javascript"></script>
+<script src="/static/ui/v1/js/voice.js" type="text/javascript"></script>	
+<script src="/st/js/jquery-1.2.6.min.js" language="javascript"></script>
+<script src="/st/js/demo.js" language="javascript"></script>
+ <link href="/st/css/demo.css" rel="stylesheet" type="text/css" />
+<title>口头作文</title>
+</head>
+<body>
+	
+
+
+<!-- saved from url=(0013)about:internet -->
+<script language="javascript">
+	if (AC_FL_RunContent == 0) {
+		alert(" AC_RunActiveContent.js");
+	} else {
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0',
+			'width', '1000',
+			'height', '570',
+			'src', '/static/ui/v1/flash/speaking',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+		   'scale', 'showall',
+		   'wmode', 'transparent',
+			'devicefont', 'false',
+			'flashvars','url=/st/demo/interact/interact_17.xml&demo=true&type=writing',
+			'id', 'speaking',
+			'bgcolor', '#ffffff',
+			'name', 'speaking',
+			'menu', 'true',
+			'allowFullScreen', 'false',
+			'allowScriptAccess','sameDomain',
+			'movie', '/static/ui/v1/flash/speaking',
+			'salign', ''
+			); //end AC code
+	}
+</script>
+<noscript><object
+	classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+	codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+	width="1000" height="570" id="speaking" align="middle">
+	<param name="allowScriptAccess" value="sameDomain" />
+	<param name="allowFullScreen" value="false" />
+	<param name="movie" value="/static/ui/v1/flash/speaking.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#ffffff" />
+	<embed src="/static/ui/v1/flash/speaking.swf" quality="high"
+		bgcolor="#ffffff" width="1000" height="570" name="speaking"
+		align="middle" allowScriptAccess="sameDomain" allowFullScreen="false"
+		type="application/x-shockwave-flash"
+		pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></noscript>
+<object id="VoiceXObject" width=1 height=1
+     classid="CLSID:137C04E6-162D-46EB-B273-B18442444D8C" alt="VoiceXObject" title="Playback" style="z-index:1">
+</object>
+</body>
+</html>

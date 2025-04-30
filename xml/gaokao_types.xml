@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content exam="gaokao">
+
+<category>
+   <name>全国高考</name>
+   <content_div>nationalrealtest</content_div>
+   <type>nationalrealtest</type>
+</category>
+
+<category>
+   <name>浙江高考</name>
+   <content_div>zhejiangrealtest</content_div>
+   <type>zhejiangrealtest</type>
+</category>
+
+<category>
+   <name>PETS2 真题</name>
+   <content_div>pets2realtest</content_div>
+   <type>pets2realtest</type>
+</category>
+
+<category>
+   <name>写作</name>
+   <content_div>writing</content_div>
+   <type>writing</type>
+</category>
+
+<category>
+   <name>PETS2 听力</name>
+   <content_div>minitest</content_div>
+   <type>minitest</type>
+</category>
+
+<category>
+   <name>词汇 <![CDATA[&]]> 语法</name>
+   <content_div>structure</content_div>
+   <type>structure</type>
+</category>
+</content>

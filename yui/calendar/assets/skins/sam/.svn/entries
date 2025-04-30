@@ -1,0 +1,52 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/calendar/assets/skins/sam
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+calendar.css
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+48477168cb913498d8bf05204bb1c866
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+calendar-skin.css
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+feccadb317a296bfb262d024a825e3b2
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "微软雅黑";
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align:center;
+	background-color:#98c6fa;
+}
+
+#container{
+	width:1000px;
+	text-align:center;
+	border-width:1px;
+	border-style:solid;
+	border-color:#FFFFFF;
+}
+
+#container #banner{
+	height:147px;
+	background-image: url(../images/binggo-band.png);
+	background-repeat: no-repeat;
+}
+
+#container #content {
+	background:#FFFFFF;
+}
+
+
+#container #content #account{
+	width:980;
+	padding:5px;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+
+#container #content #products{
+	width:450px;
+	margin:5px;
+	padding:5px;
+	float:left;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+#expandDiv{
+	
+	float:left;
+}
+
+#container #content #comments{
+	width:450px;
+	margin:5px;
+	float:right;
+	padding:5px;
+	text-align:left;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#98c6fa;
+}
+
+.hidden{
+	display:hidden;
+}
+
+.cleared{
+	clear:both;
+}
+
+.title{
+	font-size:14pt;
+	font-family:"幼圆";
+}
+
+.go{
+	color:#FFCC00;
+}
+
+.round{
+	width:688px;
+}
+.round td{
+	text-align:left;
+}
+.round_top{
+	background-image:url(../edugov/images/round_top.jpg);
+	background-repeat: no-repeat;
+	height:29px;
+}
+
+.round_left{
+	width:11px;
+	background-image:url(../edugov/images/round_left.jpg);
+	background-repeat: repeat-y;
+ 	background-position: 0px;
+}
+
+.round_right{
+	width:12px;
+	background-image:url(../edugov/images/round_right.jpg);
+	background-repeat: repeat-y;
+	background-position: 0px;
+}
+
+.round_bottom{
+	background-image:url(../edugov/images/round_bottom.jpg);
+	background-repeat: no-repeat;
+	height:24px;
+}
+
+.more{
+		text-align:right;
+		padding-right:10px;
+}
+.title{
+	font-family:"΢微软雅黑";
+	font-size:16pt;
+	font-weight:bold;
+}
+.alert_info{
+	background-color:yellow;
+	padding:2px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#FFCC00;
+}
+.go{
+	color:#FFCC00;
+	font-weight:bold;
+}
+
+.text_content{
+	text-align:left;
+	font-size:11pt;
+}
+
+#header{
+	font-size:24pt;
+	font-family:"΢微软雅黑";
+	color:#FFFFFF;
+	background-color:#FFFFFF;
+	width:100%;
+	border-bottom-width:1px;
+	border-bottom-color:#EEEEEE;
+	border-bottom-style:solid;
+	text-align:center;
+}
+
+#control{
+	text-align:right;
+	color:#FFFFFF;
+	background-color:#3a86f9;
+}
+#control a,a:hover,a:visited{
+	color:#999999;
+	font-weight:bold;
+	font-size:14pt;
+}
+
+.directions{
+	width:688px;
+	text-align:left;
+	font-size:16pt;
+	font-family:"微软雅黑";
+}
+
+#intro{
+	text-align:center;
+	border-top-width:5px;
+	border-top-style:solid;
+	border-top-color:#cce7f2;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#cce7f2;
+	width:750px;
+}
+
+#intro_index{
+	text-align:center;
+	border-top-width:5px;
+	border-top-style:solid;
+	border-top-color:#eeeeee;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#cce7f2;
+	width:100%;
+}
+
+.menu_link{
+	font-size:9px;
+	font-family:"宋体";
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+#menu_left{
+	background-image: url(../edugov/images/menu_round_left.png);
+	background-repeat: no-repeat;
+}
+
+#menu_right{
+	background-image: url(../edugov/images/menu_round_right.png);
+	background-repeat: no-repeat;
+}
+#menu_content{
+	background-image: url(../edugov/images/menu_bg.png);
+	background-repeat: repeat-x;
+	text-align:left;
+	font-family:"宋体";
+	font-size:11pt;
+	vertical-align: middle;
+}
+
+.menu_item{
+	float:left;
+	width:88px;
+	height:30px;
+	text-align:center;
+	background-image: url(../edugov/images/menu_splitter.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	font-family:"宋体";
+	font-size:11pt;
+}
+
+.menu_item_current{
+	float:left;
+	width:100px;
+	height:30px;
+	text-align:center;
+	background-image: url(../edugov/images/menu_current.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	font-family:"宋体";
+	font-size:11pt;
+}
+
+#service{
+	width:100%;
+	text-align:center;
+	font-size:11pt;
+	font-family:"微软雅黑";
+	border-style:solid;
+	border-color:#cce7f2;
+	border-width:5px;
+	
+}
+
+#service #intro{
+	text-align:left;
+}
+
+#kefu{
+	width:688px;
+	font-family:"微软雅黑";
+	font-size:11pt;
+	border-width:1px;
+	border-style:solid;
+	border-color:#DDDDDD;
+	margin:5px;
+	padding:5px;
+	text-align:left;
+}
+
+.popup_div{
+	text-align:left;
+	font-family:"微软雅黑";
+	font-size:11pt;
+	width:700px;
+}
+
+.myproduct{
+	text-align:left;
+	width:750px;
+	font-family:"微软雅黑";
+	font-size:13pt;
+	border-top-width:5px;
+	border-top-style:solid;
+	border-top-color:#0cb59f;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#cce7f2;
+	margin-bottom:20px;
+	background-image: url(../edugov/images/prduct_bg.png);
+	background-repeat: repeat-x;
+}
+
+.productItem{
+	font-size:12pt;
+	font-family:Arial, Helvetica, "微软雅黑";
+	padding:10px;
+}
+
+#loadingInfo{
+	font-size:13pt;
+}
+
+#menu{
+	background-image: url(/st/images/y_navi.png);
+	background-repeat: no-repeat;
+	height:50px;
+}
+.menu_item_fist{
+	font-size:13pt;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image: url(/st/images/y_navi_splitter.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	width:70px;
+}
+.menu_item{
+	font-size:13pt;
+	color:#FFFFFF;
+	background-image: url(/st/images/y_navi_splitter.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	width:140px;
+}
+
+a.menu_link{
+	font-size:13pt;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a.menu_link_current{
+	font-size:13pt;
+	color:#FF9900;
+	text-decoration:none;
+}
+
+a.menu_link:hover{
+	font-size:13pt;
+	color:#FFCC00;
+}
+
+#loginForm{
+	border-style:solid;
+	border-color:#cce7f2;
+	border-width:2px;
+	width:500px;
+	text-align:center;
+	padding:20px;
+}
+
+#loginForm #errorInfo{
+	background-color:#FFCC00;
+	border-style:dashed;
+	border-width:1px;
+	border-color:#FF9900;
+	padding:10px;
+	margin:10px;
+}
+
+h1{
+	font-size:16pt;
+}
+
+
+#footer{
+	background-color:#006666;
+	color:#FFFFFF;
+	padding-top:30px;
+	height:50px;
+}
+.cleared{
+	clear:both;
+}
+#topiclist_div{
+	
+	width:280px;
+	height:800px;
+	text-align:left;
+	padding:5px;
+}
+
+a.topic{
+	color:#000000;
+	font-size:10pt;
+	font-family:"微软雅黑";
+	font-weight:normal;
+	text-decoration:none;
+}
+
+a.topic:hover{
+	color:#FF9900;
+	font-size:10pt;
+	font-weight:normal;
+	text-decoration:underline;
+	font-family:"微软雅黑";
+}
+
+a.topic:visited{
+	color:#000000;
+	font-size:10pt;
+	font-family:"微软雅黑";
+	text-decoration:none;
+	font-weight:normal;
+}
+
+.dashedhr{
+	width:200px;
+	height:1px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#CCCCCC;
+}
+
+#materials{
+	width:100%;
+	height:600px;
+	padding:5px;
+	border-color:#999999;
+	border-style:solid;
+	border-width:3px;
+}
+
+#products_div{
+	float:left;
+}

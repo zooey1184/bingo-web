@@ -1,0 +1,54 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/images/mybingo
+svn+ssh://dev1/subversion
+
+
+
+2008-10-06T05:07:40.099292Z
+9388
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+banner.png
+file
+
+
+
+
+2008-11-16T03:17:31.000000Z
+14bbd4e90ea50f8459fa2ab3bacd81b0
+2008-10-06T05:07:40.099292Z
+9388
+tsusiz
+has-props
+
+top_menu.png
+file
+
+
+
+
+2008-11-16T03:17:31.000000Z
+6187bfb59cb8f54a35faafe9f803ec16
+2008-10-06T05:07:40.099292Z
+9388
+tsusiz
+has-props
+

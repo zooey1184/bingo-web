@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+	<!-- title -->
+	<title></title>
+	<!-- true or false -->
+	<show>false</show>
+	<!-- { select, no, yes } -->
+	<continue>yes</continue>
+	<!-- the infomation showed in the page -->
+	<url></url>
+	<info></info>
+</info>

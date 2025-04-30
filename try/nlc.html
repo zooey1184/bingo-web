@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="/st/js/jquery-1.2.6.js"></script>
+<link type="text/css" href="/st/css/hangtu.css" rel="stylesheet">
+<title>冰果英语欢迎您</title>
+</head>
+<body>
+
+<div class="main_div" align="center">
+
+<div class="link">
+	<div><font><b>欢迎 中国国家图书馆 的读者</b></font></div>
+
+	<a href="#null" onclick="init_login()"><div id="enter_link"><font><b>5秒钟后自动进入 >></b></font></div></a>
+</div>
+</div>
+
+<script type="text/javascript">
+
+var count = 4;
+
+window.setInterval(addTime,1000);
+
+function addTime(){
+
+  if(count <= 0){
+    init_login();
+     }
+  else{    
+    var html = "<font><b>" + count + "秒钟后自动进入 >></b></font>";    
+    $('#enter_link').empty().append($(html));
+    count = count - 1;
+     }
+}
+
+function init_login(){
+   var ran = Math.random();
+	 var current = document.location.href;
+	 var host = getHostFromURL(current);
+  var url = "http://" + host + "/lib/common/initspeciallogin.xml?host=" + host + "&key=-45d12bc44653be90c23d0c702c605e17&value=-1ef523c6b645a65441a91fa80df077c2&ran=" + ran;
+  $.get(url, function(data){
+     var serverURL = $(data).find('server_url').text(); 
+     window.open("http://" + serverURL,"_self");
+      });
+}
+ 
+ 	function getHostFromURL( url ) {
+		var host = url.replace("http://","");
+		var slash_end = host.indexOf("/");
+		if( slash_end != -1 ){
+			host = host.substring( 0, slash_end );
+		}
+		return host;
+	}
+	
+</script>
+</body>
+</html>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1b2a0b0245e696548a0dad871ad614ec";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75466871-5', 'auto');
+  ga('send', 'pageview');
+
+</script>

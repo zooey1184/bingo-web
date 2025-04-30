@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content exam="toeic">
+
+<category>
+   <name>模拟题</name>
+   <content_div>simtest</content_div>
+   <type>simtest</type>
+</category>
+
+<category>
+   <name>图片听力</name>
+   <content_div>listeningshort1</content_div>
+   <type>listeningshort1</type>
+</category>
+
+<category>
+   <name>提问与回答</name>
+   <content_div>listeningshort2</content_div>
+   <type>listeningshort2</type>
+</category>
+
+<category>
+   <name>对话</name>
+   <content_div>listeninglong1</content_div>
+   <type>listeninglong1</type>
+</category>
+
+<category>
+   <name>谈话</name>
+   <content_div>listeninglong2</content_div>
+   <type>listeninglong2</type>
+</category>
+
+<category>
+   <name>完成句子</name>
+   <content_div>readingmc</content_div>
+   <type>readingmc</type>
+</category>
+
+<category>
+   <name>完成篇章</name>
+   <content_div>readingfb</content_div>
+   <type>readingfb</type>
+</category>
+
+<category>
+   <name>阅读理解一</name>
+   <content_div>readingpassage1</content_div>
+   <type>readingpassage1</type>
+</category>
+
+<category>
+   <name>阅读理解二</name>
+   <content_div>readingpassage2</content_div>
+   <type>readingpassage2</type>
+</category>
+
+</content>

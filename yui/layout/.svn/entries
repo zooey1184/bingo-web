@@ -1,0 +1,79 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/layout
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+layout-beta.js
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+5efc9338b1a89311b7cd4a18ef90083f
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+assets
+dir
+
+layout-beta-min.js
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+7527914346a2a41d14694e09784dcd99
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+layout-beta-debug.js
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+348952c3df5d2b4327f055f3013fa70c
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+README
+file
+
+
+
+
+2008-11-16T03:17:37.000000Z
+86c4076789855a5159b470568a81f562
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

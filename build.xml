@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<project name="project" default="deploy" basedir=".">
+
+    <description>
+        Build file for a tomcat based server development and deployment.
+    </description>
+
+
+	<property name="st_resource" location="/var/www/html/www.bingoenglish.net/st"/>
+	<property name="st_project" location="../st_lib"/>
+
+	<target name="deploy">
+		<copy todir="${st_resource}">
+			<fileset dir="${st_project}"/>
+		</copy>
+	</target>
+
+</project>

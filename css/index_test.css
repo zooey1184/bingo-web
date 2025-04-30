@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left_menu_item{
+	height:42px;
+	background-image:url(../images/gaokao_1/test/item_logo.png);
+	background-repeat: no-repeat;
+	text-decoration:none;
+	padding-left:50px;
+	padding-top:5px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#33CCCC;
+	font-family:"宋体";
+	font-size:12px;
+}
+
+.highlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+.clickhighlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+#right_div {
+	float:right;
+	width:695px;
+	padding-top:0px;
+	background-image:url(../images/gaokao_1/topic_bg.png);
+	background-repeat: repeat-x;
+	min-height:500px;	
+}
+
+#materials_div{
+	padding:1px;
+}
+.todo_item{
+	padding:10px;
+	clear:both;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#EEEEEE;
+	height:80px;
+}
+#testHeader {
+	font-size:16px;
+	font-family:"宋体";
+	background-image: url(../images/gaokao_1/ability/item_bg.png);
+	background-repeat: repeate-x;
+	border-top-color:#000099;
+	border-top-width:1px;
+	border-top-style:solid;
+	height:40px;
+	color:#FFFFFF;
+	text-align:left;
+}
+.test_introduction{
+	font-family:Arial;
+	font-size:14px;
+	width:460px;
+	padding:10px;
+	float:left;
+}
+
+.serialNumber{
+	float:left;
+	width:100px;
+}
+
+.link_out{
+	float:left;
+	width:90px;
+}
+
+.navs{
+	width:50%;
+	text-align:center;
+	
+}
+.finish_time{
+	font-style:normal;
+	font-family:"幼圆";
+	font-size:12px;
+	color:#000099;
+}
+.button_current_true{
+	border-width:1px;
+	border-style:solid;
+	border-color:#FFCC00;
+	background:#FFFF00;
+	width:20px;
+	height:20px;
+	margin:10px;
+	float:left;
+	cursor:hand;
+}
+
+.button_current_false{
+	border-width:1px;
+	border-style:dashed;
+	border-color:#999999;
+	width:20px;
+	height:20px;
+	float:left;
+	margin:10px;
+	cursor:hand;
+}
+.count{
+	font-family:"宋体";
+	font-size:13px;
+	float:left;
+	margin:10px;
+}
+
+.detailTest{
+	padding-bottom:10px;	
+	padding-top:10px;
+	
+}
+
+.noitems{
+	text-align:center;
+}
+.test_item{
+	float:left;
+	font-size:12px;
+	padding-right:5px;
+	padding-left:10px;
+	margin-left:5px;
+	margin-right:5px;
+	min-width:120px;
+	text-align:left;
+	width:130px;
+}
+
+.hover{
+	background:#FFCC00;
+	cursor:hand;
+	color:#FFFFFF;
+}
+#innerMenu{
+	width:100%;
+	height:33px;
+	text-align:left;
+	font-size:16px;
+	font-family:"宋体";
+	font-weight:bold;
+	background-image: url(../images/gaokao/navBg.gif);
+	background-repeat: repeate-x;
+}
+
+.test_intro{
+	font-size:14px;
+	font-color:#333333;
+	padding:5px;
+}
+
+.test_product_item{
+	font-size:14px;
+	border-top-color:#000000;
+	border-top-width:1px;
+	border-top-style:solid;
+	text-align:left;
+	height:30px;
+	background:#a5d4fd;
+}
+
+.product_div{
+	width:690px;
+	min-height:90px;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.product_div_header{
+	background-image: url(../images/products/product_bg.gif);
+	background-repeat: no-repeat;
+	height:40px;
+	width:690px;
+	text-align:left;
+}
+.product_div_image{
+	width:100px;
+	padding-top:10px;
+	padding-left:5px;
+	float:left;
+}
+
+.product_div_body{
+	background:url(../images/products/product_bg.gif) no-repeat 0 -275px;
+	width:690px;
+}
+
+.product_div_content{
+	padding-top:10px;
+	padding-left:10px;
+	margin-left:5px;
+	width:480px;
+	float:left;
+}
+
+.product_div_bottom{
+	background:url(../images/products/product_bg.gif) no-repeat 0 -173px;
+	height:13px;
+	width:690px;
+}
+
+.product_div_out{
+	width:50px;
+	float:right;
+	padding-top:15px;
+}
+
+a.enter{display:block;background:url(/st/images/products/product_bg.gif) no-repeat 0 -190px;height:35px;width:50px;text-indent:-9999px;}
+a.enter:hover{background:url(/st/images/products/product_bg.gif) no-repeat 0 -227px;height:35px;}
+
+a.name_1{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -15px;height:35px;width:400px;text-indent:-9999px;}
+a.name_2{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -74px;height:35px;width:400px;text-indent:-9999px;}
+a.name_3{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -133px;height:35px;width:400px;text-indent:-9999px;}
+a.name_4{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -192px;height:35px;width:400px;text-indent:-9999px;}
+a.name_5{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -251px;height:35px;width:400px;text-indent:-9999px;}
+a.name_6{display:block;background:url(/st/images/products/products_name.gif) no-repeat 0 -310px;height:35px;width:400px;text-indent:-9999px;}

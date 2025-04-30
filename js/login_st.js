@@ -1,0 +1,338 @@
+
+var needLogin = true;
+
+function login(){
+		var href = window.location.href;
+		var returnURL = document.getElementById("returnURL");
+		returnURL.value = href;
+		document.getElementById("loginForm").submit.click();	
+	}
+
+function loginasdemo(){
+		var href = window.location.href;
+		/*
+		var returnURL = document.getElementById("returnURL");
+		document.getElementById("username").value ='bingodemo';
+		document.getElementById("password").value ='bingodemo';
+		returnURL.value = href;		
+		document.getElementById("loginForm").submit.click();
+		*/
+		$.post("/lib/common/login.html", 
+		{ Action: "post", username: "bingodemo" , password: "bingodemo"}, 
+		function (data, textStatus){
+		window.location.href = href;
+		});
+	}
+	
+	function _initLogin(){
+		var ran = Math.random();
+		var url = "/lib/common/initlogingaokao.html?ran="+ran;
+		
+		$.get(url,function(data){		   
+		    $('#div_account').append($(data));
+		});
+	}
+	
+	function fillLoginDiv(originalRequest){
+	   var loginDiv = $("#account");
+	   loginDiv.innerHTML = originalRequest.responseText;
+	}
+	
+	function initfail(){
+	   var loginDiv = $("#account");
+	   loginDiv.innerText = "系统维护中......";
+	}
+	
+	function logout(){
+	 var href = window.location.href;	 
+	 window.open("/lib/common/logout.html?returnURL=" + href , "_self");
+	}
+	
+
+	
+	function initIp(){
+	  var ran = Math.random();
+	  var current = document.location.href;
+	  var host = getHostFromURL(current);
+	  
+	  $.get("/lib/common/getuserip.xml?host=" + host + "&ran=" + ran, function(data){
+		 var serverURL = $(data).find('server_url').text();
+		var school = $(data).find('school').text();
+	    var html = "<div id='current_location'><div style='float:left'>您来自: " +  $(data).find('school').text();
+	    var ip_valid = $(data).find('ip_valid').text();
+	    var online = $(data).find('online').text();
+	    var stop = $(data).find('stop').text();
+	    var user_name =  $(data).find('user_name').text();
+	    
+	    if( school == "www.english1490.com" || school == "浙江工商大学"){
+	    	try{
+	    		$("#writing_link").show();
+	    	}catch(err){
+	    	alert(err);
+	    	}
+	    }
+	    
+	    if(( ip_valid == 'true') && ( online == 'false')){
+	    		html += " &nbsp;&nbsp;&nbsp;&nbsp;<input type='button' value='公共帐号进入'  name='demoentry' onclick='loginasdemo()'/>";
+	           }
+	    if( (online == 'true') && (user_name =='bingodemo') ) {
+	    		if( stop == '0' ) {
+	            	html += "&nbsp;<img src='/st/images/okschool.jpg'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#333333'>您现在以公共帐号登录，如需保存个人学习记录，您可以<a href='javascript:logout()'>登出</a>并注册个人帐号</font>";
+	            }else{
+	            	html += "&nbsp;<img src='/st/images/noschool.jpg'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color='#333333'>您现在以公共帐号登录，如需保存个人学习记录，您可以<a href='javascript:logout()'>登出</a>并注册个人帐号</font>";
+	            }
+	       }
+	   
+	    html += "</div></div>";
+	    $('#div_menu').after($(html));	    
+	    determineServer( serverURL );	
+	    _initLogin();	    	    
+	     });	  
+	}
+	
+	function determineServer( serverURL ){
+		var current = document.location.href;
+		
+		var host = getHostFromURL(current);
+		var obj = getObjectFromURL(current);
+		
+		if( serverURL!="" && serverURL != host ){
+			document.location.href = "https://" + serverURL + obj;
+		}
+	}
+	
+	function getHostFromURL( url ) {
+		var host = url.replace("https://","");
+		var slash_end = host.indexOf("/");
+		if( slash_end != -1 ){
+			host = host.substring( 0, slash_end );
+		}
+		return host;
+	}
+	
+	function getObjectFromURL( url ){
+		var host = url.replace("https://","");
+		var obj = "";
+		var slash_end = host.indexOf("/");
+		
+		if( slash_end != -1 ){
+			obj = host.substring(slash_end );
+		}
+		return obj;
+	}
+	
+	function showmore(){
+		$('#tbody_moretopic').show('slow');
+		$('#tbody_footer').hide();
+	}
+	
+	$(document).ready(function(){
+		$('#showmore').click(function(){
+			showmore();
+		});
+	});
+	
+
+
+function getCurrentProduct(){
+	var current_product = "index";
+	try{
+		var local_url = document.location.href;
+		
+		if( local_url.indexOf('cet4') > 0 ){
+			current_product = "cet4";
+		}else if(local_url.indexOf('cet6') > 0){
+			current_product = "cet6";
+		}else if(local_url.indexOf('zj3') > 0 || local_url.indexOf('zju3') > 0){
+			current_product = "zj3";
+		}else if(local_url.indexOf('gaokao') > 0){
+			current_product = "gaokao";
+		}else if(local_url.indexOf('toeic') > 0){
+			current_product = "toeic";
+		}else if(local_url.indexOf('graduate') > 0){
+			current_product = "graduate";
+		}else if(local_url.indexOf('index.html') > 0){
+			current_product = "index";
+		}
+		else if(local_url.indexOf('/ability') > 0){
+			current_product = "ability";
+		}
+		else{
+			current_product = "index";
+		}
+	}catch(err){
+		current_product = "index";
+	}
+	
+	if( current_product =="" ){
+		current_product = "index";
+	}
+	
+	return current_product;
+}
+
+function getCurrentModule(){
+	var current_module = "index";
+	try{
+		var local_url = document.location.href;
+		
+		if( local_url.indexOf('index.html') > 0 ){
+			current_module = "index";
+		}else if(local_url.indexOf('html/news/') > 0){
+			current_module = "news";
+		}else if(local_url.indexOf('ability.html') > 0){
+			current_module = "ability";
+		}else if(local_url.indexOf('test.html') > 0){
+			current_module = "test";
+		}else if(local_url.indexOf('tools.html') > 0){
+			current_module = "tools";
+		}else if(local_url.indexOf('voc.html') > 0){
+			current_module = "voc";	
+		}else if(local_url.indexOf('ent.html') > 0){
+			current_module = "ent";
+		}else if(local_url.indexOf('/freeaccount/') > 0){
+			current_module = "account";
+		}else if(local_url.indexOf('special/index.php') > 0){
+			current_module = "special";
+		}
+		else if( local_url.indexOf('level_1') > 0) {
+			current_module = "level_1";
+		}else if( local_url.indexOf('level_2') > 0) {
+			current_module = "level_2";
+		}else if( local_url.indexOf('level_3') > 0) {
+			current_module = "level_3";
+		}else if( local_url.indexOf('level_4') > 0) {
+			current_module = "level_4";
+		}else if( local_url.indexOf('level_5') > 0) {
+			current_module = "level_5";
+		}
+		else{
+			current_module = "index";
+		}
+	}catch(err){
+		current_module = "index";
+	}
+	return current_module;
+}
+
+function getStrMenu(){
+	var current_product = getCurrentProduct();	
+
+	var testStr = "";
+	var indexStr = "";
+	var preStr = "";	
+	if( current_product == 'index'){
+		indexStr = "首页";
+		testStr = "备考";
+	}else if( current_product == 'cet4'){
+		indexStr = "大学英语四级首页";
+		testStr = "考试备考";
+	}else if( current_product == 'cet6'){
+		indexStr = "大学英语六级首页";
+		testStr = "考试备考";
+	}else if( current_product == 'graduate'){
+		indexStr = "研究生英语首页";
+		testStr = "考研备考";
+	}else if( current_product == 'zj3' || current_product =='zju3'){
+		indexStr = "大学英语三级首页";
+		testStr = "考试备考";
+	}else if( current_product == 'toeic'){
+		indexStr = "托业首页";
+		testStr = "考试备考";
+	}else if( current_product == 'gaokao'){
+		indexStr = "高中生首页";
+		testStr = "考试备考";
+	}
+	else if( current_product == 'ability'){
+		indexStr = "能力提高首页";
+	}
+	else{
+		indexStr = "首页";
+		testStr = "备考";
+	}
+
+
+	var current_product_account = current_product;
+	if (current_product =='zj3'){
+		current_product_account ="zju3";
+	}
+	
+	
+	var menuHTML = "<div class='topmenu'>";
+	
+	//CMS相关的链接
+	var contentHTML = "";
+	
+	contentHTML +="<li id='news_li'><a href='/content/html/news/' target='_self'>新闻</a></li>";
+	
+	contentHTML +="<li id='photo_li'><a href='/content/html/photo/'>图文</a></li>";
+	contentHTML +="<li id='video_li'><a href='/content/html/video/'>视频</a></li>";
+	contentHTML +="<li id='funny_li'><a href='/content/html/funny/'>有趣</a></li>";
+	
+	contentHTML +="<li id='special_li'><a href='/content/special/index.php'>专题</a></li>";
+	contentHTML +="<li id='special_li'><a href='http://bingoenglish.com/blog/Huffmans/' target='_blank'>外教博客</a></li>";
+	   	
+	if( current_product == 'ability' ) {
+		menuHTML +="<ul>";
+		menuHTML +="<li id='index_li'><a href='/st/ability.html'>" + indexStr+"</a></li>";
+	    menuHTML +="<li id='tools_li'><a href='/st/ability/tools.html' target='_self'>水平自测</a></li>";
+	    menuHTML +="<li id='voc_li'><a href='/st/ability/voc.html' target='_self'>词汇</a></li>";
+	    menuHTML +="<li id='ent_li'><a href='/st/ability/ent.html' target='_self'>休闲娱乐</a></li>";
+	    menuHTML +="<li id='account_li'><a href='/lib/freeaccount/index/index.do' target='_self'>我的帐号</a></li>";
+		menuHTML += contentHTML;
+		menuHTML +="</ul>";
+		menuHTML +="</div>";
+	}else{
+		menuHTML +="<ul>";
+		menuHTML +="<li id='index_li'><a href='/st/" + current_product+".html'>" + indexStr+"</a></li>";
+		if( current_product != 'index' ) {
+	    	menuHTML +="<li id='ability_li'><a href='/st/" + current_product + "/ability.html' target='_self'>能力提高</a></li>";
+	    }
+	    menuHTML +="<li id='test_li'><a href='/st/" + current_product + "/test.html' target='_self'>" + testStr + "</a></li>";
+	    menuHTML +="<li id='tools_li'><a href='/st/" + current_product + "/tools.html' target='_self'>水平自测</a></li>";
+	    menuHTML +="<li id='voc_li'><a href='/st/" + current_product + "/voc.html' target='_self'>词汇</a></li>";
+	    menuHTML +="<li id='ent_li'><a href='/st/" + current_product + "/ent.html' target='_self'>休闲娱乐</a></li>";
+	    menuHTML +="<li id='account_li'><a href='/lib/freeaccount/index/index.do' target='_self'>我的帐号</a></li>";
+	    
+	    if( current_product == 'index' ) {
+	    	menuHTML += contentHTML;
+	    }	    
+		menuHTML +="</ul>";
+		menuHTML +="</div>";
+	}
+	return menuHTML;
+}
+
+	
+function _init_menu(){
+	var menuHTML = getStrMenu();
+	var currentModule = getCurrentModule();
+	
+	if( $('#div_menu')){	
+		$('#div_menu').empty();
+		$('#div_menu').append($(menuHTML));
+	}
+	
+	if( $('#'+currentModule+'_li')){
+		$('a','#'+currentModule+'_li').addClass("thisclass");
+	}
+}
+
+
+$(document).ready(function(){
+		_init_menu();
+});		
+
+$(document).ready(function(){
+		if(needLogin == true) {
+		   initIp();				
+		}			
+});
+
+function getCookie(name){
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+                return unescape(arr[2]);
+        else
+                return null;
+}

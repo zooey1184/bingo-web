@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left_menu_item{
+	height:35px;
+	background-image:url(../images/gaokao_1/test/item_logo.png);
+	background-repeat: no-repeat;
+	text-decoration:none;
+	padding-left:50px;
+	padding-top:5px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#33CCCC;
+	font-family:Arail;
+	font-size:13px;
+	color:#003399;
+}
+
+.highlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+.clickhighlight{
+	background-color:#FFCC00;
+	font-weight:bold;
+	cursor:hand;
+}
+
+#right_div {
+	float:right;
+	width:695px;
+	padding-top:0px;
+	min-height:500px;	
+	background-color:#FFFFFF;
+	background-image:url(../images/gaokao_1/topic_bg.png);
+	background-repeat: repeat-x;
+	border-left-width:4px;
+	border-left-style:solid;
+	border-left-color:#FFFFFF;
+}
+
+#materials_div{
+	padding:5px;
+	background-color:#FFFFFF;
+}
+.todo_item{
+	padding:10px;
+	clear:both;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#EEEEEE;
+	height:80px;
+}
+#testHeader {
+	font-size:15px;
+	font-family:"宋体";
+	font-weight:bold;
+	background-image: url(../images/gaokao_1/ability/item_bg.png);
+	background-repeat: repeate-x;
+	border-top-color:#000099;
+	border-top-width:1px;
+	border-top-style:solid;
+	height:40px;
+	color:#FFFFFF;
+	text-align:left;
+}
+.test_introduction{
+	font-family:Arial;
+	width:430px;
+	padding:10px;
+	float:left;
+}
+
+.serialNumber{
+	float:left;
+	width:120px;
+}
+
+.link_out{
+	float:left;
+	width:90px;
+}
+
+.navs{
+	width:80%;
+	text-align:center;
+	
+}
+.finish_time{
+	font-style:normal;
+	font-family:"幼圆";
+	font-size:13px;
+	color:#000099;
+}
+.button_current_true{
+	border-width:1px;
+	border-style:solid;
+	border-color:#FFCC00;
+	background:#FFFF00;
+	width:20px;
+	height:20px;
+	margin:10px;
+	float:left;
+	cursor:hand;
+}
+
+.button_current_false{
+	border-width:1px;
+	border-style:solid;
+	border-color:#CCCCCC;
+	width:20px;
+	height:20px;
+	float:left;
+	margin:10px;
+	cursor:hand;
+}
+.count{
+	font-family:"幼圆";
+	font-size:13px;
+	float:left;
+	margin:10px;
+}
+
+.detailTest{
+	padding-bottom:10px;	
+	padding-top:10px;
+	
+}
+
+.noitems{
+	text-align:center;
+}
+
+/*
+.alertmsg{
+	width:100%;
+	text-align:left;
+	height:200px;
+	background:#FFFFFF;
+}
+
+*/

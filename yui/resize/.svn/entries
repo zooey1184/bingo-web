@@ -1,0 +1,79 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/resize
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+assets
+dir
+
+resize-beta.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+8925a0a776e78cbdd107914ad1018b07
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+resize-beta-min.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+2258042ff0321235373aad2e734b5c09
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+resize-beta-debug.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+dc753c3885aba657d1d70a2c9221f358
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+README
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+fc1b97acc9141c6f63865adf0887c468
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

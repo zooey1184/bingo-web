@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content exam="graduate">
+
+<category>
+   <name>真题</name>
+   <content_div>realtest</content_div>
+   <type>realtest</type>
+</category>
+
+<category>
+   <name>模拟题</name>
+   <content_div>simtest</content_div>
+   <type>simtest</type>
+</category>
+
+<category>
+   <name>完型填空</name>
+   <content_div>cloze</content_div>
+   <type>cloze</type>
+</category>
+
+<category>
+   <name>阅读理解</name>
+   <content_div>mutiplechoice</content_div>
+   <type>mutiplechoice</type>
+</category>
+
+<category>
+   <name>标题例子复原</name>
+   <content_div>removedtitle</content_div>
+   <type>removedtitle</type>
+</category>
+
+<category>
+   <name>文中句子复原</name>
+   <content_div>removedsentence</content_div>
+   <type>removedsentence</type>
+</category>
+
+<category>
+   <name>段落排序</name>
+   <content_div>sortparagraph</content_div>
+   <type>sortparagraph</type>
+</category>
+
+<category>
+   <name>英译汉</name>
+   <content_div>translation_passage</content_div>
+   <type>translation_passage</type>
+</category>
+
+<category>
+   <name>写作</name>
+   <content_div>writing</content_div>
+   <type>writing</type>
+</category>
+</content>

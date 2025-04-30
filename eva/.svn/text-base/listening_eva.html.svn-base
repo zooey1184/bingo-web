@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>冰果英语</title>
+    <link href="/st/css/index_1.css" rel="stylesheet" type="text/css" />
+    <script src="/st/js/jquery-1.2.6.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/st/js/login_st.js"></script>
+    <script type="text/javascript" src="/st/js/index/index.js"></script>
+    <script type="text/javascript" src="/st/js/index/index_word.js"></script>
+    <script src="/st/js/AC_RunActiveContent.js" type="text/javascript"></script>
+</head>
+<body leftmargin="0" topmargin="0">
+<div id="container">
+
+	<div id="div_logo">
+		<div id="div_top_nav">
+		<a href="/st/">首页</a> | <a target="_top" href=javascript:window.external.AddFavorite('http://www.bingoenglish.com','冰果英语')>收藏本页</a> | <a href="#null" onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.bingoenglish.com');" style="CURSOR: hand">设为首页</a>
+		</div>
+    	<div id="logo_text">冰果英语--智能学习专家</div>
+    </div>
+    <div class="cleared"></div>
+    <div id="div_account"></div>
+    <div id="div_menu">
+    	<table width="100%">
+        	<tr>
+            	<td class="menu_item"><div class="menu_current"><a href="/st/index.html">首页</a></div></td>
+                <td class="menu_item"><div class="menu_no_current"><a href="/st/index/ability.html">能力提高</a></div></td>
+                <td class="menu_item"><div class="menu_no_current"><a href="/st/index/test.html">备考</a></div></td>
+                 <td class="menu_item"><div class="menu_no_current"><a href="/st/index/tools.html">冰果工具</a></div></td>
+                 <td class="menu_item"><div class="menu_no_current"><a href="/st/index/ent.html">休闲英语</a></div></td>
+                 <td class="menu_item_last"><div class="menu_no_current"><a href="/lib/account/index/index.do">我的帐号</a></div></td>
+            </tr>
+        </table>
+    </div>
+    <div id="div_content">
+	<div id='div_back'><div style='width:100px;text-align:center;padding-top:10px'><a href='/st/index.html'>返回</a></div></div>
+
+<script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0',
+'width','1000',
+'height','570',
+'align','middle',
+'src','/static/ui/v1/flash/eva_dictation',
+'quality','high',
+'wmode','transparent',
+'bgcolor','#ffffff',
+'flashvars','evatest=true&amp;url=/lib/interact/interact_for_evatest.xm&amp;userId=402881e50e308d02010e308ebef60003&amp;serialNumber=S-15-3&amp;help_video_url=/share/flash/videohelp/listen.swf&amp;help_faq_url=#&amp;demo=true',
+'allowscriptaccess','sameDomain',
+'pluginspage','http://www.macromedia.com/go/getflashplayer',
+'movie','/static/ui/v1/flash/eva_dictation' ); //end AC code
+</script>
+    </div>
+</div>
+
+
+<div id="footer">
+	<div id="footer_inner">
+		<div id="div_ent">
+    	
+    	</div>
+		<div id="footer_text">
+	    	<a href="/st/aboutbingo.html">关于我们</a> | <a href='/st/agreement.html' target="_blank">服务条款</a> | <a href='/st/help.html'>使用帮助</a> | <a href='mailto:bingoenglish@hotmail.com'>建议意见</a> | <a href='/st/custom.html'>客服中心</a>
+	        <br />
+			<div class='copyright'>         
+			<a href='http://www.miibeian.gov.cn' target="_blank">浙ICP证B2-20090013号</a> <a href='http://www.miibeian.gov.cn' target="_blank">浙ICP备06047992号</a><br />
+			版权所有© 2008 杭州增慧网络科技有限公司 保留所有权利. 
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

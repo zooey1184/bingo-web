@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="/st/js/jquery-1.2.6.js"></script>
+<title>冰果英语欢迎您</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+   var ran = Math.random();
+	 var current = document.location.href;
+	 var host = getHostFromURL(current);
+  var url = "http://www.bingobeta.net/lib/common/getuserip.xml?host=" + host + "&key=-3a0406999e96ef27937fd523590a33d&value=-1ef523c6b645a65441a91fa80df077c2&ran=" + ran;
+  $.get(url, function(data){
+     window.open("http://www.bingobeta.net","_self");
+      });
+});
+ 
+ 	function getHostFromURL( url ) {
+		var host = url.replace("http://","");
+		var slash_end = host.indexOf("/");
+		if( slash_end != -1 ){
+			host = host.substring( 0, slash_end );
+		}
+		return host;
+	}
+</script>
+</body>
+</html>

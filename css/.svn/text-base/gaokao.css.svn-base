@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "微软雅黑";
+	font-size: 11pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+	text-align:center;
+	background-color:#EEEEEE;
+}
+
+#container{
+	width:1000px;
+	text-align:center;
+	border-width:1px;
+	border-style:solid;
+	border-color:#FFFFFF;
+}
+
+#container #content {
+	width:1000px;
+}
+
+#container #banner{
+	height:147px;
+	background-image: url(/st/images/binggo-band.png);
+	background-repeat: no-repeat;
+}
+
+#product{
+	background:#FFFFFF;
+	width:100%;
+	float:left;
+	}
+#products_intro_div{
+	margin-top:10px;
+	width:700px;
+	background:#FFFFFF;
+	height:675px;
+	float:left;
+}
+
+#right_div{
+	float:left;
+	width:290px;
+}
+#account{
+	padding:5px;
+	background-color:#FFFFFF;
+	color:#338490;
+	height:305px;
+	width:280px;
+	margin-left:10px;
+	margin-top:10px;
+	text-align:left;
+	background-image: url(/st/images/y_index_account_bg.png);
+	background-repeat: no-repeat;
+}
+
+#hot{
+	width:1000px;
+	background-color:#FFFFFF;
+}
+
+#hot #news{
+	width:690px;
+	float:left;
+	height:300px;
+	background-image:url(/st/images/y_news.png);
+	background-repeat: no-repeat;
+	background-position: 20px;
+}
+
+#hot #links{
+	width:300px;
+	float:right;
+}
+
+
+#menu{
+	background-image: url(/st/images/y_navi.png);
+	background-repeat: no-repeat;
+	height:50px;
+}
+.menu_item_fist{
+	font-size:13pt;
+	font-weight:bold;
+	color:#FFFFFF;
+	background-image: url(/st/images/y_navi_splitter.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	width:70px;
+}
+.menu_item{
+	font-size:13pt;
+	color:#FFFFFF;
+	background-image: url(/st/images/y_navi_splitter.png);
+	background-repeat: no-repeat;
+	background-position: right;	
+	width:140px;
+}
+
+a.menu_link{
+	font-size:13pt;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a.menu_link_current{
+	font-size:13pt;
+	color:#FF9900;
+	text-decoration:none;
+}
+
+a.menu_link:hover{
+	font-size:13pt;
+	color:#FFCC00;
+}
+
+a.product_link{
+	font-size:12pt;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+a.product_link:hover{
+	font-size:12pt;
+	font-weight:bold;
+	color:#FFCC00;
+}
+
+.splitter{
+	height:1px;
+	width:200px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#006666;
+}
+
+.title{
+	font-size:13pt;
+}
+
+#footer{
+	background-color:#006666;
+	color:#FFFFFF;
+	padding-top:30px;
+	height:50px;
+}
+.cleared{
+	clear:both;
+}
+
+
+.ul_detail{
+	margin:0px;
+}
+.ul_detail li{
+	height:30px;
+	list-style:none;
+}
+
+.table_item{
+	background-image:url(/st/images/y_product_splitter.png);
+	background-repeat:repeat-y;
+	background-position:right;
+}
+
+#free_product{
+	width:250px;
+	background-image:url(/st/images/y_product_free.png);
+	background-repeat:no-repeat;
+	height:300px;
+	padding-top:30px;
+}

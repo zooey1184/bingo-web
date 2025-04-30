@@ -1,0 +1,79 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/yui/imagecropper
+svn+ssh://dev1/subversion
+
+
+
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+imagecropper-beta.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+86283b711484d308b13a0ce32aa176fa
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+assets
+dir
+
+imagecropper-beta-min.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+7925a84e9f3fd2bc5dc6406be9310f62
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+imagecropper-beta-debug.js
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+61848ac279ed3e3aab2b22263896ccbc
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+
+README
+file
+
+
+
+
+2008-11-16T03:17:38.000000Z
+29e010ed5b24547dbb81935fc64c173c
+2008-09-27T01:28:45.687110Z
+9178
+tsusiz
+

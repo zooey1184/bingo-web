@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family:"宋体";
+	font-size:12pt;
+	text-align:center;
+}
+
+.demoinfo{
+	height:30px;
+	background:#FFFF00;
+	border-width:1px;
+	border-style:dashed;
+	border-color:#999999;
+}
+
+#close{
+	float:right;
+}

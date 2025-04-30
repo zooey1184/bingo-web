@@ -1,0 +1,55 @@
+8
+
+dir
+15736
+svn+ssh://dev1/subversion/st/branches/lib/edugov/js
+svn+ssh://dev1/subversion
+
+
+
+2008-09-30T06:25:31.935322Z
+9273
+tsusiz
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+91a9a0fa-3223-0410-bc69-9dc52b000a6a
+
+MM.js
+file
+
+
+
+
+2008-11-16T03:17:36.000000Z
+41037dda2aa18694bc5e196d53630b13
+2008-09-30T06:25:31.935322Z
+9273
+tsusiz
+
+aculous
+dir
+
+lightview.js
+file
+
+
+
+
+2008-11-16T03:17:36.000000Z
+2c29a63ea88e187a79719990b96e2147
+2008-09-30T05:26:35.701107Z
+9263
+tsusiz
+

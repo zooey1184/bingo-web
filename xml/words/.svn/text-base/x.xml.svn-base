@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<words>
+				<item>
+			<word><![CDATA[x-ray]]></word>
+			<chinese><![CDATA[X光检查]]></chinese>		
+		</item>
+				<item>
+			<word><![CDATA[x-ray]]></word>
+			<chinese><![CDATA[x射线，x光]]></chinese>		
+		</item>
+
+				<item>
+			<word><![CDATA[xerox]]></word>
+			<chinese><![CDATA[复印]]></chinese>		
+		</item>
+				<item>
+			<word><![CDATA[xerox]]></word>
+			<chinese><![CDATA[静电复印]]></chinese>		
+		</item>
+				<item>
+			<word><![CDATA[xerox]]></word>
+
+			<chinese><![CDATA[用静电复印]]></chinese>		
+		</item>
+			</words>
+</page>
