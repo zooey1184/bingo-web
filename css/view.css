@@ -4,3 +4,32 @@
   box-sizing: border-box;
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.top_menu_item {
+  /* width: 80px; */
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 100ms linear;
+}
+.top_menu_item:hover {
+  background: #1890ff33;
+}
+#top_container_menu {
+  width: 200px;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #837c7a;
+}
+.footer-body {
+  font-weight: 200;
+}
+.footer-body li {
+  line-height: 35px;
+}
