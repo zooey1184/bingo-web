@@ -11,10 +11,13 @@ a {
 
 .top_menu_item {
   /* width: 80px; */
-  font-size: 14px;
-  padding: 8px;
-  border-radius: 4px;
+  font-size: 16px;
+  padding: 0 12px;
+  border-radius: 8px;
   transition: all 100ms linear;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
 .top_menu_item:hover {
   background: #1890ff33;
@@ -32,4 +35,24 @@ a {
 }
 .footer-body li {
   line-height: 35px;
+}
+.module_menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.module_menu i {
+  font-size: 20px;
+  color: #5a5a5a;
+}
+
+#content {
+  max-width: 1200px;
+  min-height: 90vh;
+  margin: 0 auto;
+}
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 32px;
 }

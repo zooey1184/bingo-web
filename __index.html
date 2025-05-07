@@ -7,20 +7,23 @@
     <script src="/st/js/jquery-1.2.6.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="/st/js/login_st2.js"></script>
     <script type="text/javascript" src="/st/js/index_st2.js"></script>
+    <script src="/css/font/iconfont.js"></script>
     <!-- <link href="css/main.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="css/atom.css" type="text/css" />
     <link rel="stylesheet" href="css/view.css" />
+    <link rel="stylesheet" href="css/college-logo.css" />
+    <link rel="stylesheet" href="css/font/iconfont.css">
   </head>
 
   <body>
-    <div id="main">
-      <div id="top sticky top-0">
+    <div id="main" class="w-100p">
+      <div id="top0" class="bg-white z-index-9 sticky top-0">
         <div id="top_container">
           <div class=" p-16 flex justify-between items-center">
             <div class="flex items-center">
               <img src="images/bingo-logo.png" style="height: 32px" alt="" />
               <div class="ml-8 font-size-18 font-weight-600 color-black">
-                Bingo English
+                <!-- Bingo English -->
               </div>
             </div>
             <div class="color-black flex items-center gap-8">
@@ -45,46 +48,60 @@
         <div id="top_container_menu" class="flex-0 pl-16 mr-16">
           <div id="top_container_menu_inner">
             <div class="top_menu_item">
-              <a class="module_menu" href="/st2/index.php">首 页</a>
+              <a class="module_menu" href="/st2/index.php">
+                <i class="iconfont icon-shouye mr-16 font-size-24"></i>
+                首 页
+              </a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/st/index/test.html">备 考</a>
+              <a class="module_menu" href="/st/index/test.html">
+                <i class="iconfont icon-beikaozhunbei mr-16"></i>备 考</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/st/index/tools.html">水平自测</a>
+              <a class="module_menu" href="/st/index/tools.html">
+                <i class="iconfont icon-ceshi mr-16"></i>水平自测</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/st/index/voc.html">词 汇</a>
+              <a class="module_menu" href="/st/index/voc.html">
+                <i class="icon-cihuiguanli iconfont mr-16"></i>词 汇</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/st/index/ent.html">休闲娱乐</a>
+              <a class="module_menu" href="/st/index/ent.html">
+                <i class="iconfont icon-xiuxian mr-16"></i>休闲娱乐</a>
             </div>
             <div class="top_menu_item">
               <a class="module_menu" href="/lib/freeaccount/index/index.do"
-                >我的帐号</a
+                >
+                <i class="iconfont icon-zhanghaodenglu mr-16"></i>我的帐号</a
               >
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/content/html/news/">新 闻</a>
+              <a class="module_menu" href="/content/html/news/">
+                <i class="iconfont icon-24gl-newspapers mr-16"></i>新 闻</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/content/html/photo/">图 文</a>
+              <a class="module_menu" href="/content/html/photo/">
+                <i class="iconfont icon-tuwenxiangqing mr-16"></i>图 文</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/content/html/video/">视 频</a>
+              <a class="module_menu" href="/content/html/video/">
+                <i class="iconfont icon-shipin mr-16"></i>视 频</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/content/html/funny/">有 趣</a>
+              <a class="module_menu" href="/content/html/funny/">
+                <i class="iconfont icon-youquhaowan-01 mr-16"></i>有 趣</a>
             </div>
             <div class="top_menu_item">
-              <a class="module_menu" href="/content/special/index.php">专 题</a>
+              <a class="module_menu" href="/content/special/index.php">
+                <i class="iconfont icon-a-zhuantizhuantiguanli mr-16"></i>专 题</a>
             </div>
             <div class="top_menu_item">
               <a
                 class="module_menu"
                 href="http://bingoenglish.com/blog/Huffmans/"
                 target="_blank"
-                >外教博客</a
+                >
+                <i class="iconfont icon-boke1 mr-16"></i>外教博客</a
               >
             </div>
           </div>
@@ -101,10 +118,53 @@
 
 
           <div>
-            <img src="/images/newEng.png" style="width: 100%" alt="" srcset="">
+            <div class="title">冰果服务</div>
+          </div>
+
+          <div>
+            <div class="title">英语水平测试 Evaluation</div>
           </div>
           <div>
-            <div class="font-weight-600 font-size-24 mb-16 mt-16">合作伙伴</div>
+            <div class="title">News</div>
+          </div>
+
+          <div>
+            <div class="title">Hot</div>
+          </div>
+
+          <div>
+            <div>
+              <!-- <img src="immg/nce.jpg" alt=""> -->
+            </div>
+            <div class="title">新编大学英语</div>
+            <div class="overflow-hidden flex justify-between bg-red-10 rounded-16 mt-8 p-16">
+              <div class="flex">
+                <img src="/images/newEng.png" style="max-height: 150px;" alt="" srcset="">
+                <div class="ml-8">
+                  <div>普通高等教育“十一五”国家级规划教材，</div>
+                  <div>教育部“2007年度普通高等教育精品教材”</div>
+                  <div>浙江大学 编著</div>
+                  <div>应惠兰 主编</div>
+                </div>
+              </div>
+              <div>
+                <div>新编大学英语用户</div>
+                <div>New College English</div>
+                <div>
+                  <button class="custom-btn rounded-8 custom-primary-btn">进入</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="title">合作伙伴</div>
+
+            <div>
+              <div class="flex flex-col items-center justify-center">
+                <div class="college-icon-1"></div>
+                <div class="mt-8">浙江大学</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,10 +172,10 @@
       <div class="cleared"></div>
 
       
-      <div id="bottom">
+      <div id="bottom" class="w-100p">
         <div class="page-footer">
           <div class="footer-header">
-            <div class="container pt-48 px-24 flex items-center justify-center gap-16">
+            <div class="container pt-48 px-24 flex items-center flex-wrap justify-center gap-16">
               <a href="/about">关于我们</a>
               <span class="splice">|</span>
               <a href="/st/agreement.html">服务条款</a>
