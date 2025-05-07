@@ -18,6 +18,7 @@ a {
   min-height: 48px;
   display: flex;
   align-items: center;
+  font-weight: 300;
 }
 .top_menu_item:hover {
   background: #1890ff33;
@@ -55,4 +56,48 @@ a {
   font-weight: 600;
   font-size: 20px;
   margin-top: 32px;
+}
+
+.iconBtn {
+  border-radius: 30px;
+  padding: 4px;
+  background-color: #b4b4b433;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms linear;
+}
+.iconBtn:hover {
+  background-color: #1890ff;
+  color: #fff;
+}
+
+.evaPane {
+  border-radius: 8px;
+  background-color: #b4b4b433;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  min-width: 220px;
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+
+.color-dark-gray {
+  color: #5a5a5a;
+}
+
+.serverPane {
+  border-radius: 8px;
+  background-color: #b4b4b433;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+  cursor: pointer;
+  transition: all 100ms linear;
 }
