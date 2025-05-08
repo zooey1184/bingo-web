@@ -14,6 +14,13 @@
   <link rel="stylesheet" href="css/atom.css" type="text/css" />
   <link rel="stylesheet" href="css/view.css" />
   <link rel="stylesheet" href="css/college-logo.css" />
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,12 +32,12 @@
             <img src="images/bingoenglish-logo.png" alt="" />
           </div>
           <div class="color-black flex items-center gap-8">
-            <div class="iconBtn mr-16">
+            <!-- <div class="iconBtn mr-16">
               <i class="iconfont icon-help"></i>
-            </div>
-            <div class="color-gray hover-color-blue cursor-pointer">登录</div>
-            <div class="color-gray">|</div>
-            <div class="color-gray hover-color-blue cursor-pointer">注册</div>
+            </div> -->
+            <div class="color-balck hover-color-blue cursor-pointer">登录</div>
+            <div class="color-grey">|</div>
+            <div class="color-balck hover-color-blue cursor-pointer">注册</div>
           </div>
         </div>
         <div id="top_container_logo_txt"></div>
@@ -44,7 +51,7 @@
           <div class="cleared"></div> -->
       </div>
     </div>
-    <div id="top_container_menu" class="bg-light-black p-8 color-white">
+    <div id="top_container_menu" class="bg-light-black color-white">
       <div id="top_container_menu_inner" class="flex w-100p items-center justify-center">
         <div class="top_menu_item">
           <a class="module_menu" href="/st2/index.php">
@@ -99,7 +106,26 @@
     </div>
     <div>
 
-      <div id="content" class="px-24 py-8 flex-1">
+      <div id="content">
+
+        <div class="swiper pos-r">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swp1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swp1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swp1"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
         <div>
           <img class="w-100p" style="border-radius: 8px" src="/images/binggo-band.png" alt="" />
         </div>
@@ -214,4 +240,21 @@
     var pageTracker = _gat._getTracker("UA-6385959-1");
     pageTracker._trackPageview();
   } catch (err) { }
+
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 </script>

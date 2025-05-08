@@ -11,13 +11,13 @@ a {
 
 .top_menu_item {
   font-size: 14px;
-  padding: 0 12px;
-  border-radius: 8px;
+  padding: 12px;
   transition: all 100ms linear;
   font-weight: 300;
 }
 .top_menu_item:hover {
-  background: #1890ff33;
+  background: #fff;
+  color: #3e3e3e;
 }
 
 .page-footer {
@@ -41,7 +41,6 @@ a {
 }
 
 #content {
-  max-width: 1200px;
   min-height: 90vh;
   margin: 0 auto;
 }
@@ -81,12 +80,35 @@ a {
   color: #3e3e3e;
 }
 .bg-light-black {
-  background-color: #3e3e3e;
+  background-color: #3e3e3e !important;
 }
 .color-dark-gray {
   color: #5a5a5a;
 }
+.swiper {
+  width: 100%;
+  height: 80vh;
+}
 
+.swp1 {
+  background-image: url('http://www.bingoenglish.com/assets/temp/banner1.jpg');
+  background: url('http://www.bingoenglish.com/assets/temp/banner1.jpg') center center no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.swp2 {
+  background: url('http://www.bingoenglish.com/assets/temp/banner2.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  height: 80vh;
+}
+.swp3 {
+  background: url('http://www.bingoenglish.com/assets/temp/banner3.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
 .serverPane {
   border-radius: 8px;
   background-color: #b4b4b433;
