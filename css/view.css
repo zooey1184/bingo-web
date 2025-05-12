@@ -4,16 +4,27 @@
   box-sizing: border-box;
   list-style: none;
 }
+:root {
+  --swiperHeight: 510px;
+}
 a {
   text-decoration: none;
   color: inherit;
 }
-
+.diliver_v {
+  margin: 0 24px;
+  border-left: 2px solid #bebebe80;
+  height: 100%;
+}
 .top_menu_item {
   font-size: 14px;
   padding: 12px;
   transition: all 100ms linear;
   font-weight: 300;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .top_menu_item:hover {
   background: #fff;
@@ -82,32 +93,33 @@ a {
 .bg-light-black {
   background-color: #3e3e3e !important;
 }
+
 .color-dark-gray {
   color: #5a5a5a;
 }
 .swiper {
   width: 100%;
-  height: 80vh;
+  height: var(--swiperHeight);
 }
 
 .swp1 {
   background-image: url('http://www.bingoenglish.com/assets/temp/banner1.jpg');
   background: url('http://www.bingoenglish.com/assets/temp/banner1.jpg') center center no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: var(--swiperHeight);
 }
 .swp2 {
   background: url('http://www.bingoenglish.com/assets/temp/banner2.jpg');
   background-position: center center;
   background-repeat: no-repeat;
 
-  height: 80vh;
+  height: var(--swiperHeight);
 }
 .swp3 {
   background: url('http://www.bingoenglish.com/assets/temp/banner3.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: var(--swiperHeight);
 }
 .serverPane {
   border-radius: 8px;

@@ -17,10 +17,10 @@
 
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  href="js/swiper/bundle.min.css"
 />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper/bundle.min.js"></script>
 </head>
 
 <body>
@@ -35,9 +35,9 @@
             <!-- <div class="iconBtn mr-16">
               <i class="iconfont icon-help"></i>
             </div> -->
-            <div class="color-balck hover-color-blue cursor-pointer">登录</div>
-            <div class="color-grey">|</div>
-            <div class="color-balck hover-color-blue cursor-pointer">注册</div>
+            <div class="color-light-black hover-color-blue cursor-pointer">登录</div>
+            <div class="color-light-black">|</div>
+            <div class="color-light-black hover-color-blue cursor-pointer">注册</div>
           </div>
         </div>
         <div id="top_container_logo_txt"></div>
@@ -114,10 +114,10 @@
               <div class="swp1"></div>
             </div>
             <div class="swiper-slide">
-              <div class="swp1"></div>
+              <div class="swp2"></div>
             </div>
             <div class="swiper-slide">
-              <div class="swp1"></div>
+              <div class="swp3"></div>
             </div>
           </div>
           <div class="swiper-pagination"></div>
@@ -131,7 +131,7 @@
         </div>
 
 
-        <div>
+        <div style="margin: 32px auto; max-width: 1200px;">
           <div>
             <!-- <img src="immg/nce.jpg" alt=""> -->
           </div>
@@ -158,16 +158,7 @@
             </div>
           </div>
         </div>
-        <div>
-          <div class="title">合作伙伴</div>
-
-          <div>
-            <div class="flex flex-col items-center justify-center">
-              <div class="college-icon-1"></div>
-              <div class="mt-8">浙江大学</div>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
 
@@ -175,9 +166,35 @@
 
 
     <div id="bottom" class="w-100p">
+      
       <div class="page-footer">
+        <div class="flex items-center pt-24 justify-center title">
+          <div class="mr-16">合作伙伴</div>
+          <!-- <div class="diliver_v" style="height: 45px;"></div> -->
+          <div><img src="/immg/zjdx_logo.png" style="height: 50px" alt=""></div>
+        </div>
+        
+        <div class="text-align-center mt-48 font-size-14">
+          <!-- <div class="footer-title mb-8">联系我们</div> -->
+          <div class="mb-16">杭州增慧网络科技有限公司</div>
+          <div>
+            <div>公司地址：中国杭州浙江大学国家大学科技园A栋东区422</div>
+            <div class="flex items-center gap-16 flex-wrap justify-center mt-8">
+              <div class="flex items-center"><i class="iconfont icon-lianxiwomen mr-4"></i>联系电话：0571-28991078</div>
+              |
+              <div class="flex items-center">
+                <i class="iconfont icon-kefu mr-4"></i>客服在线：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=996091820&amp;site=qq&amp;menu=yes">QQ
+                  996091820</a>
+              </div>
+              |
+              <div class="flex items-center"><i class="iconfont icon-youxiang mr-4"></i>客服邮箱：996091820@qq.com</div>
+            </div>
+            
+          </div>
+        </div>
+
         <div class="footer-header">
-          <div class="container pt-48 px-24 flex items-center flex-wrap justify-center gap-16">
+          <div class="container pt-24 px-24 flex flex-wrap items-center flex-wrap justify-center gap-16">
             <a href="/about">关于我们</a>
             <span class="splice">|</span>
             <a href="/st/agreement.html">服务条款</a>
@@ -188,33 +205,21 @@
           </div>
         </div>
         <div class="footer-body">
-          <div class="container py-48 px-24">
-            <div class="footer-title font-size-28 font-weight-600 mb-8">联系我们</div>
-            <div class="mb-48">杭州增慧网络科技有限公司</div>
-            <ul>
-              <li>公司地址：中国杭州浙江大学国家大学科技园A栋东区422</li>
-
-              <li>联系电话：0571-28991078</li>
-              <li>
-                客服在线：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=996091820&amp;site=qq&amp;menu=yes">QQ
-                  996091820</a>
-              </li>
-              <li>客服邮箱：996091820@qq.com</li>
-              <li>
-                <a class="beian flex items-center" target="_blank"
-                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002579">
-                  <img src="/images/beian.png" class="mr-8" />
-                  <p>浙公网安备 33010602002579号</p>
-                </a>
-              </li>
-            </ul>
+          <div class="container pb-48 px-24">
+            
             <div class="text-align-center mt-48 font-size-12">
               版权所有 © 2005 - 2025 杭州增慧网络科技有限公司保留所有权利.
             </div>
             <div class="FL-r text-align-center mt-8 font-size-12">
               <a rel="nofollow" href="http://www.beian.miit.gov.cn/" target="_blank">浙ICP证B2-20140303号</a>
               <a rel="nofollow" href="http://beian.miit.gov.cn/" target="_blank">浙ICP备14032562号-1</a>
-
+              <div class="text-align-center flex items-center justify-center mt-8">
+                <a class="beian flex items-center" target="_blank"
+                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002579">
+                  <img src="/images/beian.png" class="mr-8" />
+                  <p>浙公网安备 33010602002579号</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
