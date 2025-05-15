@@ -154,7 +154,7 @@ a {
   transition: all 100ms linear;
 }
 .serverCard {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   cursor: pointer;
   transition: all 100ms linear;
