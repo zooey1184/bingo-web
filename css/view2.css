@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html {
+  font-family: "PingFang SC", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 14px;
+}
+:root {
+  --swiperHeight: 510px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
