@@ -397,3 +397,182 @@ button:active {
 .jiaocaiPane {
   box-shadow:  0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.1);
 }
+
+#top_container_menu_inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 36px;
+  margin: 0 0 8px;
+  padding-top: 40px;
+  border-bottom: 1px solid #e2e4e7;
+  line-height: 70px;
+}
+.section-desc {
+  display: block;
+    color: #acacac;
+    font-size: 16px;
+}
+
+.advancePane {
+  background-color: #3e3e3e;
+  margin-top: 10vh;
+  padding: 60px 0;
+}
+
+.per {
+  position: relative;
+  width: 288px;
+  height: 473px;
+  background: #fff;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),0 10px 10px -5px rgba(0,0,0,0.04);
+  overflow: hidden;
+  border-radius: 10px;
+  will-change: transform;
+}
+.per:hover {
+  transform: translateY(-10px);
+}
+.per .icon-card-arrow {
+  position: absolute;
+  top: 248px;
+  left: 20px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #fff;
+}
+
+.per .content {
+  padding: 15px 20px 0;
+}
+
+.per .content span {
+  color: #8b8b8b;
+  line-height: 1em;
+  font-size: 15px;
+}
+.per .content b {
+  display: block;
+  padding-top: 2px;
+  font-size: 28px;
+}
+.per .content p {
+  margin: 22px 0;
+  font-size: 16px;
+}
+
+.swiper2 {
+  width: 80%;
+  max-width: 1000px;
+  height: var(--swiperHeight);
+  margin: 0 auto;
+  overflow: hidden;
+}
+.swp2-1 {
+  background-image: url('/images/home/intro_1.jpg');
+  background: url('/images/home/intro_1.jpg') center center no-repeat;
+  background-size: contain;
+  height: var(--swiperHeight);
+}
+.swp2-2 {
+  background-image: url('/images/home/intro_2.jpg');
+  background: url('/images/home/intro_2.jpg') center center no-repeat;
+  background-size: contain;
+  height: var(--swiperHeight);
+}
+.swp2-3 {
+  background-image: url('/images/home/intro_3.jpg');
+  background: url('/images/home/intro_3.jpg') center center no-repeat;
+  background-size: contain;
+  height: var(--swiperHeight);
+}
+.swp2-4 {
+  background-image: url('/images/home/intro_4.jpg');
+  background: url('/images/home/intro_4.jpg') center center no-repeat;
+  background-size: contain;
+  height: var(--swiperHeight);
+}
+.gap-5vw {
+  gap: 2vw;
+}
+
+.navItem .child {
+  position: absolute;
+  z-index: 30;
+  background: #fff;
+  top: 59px;
+  left: 0;
+  right: 0;
+  height: 210px;
+  display: none;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  line-height: 1.42857143em;
+  border-radius: 0 0 3px 3px;
+  color: #222;
+}
+.navItem {
+  color: #b4b4b4;
+}
+.navItem:hover {
+  background-color: #fff;
+  color: #222;
+}
+.navItem:hover .child {
+  display: block;
+}
+.navItem .lev1 {
+  text-align: center;
+  position: relative;
+  font-size: 14px;
+  display: block;
+  
+  padding: 20px;
+}
+.navItem .child .nav-title-block {
+  position: relative;
+  width: 154px;
+  height: 100%;
+  border-right: 1px solid #efeeee;
+}
+
+.imgNav {
+  background-image: url('/images/sprite-nav-img.png');
+  width: 94px;
+  height: 94px;
+}
+.icon-nav-img1 {
+  background-position: 0 0;
+}
+.icon-nav-img2 {
+  background-position: -114px 0;
+}
+.icon-nav-img9 {
+  background-position: -228px -228px;
+}
+.child .btn {
+  width: 100px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 8px;
+}
+
+.child li {
+  padding: 2px 0;
+  line-height: 26px;
+  color: #8b8b8b;
+}
+.child ul b {
+  display: block;
+  float: left;
+  font-weight: 400;
+  width: 100px;
+}
