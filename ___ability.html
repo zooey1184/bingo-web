@@ -18,14 +18,20 @@
 
 <body>
   <div id="app">
-    <div class="sticky navContent top-0">
-      <div>
-        首页
+    <Transition name="slide">
+      <div class="sticky navContent top-0" v-if="state.showNav">
+        <div>
+          首页
+        </div>
       </div>
-    </div>
+    </Transition>
 
     <div class="navbar">
-      
+      <div class="navbarMask"></div>
+      <div style="height: 64px;" class="pos-r p-16 flex items-center">
+        首页
+      </div>
+      <div ref="navRef" style="height: 10px"></div>
     </div>
     <div v-for="item in 100">
       {{item}}
@@ -98,13 +104,44 @@
   <script>
     AOS.init();
 
-    const { createApp, ref } = Vue
-
+    const { createApp, ref, reactive, onMounted } = Vue
+    
+    
     createApp({
       setup() {
-        const message = ref('Hello vue!')
+        const state = reactive({
+          showNav: false
+        })
+        const navRef = ref(null)
+
+        // const intersectionObserver = new IntersectionObserver((entries) => {
+        //   // 如果 intersectionRatio 为 0，则目标在视野外，
+        //   // 我们不需要做任何事情。
+        //   if (entries[0].intersectionRatio <= 0) {
+        //     state.showNav = true
+        //   } else {
+        //     state.showNav = false
+        //   };
+
+        // });
+        // // 开始监听
+        // onMounted(() => {
+        //   setTimeout(() => {
+        //     intersectionObserver.observe(navRef.value);
+        //   }, 200)
+        // })
+
+        window.addEventListener('scroll', (e) => {
+          const top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop; 
+          if (top > 64) {
+            state.showNav = true
+          } else {
+            state.showNav = false
+          }
+        })
         return {
-          message
+          state,
+          navRef
         }
       }
     }).mount('#app')
