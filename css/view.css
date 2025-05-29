@@ -10,6 +10,7 @@ html {
 }
 :root {
   --swiperHeight: 510px;
+  --swp2Height: 50vh;
 }
 a {
   text-decoration: none;
@@ -409,17 +410,18 @@ button:active {
   font-size: 36px;
   margin: 0 0 8px;
   padding-top: 40px;
-  border-bottom: 1px solid #e2e4e7;
+  border-bottom: 1px solid #54595f;
   line-height: 70px;
+  font-weight: 600;
 }
 .section-desc {
   display: block;
-    color: #acacac;
-    font-size: 16px;
+  color: #2F327D;
+  font-size: 20px;
 }
 
 .advancePane {
-  background-color: #3e3e3e;
+  background-color: #FFF2E1;
   margin-top: 10vh;
   padding: 60px 0;
 }
@@ -470,8 +472,8 @@ button:active {
 
 .swiper2 {
   width: 80%;
-  max-width: 1000px;
-  height: var(--swiperHeight);
+  max-width: 1200px;
+  height: 60vh;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -479,25 +481,25 @@ button:active {
   background-image: url('/images/home/intro_1.jpg');
   background: url('/images/home/intro_1.jpg') center center no-repeat;
   background-size: contain;
-  height: var(--swiperHeight);
+  height: var(--swp2Height);
 }
 .swp2-2 {
   background-image: url('/images/home/intro_2.jpg');
   background: url('/images/home/intro_2.jpg') center center no-repeat;
   background-size: contain;
-  height: var(--swiperHeight);
+  height: var(--swp2Height);
 }
 .swp2-3 {
   background-image: url('/images/home/intro_3.jpg');
   background: url('/images/home/intro_3.jpg') center center no-repeat;
   background-size: contain;
-  height: var(--swiperHeight);
+  height: var(--swp2Height);
 }
 .swp2-4 {
   background-image: url('/images/home/intro_4.jpg');
   background: url('/images/home/intro_4.jpg') center center no-repeat;
   background-size: contain;
-  height: var(--swiperHeight);
+  height: var(--swp2Height);
 }
 .gap-5vw {
   gap: 2vw;
@@ -581,4 +583,10 @@ button:active {
   float: left;
   font-weight: 400;
   width: 100px;
+}
+
+.advanceItemPane {
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #fff;
 }

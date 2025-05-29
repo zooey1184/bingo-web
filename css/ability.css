@@ -301,3 +301,45 @@ button:active {
   top: 50%;
   transform: translateY(-50%);
 }
+
+
+
+.navItem .child {
+  position: absolute;
+  z-index: 30;
+  background: #fff;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 210px;
+  display: none;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  line-height: 1.42857143em;
+  border-radius: 0 0 3px 3px;
+  color: #222;
+}
+.navItem {
+  color: #111;
+}
+.navItem:hover {
+  background-color: #fff;
+  color: #222;
+}
+.navItem:hover .child {
+  display: block;
+}
+.navItem .lev1 {
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  display: block;
+  
+  padding: 20px;
+}
+.navItem .child .nav-title-block {
+  position: relative;
+  width: 154px;
+  height: 100%;
+  border-right: 1px solid #efeeee;
+}
