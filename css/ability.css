@@ -27,7 +27,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 64px;
+  /* height: 64px; */
   position: absolute;
   width: 100%;
   top: 0;
