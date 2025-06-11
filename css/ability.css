@@ -28,9 +28,9 @@ a {
   background-size: cover;
   background-position: center;
   /* height: 64px; */
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
-  top: 0;
+  /* top: 0; */
   /* color: #fff; */
 }
 .text-darken {
@@ -342,4 +342,43 @@ button:active {
   width: 154px;
   height: 100%;
   border-right: 1px solid #efeeee;
+}
+.bigCircle {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 40vw;
+  background-color: #d4339168;
+  position: absolute;
+  left: -5vw;
+  top: -2vw;
+}
+.topMenu {
+  border-bottom: 1px solid #dedede;
+}
+.topMenuIconWrap {
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuItem {
+  position: relative;
+  padding: 8px;
+  transition: all 100ms linear;
+  border-radius: 8px;
+}
+.menuItem:after {
+  content: '';
+  position: absolute;
+  width: 78%;
+  left: 20%;
+  bottom: 0;
+  background-color: #ddd;
+  height: 1px;
+  transform: scaleY(0.7);
+}
+.menuItem:hover {
+  background-color: #ffbcb831;
 }
