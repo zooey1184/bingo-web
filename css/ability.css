@@ -347,7 +347,7 @@ button:active {
   width: 15vw;
   height: 15vw;
   border-radius: 40vw;
-  background-color: #d4339168;
+  background-color: #d433911f;
   position: absolute;
   left: -5vw;
   top: -2vw;
@@ -369,7 +369,7 @@ button:active {
   transition: all 100ms linear;
   border-radius: 8px;
 }
-.menuItem:after {
+/* .menuItem:after {
   content: '';
   position: absolute;
   width: 78%;
@@ -378,7 +378,111 @@ button:active {
   background-color: #ddd;
   height: 1px;
   transform: scaleY(0.7);
-}
+} */
 .menuItem:hover {
   background-color: #ffbcb831;
+}
+/* 动画关键帧 */
+@keyframes float1 {
+  0% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(-20px) scale(1.08);}
+  100% { transform: translateY(0) scale(1);}
+}
+@keyframes float2 {
+  0% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(15px) scale(0.95);}
+  100% { transform: translateY(0) scale(1);}
+}
+@keyframes float3 {
+  0% { transform: translateX(0) scale(1);}
+  50% { transform: translateX(18px) scale(1.1);}
+  100% { transform: translateX(0) scale(1);}
+}
+@keyframes float4 {
+  0% { transform: translateY(0) scale(1);}
+  50% { transform: translateY(-12px) scale(1.05);}
+  100% { transform: translateY(0) scale(1);}
+}
+.navPane-ball1 { animation: float1 3s ease-in-out infinite; }
+.navPane-ball2 { animation: float2 3.5s ease-in-out infinite; }
+.navPane-ball3 { animation: float3 4s ease-in-out infinite; }
+.navPane-ball4 { animation: float4 2.8s ease-in-out infinite; }
+
+
+
+
+.articlePane {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.07);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+.menuItem {
+  background: linear-gradient(90deg, #f1f5f9 60%, #fff 100%);
+  border-radius: 12px;
+  padding: 16px 12px;
+  margin-bottom: 18px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+}
+.menuItem:hover {
+  box-shadow: 0 6px 24px 0 rgba(56,189,248,0.13);
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, #e0f2fe 60%, #fff 100%);
+}
+.menuItem img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #f3f4f6;
+}
+.menuItem .font-size-16 {
+  color: #1e293b;
+}
+.menuItem .font-size-12 {
+  color: #64748b;
+}
+
+.articleItem {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.articleItem:hover {
+  box-shadow: 0 6px 24px 0 rgba(168,139,250,0.13);
+  transform: translateY(-2px) scale(1.02);
+  background: #f3f4f6;
+}
+.articleItem img {
+  aspect-ratio: 16/10;
+  border-radius: 10px;
+  background: #e0e7ef;
+  max-width: 200px;
+}
+.articlePane .ml-16 {
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.7;
+}
+@media (max-width: 900px) {
+  .articlePane {
+    flex-direction: column;
+    padding: 0 8px;
+  }
+  .articleContent {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .articlePane > div[style*="width: 300px"] {
+    width: 100% !important;
+  }
 }
