@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="../css/aos.css" />
   <script src="../st/js/jquery-1.2.6.js" type="text/javascript"></script>
   <script type="text/javascript" src="../st/js/login_st.js"></script>
-  <script type="text/javascript" src="../st/js/index/index_ability.js"></script>
+  <script type="text/javascript" src="../st/js/ability/level_1.js"></script>
+  <!-- <script type="text/javascript" src="../st/js/index/index_ability.js"></script> -->
   <link rel="stylesheet" href="../css/ability.css">
   <link href="../css/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/atom.css" type="text/css" />
@@ -367,15 +368,21 @@
     </div>
     <div class="flex articlePane" style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 0 auto;">
       <div style="width: 300px" class="flex-0">
-        <div v-for="item in 10" class="flex items-center menuItem">
-          <img class="mr-8" src="https://lib.bingoenglish.com/st/images/products/topic_list/2.png" alt="">
+        <div v-for="item in state.topicsList" class="flex items-center menuItem">
+          <!-- <img class="mr-8" src="/images/products/topic_list/1.png" alt=""> -->
+          <img class="mr-8" :src="item.image" alt="">
           <div>
-            <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">Home, Family and Daily Life</div>
-            <div class="font-size-12" style="color: rgb(107, 114, 128)">家庭家人，日常生活</div>
+            <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">{{item.en_name}}</div>
+            <div class="font-size-12" style="color: rgb(107, 114, 128)">{{item.ch_long_name}}</div>
           </div>
         </div>
       </div>
       <div class="flex-1 articleContent" style="margin-left: 40px">
+        <div class="abilityName">
+          <div class="abilityNameContent">听力诊断</div>
+          <div class="abilityNameIntro">动态诊断练习，冰果英语您对症下药</div>
+        </div>
+        <!-- <div class="articleTitle">听力测试</div> -->
         <div v-for="(item, index) in state.articleList" class="flex articleItem items-center mb-16" :key="index">
           <div class="mr-16">
             <img :src="item.img" alt="">
@@ -489,34 +496,39 @@
               content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
             }
           ],
+          topicsList: []
         })
         const navRef = ref(null)
+        const fetchTopics = async () => {
+          try {
+            // const res = await fetch('/st/xml/topics.xml');
+            const res = await fetch('./topics.xml');
+            const xmlText = await res.text();
+            const parser = new window.DOMParser();
+            const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+            const items = Array.from(xmlDoc.querySelectorAll('item'));
+            
+            state.topicsList = items.map(item => {
+              const pic = item.querySelector('pic')?.textContent || ''
+              return {
+                id: item.querySelector('id')?.textContent || '',
+                pic: item.querySelector('pic')?.textContent || '',
+                image: pic?.replace(/^\/st/, ''),
+                en_name: item.querySelector('en_name')?.textContent || '',
+                ch_long_name: item.querySelector('ch_long_name')?.textContent || '',
+                cn_long_name: item.querySelector('cn_long_name')?.textContent || ''
+              }
+            });
+            console.log('==state.topicsList==:\n', state.topicsList)
+          } catch (e) {
+            state.topicsList = [];
+          }
+        }
 
-        // const intersectionObserver = new IntersectionObserver((entries) => {
-        //   // 如果 intersectionRatio 为 0，则目标在视野外，
-        //   // 我们不需要做任何事情。
-        //   if (entries[0].intersectionRatio <= 0) {
-        //     state.showNav = true
-        //   } else {
-        //     state.showNav = false
-        //   };
-
-        // });
-        // // 开始监听
-        // onMounted(() => {
-        //   setTimeout(() => {
-        //     intersectionObserver.observe(navRef.value);
-        //   }, 200)
-        // })
-
-        // window.addEventListener('scroll', (e) => {
-        //   const top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-        //   if (top > 64) {
-        //     state.showNav = true
-        //   } else {
-        //     state.showNav = false
-        //   }
-        // })
+        onMounted(() => {
+          fetchTopics();
+        });
+        
         return {
           state,
           navRef
