@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content>
+
+<online>true</online>
+<valid>false</valid>
+<ip_valid>true</ip_valid>
+<school>夏</school>
+<ip_string>58.22.122.197</ip_string>
+
+	<todos>
+	
+		<todo>
+		<name>听力诊断</name>	
+		<skill_type>2</skill_type>	
+		
+		<item>
+		  <score>80.0</score>
+			<serial_number>L-2-538</serial_number>
+			<introduction>Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. 
+First, you should ask if it is a formal or casual </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-2-538</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-2-538</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-2-539</serial_number>
+			<introduction>Henry is a little fatter than he wants to be. He wants to lose some weight. So he is on a diet. He tries not to eat too much and eats very little sugar because it will make him fat. He also does exerc</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-2-539</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-2-539</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>60.0</score>
+			<serial_number>L-3-460</serial_number>
+			<introduction>T: Mike, you know I’m going to England next week for a holiday?
+M: Yes, Tom.
+T: Well, we can’t take the dog with us. Could you look after her for me while we’re away?
+M: With pleasure.
+T: Are you </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-3-460</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-3-460</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-3-476</serial_number>
+			<introduction>	Speaker: Welcome to our conference, ladies and gentlemen. Can you tell me where you come from? First, the girl over there with the fair hair. Your name&#039;s Lisa, isn&#039;t it?
+	Lisa:    That&#039;s right. I&#039;m </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-3-476</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-3-476</url>
+			<finished>true</finished>
+		</item>
+		
+		
+		</todo>
+	
+		<todo>
+		<name>轻松听力</name>	
+		<skill_type>5</skill_type>	
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-124</serial_number>
+			<introduction>David: Hi Tom, do you know Bob?
+Tom: Bob? No, I don’t think I know him.
+
+David: You don’ know Bob? You’re kidding. He’s also from your home city, Beijing.
+Tom: What’s so special about him?
+
+Davi</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-124</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-124</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-125</serial_number>
+			<introduction>David: Tom, did you hear about what happened to Jack?
+Tom: No. What’s the matter with him?
+
+David: His car was stolen.
+Tom: My God! You must be kidding.
+
+David: There’s no doubt about it. Jack h</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-125</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-125</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-126</serial_number>
+			<introduction>Da Ming: Xiao Hong, what do you think about our class monitor?
+Xiao Hong: She’s very capable, I think.
+
+Da Ming: Why do you think so?
+Xiao Hong: Everyone knows that she’s pretty good at her subjec</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-126</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-126</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-127</serial_number>
+			<introduction>Wu Mei: Hi, Xiao Hong. Come and have a look at my new dress.
+Xiao Hong: Oh! What a beautiful dress! It fits you so well. You look great in the dress.
+
+Wu Mei: Thank you. That’s exactly what I need.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-127</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-127</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-128</serial_number>
+			<introduction>David: I find it hard to get along with Tom.
+Jane: Why do you think so, David?
+
+David: He is sort of, well, odd.
+Jane: I don’t think so, what I mean is, you’ll like him better when you understand </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-128</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-128</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-129</serial_number>
+			<introduction>Jane: This is my house, David. Let me show you around..
+David: How beautiful it is.
+
+Jane: Follow me to the backyard.
+David: It’s marvelous! The lawn looks like a green carpet, and the garden with</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-129</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-129</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-130</serial_number>
+			<introduction>David: Good morning, Mike.
+Mike: Morning, David. I hope you had a good night’s rest.
+
+David: Yes, thanks. I slept like a log. 
+Mike: Would you like to have breakfast now? How about some fruit juic</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-130</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-130</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-131</serial_number>
+			<introduction>Omed: Good afternoon! I’m Omed from Nepal. 
+David: Good afternoon! I’m David from Britain. How are you?
+
+Omed: I’m very well, thank you. How are you?
+David: Very well too, thank you very much. Isn</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-131</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-131</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-132</serial_number>
+			<introduction>Mom: Is it your turn to wash the dishes?
+Mike: No, Mom. I did it yesterday. It’s Anna’s turn today.
+
+Mom: Anna is busy preparing for tomorrow’s meeting. Can you help her out?
+Mike: Ok. But you sho</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-132</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-132</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-133</serial_number>
+			<introduction>Jane: David, we are going to have a general cleaning this weekend. 
+David: Why?
+
+Jane: That’s mom’s decision. To welcome the coming Spring Festival.
+David: Oh, that’s too bad. I’ve planned to watc</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-133</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-133</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-134</serial_number>
+			<introduction>Tim: Shall we stop off somewhere on the way home?
+Mary: Yes, please. We just need to get a few things at the supermarket. 
+
+Tim: Oh, yeah. We need some eggs and tomatoes. 
+Mary: Yes. We’ll get som</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-134</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-134</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>50.0</score>
+			<serial_number>L-5-196</serial_number>
+			<introduction>One Sunday morning when my son was about 5, we were attending church in our community. It was common for the preacher to invite the children to the front of the church and have a small lesson before b</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-196</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-196</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-5-252</serial_number>
+			<introduction>M: Hi! Are you Lucy Brown?
+W: No, my sister is Lucy Brown. I’m Lily Brown.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-252</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-252</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-5-261</serial_number>
+			<introduction>W: Hello, Mark! Is your family name Brown?
+M: Yes, you are right.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-261</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-261</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-286</serial_number>
+			<introduction>T: Hello! What’s your name?
+J: My name’s Jenny.
+T: I’m Tony.
+J: Nice to meet you!
+T: Nice to meet you, too! Well, what’s your telephone number?
+J: My phone number is 535-2375.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-286</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-286</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-292</serial_number>
+			<introduction>W: Which floor does Peter live on? 
+M: He lives on the twelfth floor of a modern building.
+W: Which floor does Mary live on? 
+M: She lives two floors below Peter.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-292</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-292</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-317</serial_number>
+			<introduction>A: Is this a picture of your family? 
+B: Yes, this is my whole family by the sea in Qingdao. 
+A: Are they your parents in the middle? They look so young.  
+B: Because they are very optimistic. Actu</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-317</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-317</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-5-331</serial_number>
+			<introduction>B: Mary, is your aunt good-looking?
+G: Yes, she is. She’s tall and medium build. She has short curly blond hair.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-331</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-331</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-334</serial_number>
+			<introduction>M: I want some apples. What about you, Mary?
+W: Well, oranges and pears, please.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-334</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-334</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-336</serial_number>
+			<introduction>M: Which boy is Jack?
+W: The boy in a white shirt is.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-336</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-336</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-337</serial_number>
+			<introduction>M: What’s in your bag, Kate?
+W: Just some books.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-337</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-337</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-338</serial_number>
+			<introduction>M: Look at the girl under the tree. Is she Jim’s sister?
+W: No, she is Sam’s sister.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-338</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-338</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-339</serial_number>
+			<introduction>W: What are you doing, David? 
+M: I&#039;m painting, Mom. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-339</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-339</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-340</serial_number>
+			<introduction>W: When do you want to go shopping, Steve? 
+M: Let&#039;s go at 3:30. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-340</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-340</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-341</serial_number>
+			<introduction>W: Is that boy from Korea? 
+M: No, he isn&#039;t. He is from Japan. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-341</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-341</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-343</serial_number>
+			<introduction>M: Mom, do you see my coat?
+W: Yes, it&#039;s on your bed.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-343</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-343</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-350</serial_number>
+			<introduction>W: I like some rice and beef. What about you, Jim?
+M: I don’t like any rice or beef. I like tomatoes a lot.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-350</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-350</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-351</serial_number>
+			<introduction>W: Would you like some vegetable dumplings for breakfast, Peter?
+M: No, but I’d like them for lunch.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-351</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-351</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-352</serial_number>
+			<introduction>W: Where do you live?
+M: I live at 25 Center Street, between the library and the supermarket.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-352</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-352</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-353</serial_number>
+			<introduction>M: Are you taller now?
+W: Two years ago I was 155 centimeters, but now I am about five centimeters taller.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-353</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-353</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-354</serial_number>
+			<introduction>M: Can you go to the mall tomorrow?
+W: Sorry,I can’t. 
+M: Why?
+W: I have to look after my sister.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-354</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-354</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-358</serial_number>
+			<introduction>W: Do you know there was a big fire yesterday?
+M: Yes, it was terrible.
+W: How did the fire start?
+M: The old grandpa forgot to turn off the stove. And it made the fire.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-358</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-358</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-391</serial_number>
+			<introduction>M: Wow, what a nice jacket!
+W: Thanks.
+M: What&#039;s it made of?
+W: At first I thought it was made of wool, but now I find it&#039;s made of cotton.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-391</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-391</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-399</serial_number>
+			<introduction>W: What’s your new house like?
+M: It’s larger than the old one. The rooms are brighter. The street near it is wider and cleaner.
+W: Which house do you like better, the new one or the old one?
+M: I </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-399</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-399</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-400</serial_number>
+			<introduction>W: What time is it?
+M: It’s 10:15.
+W: Are you sure? My watch says 10:30.
+M: Your watch must be fast. I have just set mine by the radio.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-400</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-400</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-410</serial_number>
+			<introduction>A: What are you doing, Ann?
+B: I’m trying to draw a car on the desk.
+A: Don’t draw on the desk. Please keep it clean.
+B: Sorry. I won’t do it again.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-410</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-410</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-411</serial_number>
+			<introduction>A: Tom, what were you doing at nine yesterday morning?
+B: I was making a model plane.
+A: What was Jack doing at that time? 
+B: He was listening to the radio.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-411</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-411</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-417</serial_number>
+			<introduction>Mom: Jim, it’s 10 o’clock. Time to go to bed.
+Jim: Ok, mom. Just a minute.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-417</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-417</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-418</serial_number>
+			<introduction>Girl: Hi, Alan, how many brothers and sisters do you have?
+Boy: Oh, I have two brothers and four sisters.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-418</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-418</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-423</serial_number>
+			<introduction>W: Excuse me. Where can I find a bank? 
+M: There’s one near the park. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-423</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-423</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-424</serial_number>
+			<introduction>M: Sally, your grandpa’s house is really big.
+W: Yes, it is. It has 16 rooms altogether.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-424</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-424</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-450</serial_number>
+			<introduction>Father: Hi Michael. Happy Birthday! How old are you today? 
+Son: Seven. 
+Father: Alright. Well, let&#039;s sing Happy Birthday: 
+Happy Birthday to you,
+Happy Birthday to you,
+Happy Birthday dear Micha</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-450</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-450</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-455</serial_number>
+			<introduction>Girl: Dad, will you read to me? 
+Dad: Uh, let me finish the newspaper first? 
+Girl: You&#039;ve been saying that forever! 
+Dad: Well, how about reading the [[business section]] of the newspaper together</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-455</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-455</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-458</serial_number>
+			<introduction>Little Girl: Hello. 
+Caller: He, he.., hello? Uh, yeah. Is . . . uh . . . your dad home? 
+Little Girl: Just a minute please. 
+Older Sister: Hello. 
+Caller: Uh . . . yeah . . . uh hello? Yeah, um .</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-458</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-458</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-462</serial_number>
+			<introduction>Bill: Hey, this is Bill. I&#039;m sorry I&#039;m not in. Just leave a message. 
+[Beep] 
+Hank: Hey Bill. This is Hank. I&#039;m just calling to let you know that I&#039;ll be a little late to the game tomorrow night. I </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-462</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-462</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-469</serial_number>
+			<introduction>A: My husband died.
+B: I’m sorry for you.
+A: Thank you.
+B: When did he die?
+A: [[A couple of]] months ago.
+B: You still miss him.
+A: Yes, but I talk to him almost every day.
+B: When you go to [</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-469</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-469</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-475</serial_number>
+			<introduction>A: I like living here.
+B: I agree. [[Pasadena]] is a nice city.
+A: It’s not too big.
+B: And it’s not too small.
+A: It has great weather all year long.
+B: It has the [[Rose Parade]].
+A: It has be</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-475</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-475</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>100.0</score>
+			<serial_number>L-5-476</serial_number>
+			<introduction>A: Did you write a letter to grandma?
+B: Yes, I did.
+A: Did you tell her about school?
+B: I told her that school is fun.
+A: Did you put the letter in an [[envelope]]?
+B: Yes.
+A: Did you put a [[</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-476</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-476</url>
+			<finished>true</finished>
+		</item>
+		
+		
+		</todo>
+	
+		<todo>
+		<name>听写</name>	
+		<skill_type>6</skill_type>	
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-103</serial_number>
+			<introduction>波莉的男友 Polly&#039;s Boyfriend</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-103</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-103</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-106</serial_number>
+			<introduction>The efficiency expert concluded his lecture with a note of caution. &#034;You don&#039;t want to try these techniques at home.&#034; 
+
+&#034;Why not?&#034; asked someone from the back of the audience. 
+
+&#034;I watched my wife</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-106</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-106</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-114</serial_number>
+			<introduction>A ten-year-old daughter of rich parents was very spoilt and vain. Every person she met, she would tell, 
+&#034;I am the daughter of General X.&#034; 
+Her mother tried to correct her. 
+&#034;You must not boast to </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-114</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-114</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-162</serial_number>
+			<introduction>My husband, Phil, and I had stopped by my father’s house on the way to a friend’s funeral. During the visit, my husband spoke about the man who had died, saying,
+	“You know, I had a feeling I should </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-162</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-162</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-36</serial_number>
+			<introduction>The newlywed wife said to her husband when he returned from work, &#034;I have great news for you. Pretty soon, we&#039;re going to be three in this house.&#034;Her husband ran to her with a smile on his face and de</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-36</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-36</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-373</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-373</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-373</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-385</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-385</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-385</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-39</serial_number>
+			<introduction>A man sat at a bar, had the saddest hangdog(羞愧的) expression. The bartender came to him.
+Bartender: &#034;What&#039;s the matter? Are you having troubles with your wife?&#034; The man: &#034;We had a fight, and she told </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-39</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-39</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-43</serial_number>
+			<introduction>Little Robert asked his mother for two cents. 　　
+&#034;What did you do with the money I gave you yesterday?&#034; 
+&#034;I gave it to a poor old woman,&#034; he answered.
+&#034;You&#039;re a good boy,&#034; said the mother proudly.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-43</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-43</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-440</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-440</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-440</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-452</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-452</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-452</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-50</serial_number>
+			<introduction>Ronnie, my husband, volunteered to strip the bricks from the exterior of my parents’ house. One morning he was out chipping away, when a man came by looking for my father.
+“He’s not here.” Ronnie sai</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-50</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-50</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-510</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-510</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-510</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-515</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-515</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-515</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-52</serial_number>
+			<introduction>A guy walks into a bar and orders a drink. After a few more he needs to go to the washroom. He doesn’t want anyone to steal his drink so he puts a sign on it saying, “I spat in this beer, do not drink</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-52</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-52</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-530</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-530</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-530</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-54</serial_number>
+			<introduction>My parents had one of those old-time rotary(转动的)telephones. This drove my brother crazy.
+Once, he misdialed(拨错) a long-distance number. So he had to do it all over again.
+“Mom,” he asked in frustrat</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-54</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-54</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>64.0</score>
+			<serial_number>L-6-55</serial_number>
+			<introduction>Our son was constantly wandering in and out of the house, leaving the front or back door wide open.
+“Once and for all, will you please close that?” My angry wife asked him one day. “Were you born in </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-55</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-55</url>
+			<finished>true</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-805</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-805</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-805</url>
+			<finished>false</finished>
+		</item>
+		
+		<item>
+		  <score>0.0</score>
+			<serial_number>L-6-806</serial_number>
+			<introduction></introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-806</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-806</url>
+			<finished>false</finished>
+		</item>
+		
+		
+		</todo>
+	
+	</todos>
+
+	<historys>
+	
+		<history>
+		<name>听力诊断</name>
+		<skill_type>2</skill_type>
+		
+		<item>
+			<score>80.0</score>
+			<serial_number>L-2-538</serial_number>
+			<introduction>Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. 
+First, you should ask if it is a formal or casual </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-2-538</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-2-538</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-2-539</serial_number>
+			<introduction>Henry is a little fatter than he wants to be. He wants to lose some weight. So he is on a diet. He tries not to eat too much and eats very little sugar because it will make him fat. He also does exerc</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-2-539</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-2-539</url>
+			</item>
+		
+		<item>
+			<score>60.0</score>
+			<serial_number>L-3-460</serial_number>
+			<introduction>T: Mike, you know I’m going to England next week for a holiday?
+M: Yes, Tom.
+T: Well, we can’t take the dog with us. Could you look after her for me while we’re away?
+M: With pleasure.
+T: Are you </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-3-460</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-3-460</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-3-476</serial_number>
+			<introduction>	Speaker: Welcome to our conference, ladies and gentlemen. Can you tell me where you come from? First, the girl over there with the fair hair. Your name&#039;s Lisa, isn&#039;t it?
+	Lisa:    That&#039;s right. I&#039;m </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-3-476</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-3-476</url>
+			</item>
+		
+		</history>		
+	
+		<history>
+		<name>轻松听力</name>
+		<skill_type>5</skill_type>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-124</serial_number>
+			<introduction>David: Hi Tom, do you know Bob?
+Tom: Bob? No, I don’t think I know him.
+
+David: You don’ know Bob? You’re kidding. He’s also from your home city, Beijing.
+Tom: What’s so special about him?
+
+Davi</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-124</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-124</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-125</serial_number>
+			<introduction>David: Tom, did you hear about what happened to Jack?
+Tom: No. What’s the matter with him?
+
+David: His car was stolen.
+Tom: My God! You must be kidding.
+
+David: There’s no doubt about it. Jack h</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-125</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-125</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-126</serial_number>
+			<introduction>Da Ming: Xiao Hong, what do you think about our class monitor?
+Xiao Hong: She’s very capable, I think.
+
+Da Ming: Why do you think so?
+Xiao Hong: Everyone knows that she’s pretty good at her subjec</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-126</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-126</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-127</serial_number>
+			<introduction>Wu Mei: Hi, Xiao Hong. Come and have a look at my new dress.
+Xiao Hong: Oh! What a beautiful dress! It fits you so well. You look great in the dress.
+
+Wu Mei: Thank you. That’s exactly what I need.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-127</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-127</url>
+			</item>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-128</serial_number>
+			<introduction>David: I find it hard to get along with Tom.
+Jane: Why do you think so, David?
+
+David: He is sort of, well, odd.
+Jane: I don’t think so, what I mean is, you’ll like him better when you understand </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-128</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-128</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-129</serial_number>
+			<introduction>Jane: This is my house, David. Let me show you around..
+David: How beautiful it is.
+
+Jane: Follow me to the backyard.
+David: It’s marvelous! The lawn looks like a green carpet, and the garden with</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-129</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-129</url>
+			</item>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-130</serial_number>
+			<introduction>David: Good morning, Mike.
+Mike: Morning, David. I hope you had a good night’s rest.
+
+David: Yes, thanks. I slept like a log. 
+Mike: Would you like to have breakfast now? How about some fruit juic</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-130</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-130</url>
+			</item>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-131</serial_number>
+			<introduction>Omed: Good afternoon! I’m Omed from Nepal. 
+David: Good afternoon! I’m David from Britain. How are you?
+
+Omed: I’m very well, thank you. How are you?
+David: Very well too, thank you very much. Isn</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-131</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-131</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-132</serial_number>
+			<introduction>Mom: Is it your turn to wash the dishes?
+Mike: No, Mom. I did it yesterday. It’s Anna’s turn today.
+
+Mom: Anna is busy preparing for tomorrow’s meeting. Can you help her out?
+Mike: Ok. But you sho</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-132</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-132</url>
+			</item>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-133</serial_number>
+			<introduction>Jane: David, we are going to have a general cleaning this weekend. 
+David: Why?
+
+Jane: That’s mom’s decision. To welcome the coming Spring Festival.
+David: Oh, that’s too bad. I’ve planned to watc</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-133</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-133</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-134</serial_number>
+			<introduction>Tim: Shall we stop off somewhere on the way home?
+Mary: Yes, please. We just need to get a few things at the supermarket. 
+
+Tim: Oh, yeah. We need some eggs and tomatoes. 
+Mary: Yes. We’ll get som</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-134</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-134</url>
+			</item>
+		
+		<item>
+			<score>50.0</score>
+			<serial_number>L-5-196</serial_number>
+			<introduction>One Sunday morning when my son was about 5, we were attending church in our community. It was common for the preacher to invite the children to the front of the church and have a small lesson before b</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-196</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-196</url>
+			</item>
+		
+		<item>
+			<score>0.0</score>
+			<serial_number>L-5-252</serial_number>
+			<introduction>M: Hi! Are you Lucy Brown?
+W: No, my sister is Lucy Brown. I’m Lily Brown.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-252</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-252</url>
+			</item>
+		
+		<item>
+			<score>0.0</score>
+			<serial_number>L-5-261</serial_number>
+			<introduction>W: Hello, Mark! Is your family name Brown?
+M: Yes, you are right.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-261</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-261</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-286</serial_number>
+			<introduction>T: Hello! What’s your name?
+J: My name’s Jenny.
+T: I’m Tony.
+J: Nice to meet you!
+T: Nice to meet you, too! Well, what’s your telephone number?
+J: My phone number is 535-2375.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-286</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-286</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-292</serial_number>
+			<introduction>W: Which floor does Peter live on? 
+M: He lives on the twelfth floor of a modern building.
+W: Which floor does Mary live on? 
+M: She lives two floors below Peter.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-292</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-292</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-317</serial_number>
+			<introduction>A: Is this a picture of your family? 
+B: Yes, this is my whole family by the sea in Qingdao. 
+A: Are they your parents in the middle? They look so young.  
+B: Because they are very optimistic. Actu</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-317</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-317</url>
+			</item>
+		
+		<item>
+			<score>0.0</score>
+			<serial_number>L-5-331</serial_number>
+			<introduction>B: Mary, is your aunt good-looking?
+G: Yes, she is. She’s tall and medium build. She has short curly blond hair.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-331</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-331</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-334</serial_number>
+			<introduction>M: I want some apples. What about you, Mary?
+W: Well, oranges and pears, please.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-334</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-334</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-336</serial_number>
+			<introduction>M: Which boy is Jack?
+W: The boy in a white shirt is.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-336</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-336</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-337</serial_number>
+			<introduction>M: What’s in your bag, Kate?
+W: Just some books.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-337</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-337</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-338</serial_number>
+			<introduction>M: Look at the girl under the tree. Is she Jim’s sister?
+W: No, she is Sam’s sister.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-338</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-338</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-339</serial_number>
+			<introduction>W: What are you doing, David? 
+M: I&#039;m painting, Mom. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-339</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-339</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-340</serial_number>
+			<introduction>W: When do you want to go shopping, Steve? 
+M: Let&#039;s go at 3:30. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-340</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-340</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-341</serial_number>
+			<introduction>W: Is that boy from Korea? 
+M: No, he isn&#039;t. He is from Japan. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-341</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-341</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-343</serial_number>
+			<introduction>M: Mom, do you see my coat?
+W: Yes, it&#039;s on your bed.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-343</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-343</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-350</serial_number>
+			<introduction>W: I like some rice and beef. What about you, Jim?
+M: I don’t like any rice or beef. I like tomatoes a lot.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-350</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-350</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-351</serial_number>
+			<introduction>W: Would you like some vegetable dumplings for breakfast, Peter?
+M: No, but I’d like them for lunch.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-351</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-351</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-352</serial_number>
+			<introduction>W: Where do you live?
+M: I live at 25 Center Street, between the library and the supermarket.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-352</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-352</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-353</serial_number>
+			<introduction>M: Are you taller now?
+W: Two years ago I was 155 centimeters, but now I am about five centimeters taller.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-353</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-353</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-354</serial_number>
+			<introduction>M: Can you go to the mall tomorrow?
+W: Sorry,I can’t. 
+M: Why?
+W: I have to look after my sister.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-354</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-354</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-358</serial_number>
+			<introduction>W: Do you know there was a big fire yesterday?
+M: Yes, it was terrible.
+W: How did the fire start?
+M: The old grandpa forgot to turn off the stove. And it made the fire.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-358</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-358</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-391</serial_number>
+			<introduction>M: Wow, what a nice jacket!
+W: Thanks.
+M: What&#039;s it made of?
+W: At first I thought it was made of wool, but now I find it&#039;s made of cotton.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-391</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-391</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-399</serial_number>
+			<introduction>W: What’s your new house like?
+M: It’s larger than the old one. The rooms are brighter. The street near it is wider and cleaner.
+W: Which house do you like better, the new one or the old one?
+M: I </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-399</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-399</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-400</serial_number>
+			<introduction>W: What time is it?
+M: It’s 10:15.
+W: Are you sure? My watch says 10:30.
+M: Your watch must be fast. I have just set mine by the radio.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-400</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-400</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-410</serial_number>
+			<introduction>A: What are you doing, Ann?
+B: I’m trying to draw a car on the desk.
+A: Don’t draw on the desk. Please keep it clean.
+B: Sorry. I won’t do it again.</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-410</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-410</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-411</serial_number>
+			<introduction>A: Tom, what were you doing at nine yesterday morning?
+B: I was making a model plane.
+A: What was Jack doing at that time? 
+B: He was listening to the radio.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-411</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-411</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-417</serial_number>
+			<introduction>Mom: Jim, it’s 10 o’clock. Time to go to bed.
+Jim: Ok, mom. Just a minute.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-417</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-417</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-418</serial_number>
+			<introduction>Girl: Hi, Alan, how many brothers and sisters do you have?
+Boy: Oh, I have two brothers and four sisters.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-418</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-418</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-423</serial_number>
+			<introduction>W: Excuse me. Where can I find a bank? 
+M: There’s one near the park. 
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-423</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-423</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-424</serial_number>
+			<introduction>M: Sally, your grandpa’s house is really big.
+W: Yes, it is. It has 16 rooms altogether.
+</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-424</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-424</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-450</serial_number>
+			<introduction>Father: Hi Michael. Happy Birthday! How old are you today? 
+Son: Seven. 
+Father: Alright. Well, let&#039;s sing Happy Birthday: 
+Happy Birthday to you,
+Happy Birthday to you,
+Happy Birthday dear Micha</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-450</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-450</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-455</serial_number>
+			<introduction>Girl: Dad, will you read to me? 
+Dad: Uh, let me finish the newspaper first? 
+Girl: You&#039;ve been saying that forever! 
+Dad: Well, how about reading the [[business section]] of the newspaper together</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-455</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-455</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-458</serial_number>
+			<introduction>Little Girl: Hello. 
+Caller: He, he.., hello? Uh, yeah. Is . . . uh . . . your dad home? 
+Little Girl: Just a minute please. 
+Older Sister: Hello. 
+Caller: Uh . . . yeah . . . uh hello? Yeah, um .</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-458</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-458</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-462</serial_number>
+			<introduction>Bill: Hey, this is Bill. I&#039;m sorry I&#039;m not in. Just leave a message. 
+[Beep] 
+Hank: Hey Bill. This is Hank. I&#039;m just calling to let you know that I&#039;ll be a little late to the game tomorrow night. I </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-462</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-462</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-469</serial_number>
+			<introduction>A: My husband died.
+B: I’m sorry for you.
+A: Thank you.
+B: When did he die?
+A: [[A couple of]] months ago.
+B: You still miss him.
+A: Yes, but I talk to him almost every day.
+B: When you go to [</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-469</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-469</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-475</serial_number>
+			<introduction>A: I like living here.
+B: I agree. [[Pasadena]] is a nice city.
+A: It’s not too big.
+B: And it’s not too small.
+A: It has great weather all year long.
+B: It has the [[Rose Parade]].
+A: It has be</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-475</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-475</url>
+			</item>
+		
+		<item>
+			<score>100.0</score>
+			<serial_number>L-5-476</serial_number>
+			<introduction>A: Did you write a letter to grandma?
+B: Yes, I did.
+A: Did you tell her about school?
+B: I told her that school is fun.
+A: Did you put the letter in an [[envelope]]?
+B: Yes.
+A: Did you put a [[</introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-5-476</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-5-476</url>
+			</item>
+		
+		</history>		
+	
+		<history>
+		<name>听写</name>
+		<skill_type>6</skill_type>
+		
+		<item>
+			<score>64.0</score>
+			<serial_number>L-6-55</serial_number>
+			<introduction>Our son was constantly wandering in and out of the house, leaving the front or back door wide open.
+“Once and for all, will you please close that?” My angry wife asked him one day. “Were you born in </introduction>
+			<redo_url>/lib/listening/doneAbility.do?reviewEnabled=true&amp;serialNumber=L-6-55</redo_url>
+			<url>/lib/listening/doneAbility.do?reviewEnabled=false&amp;serialNumber=L-6-55</url>
+			</item>
+		
+		</history>		
+	
+	</historys>
+</content>
+
