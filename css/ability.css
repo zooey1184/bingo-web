@@ -382,6 +382,7 @@ button:active {
 .menuItem:hover {
   background-color: #ffbcb831;
 }
+
 /* 动画关键帧 */
 @keyframes float1 {
   0% { transform: translateY(0) scale(1);}
@@ -424,7 +425,7 @@ button:active {
   border-radius: 12px;
   padding: 16px 12px;
   margin-bottom: 18px;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: all 0.2s;
   cursor: pointer;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
 }
@@ -432,6 +433,16 @@ button:active {
   box-shadow: 0 6px 24px 0 rgba(56,189,248,0.13);
   transform: translateY(-2px) scale(1.03);
   background: linear-gradient(90deg, #e0f2fe 60%, #fff 100%);
+}
+.menuItemActive {
+  box-shadow: 0 6px 24px 0 rgba(56,189,248,0.13);
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, #c1e3fa 60%, #fff 100%);
+}
+.menuItemActive:hover{
+  box-shadow: 0 6px 24px 0 rgba(56,189,248,0.13);
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, #c1e3fa 60%, #fff 100%);
 }
 .menuItem img {
   width: 48px;

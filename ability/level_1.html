@@ -25,7 +25,7 @@
 
 <body>
   <div id="app">
-    <div class="bg-cream overflow-hidden">
+    <!-- <div class="bg-cream overflow-hidden">
       <div style="max-width: 1200px; margin: 0 auto" class="pos-r navPane flex items-center flex-wrap justify-between">
         <div class="color-orange p-16 flex items-center">
           <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
@@ -41,16 +41,15 @@
           </div>
         </div>
       </div>
-      <div style="height: 50vh"></div>
       <nav-bottom></nav-bottom>
     </div>
 
-    <level-type></level-type>
+    <level-type></level-type> -->
 
     <div class="flex articlePane"
       style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 0 auto;">
       <div style="width: 300px" class="flex-0">
-        <div v-for="item in state.topicsList" class="flex items-center menuItem">
+        <div v-for="item in state.topicsList" :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
           <img class="mr-8" :src="item.image" alt="">
           <div>
             <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">{{item.en_name}}</div>
@@ -59,16 +58,23 @@
         </div>
       </div>
       <div class="flex-1 articleContent" style="margin-left: 40px">
-        <div class="abilityName">
-          <div class="abilityNameContent">听力诊断</div>
-          <div class="abilityNameIntro">动态诊断练习，冰果英语您对症下药</div>
-        </div>
-        
-        <div v-for="(item, index) in state.articleList" class="flex articleItem items-center mb-16" :key="index">
-          <div class="mr-16">
-            <img :src="item.img" alt="">
+        <div v-for="(articles, index) in state.articleList">
+          <div class="abilityName">
+            <div class="abilityNameContent">{{articles.name}}</div>
+            <div class="abilityNameIntro">{{articles.skill_type}}</div>
           </div>
-          <div class="ml-16">{{item.content}}</div>
+          
+          <div v-for="(item, index) in articles.items" class="flex articleItem items-center mb-16" :key="index">
+            <div class="mr-16">
+              <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+            </div>
+            <div class="ml-16 flex-1">{{item.introduction}}</div>
+            <div>
+              <div>score</div>
+              <button>kaishi</button>
+              <button>chongshi</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -82,51 +88,45 @@
   <script type="module">
     AOS.init();
 
-    const { createApp, ref, reactive, onMounted } = Vue
+    const { createApp, ref, reactive, onMounted, watch } = Vue
 
     const app = createApp({
       setup() {
         const state = reactive({
-          articleList: [
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/1.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/2.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/3.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/4.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/1.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/1.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            },
-            {
-              img: 'https://www.bingoenglish.com/st/onlinepic/2/1.jpg',
-              content: 'Partying is fun. But have you ever been invited to a party by a foreigner? Today we are going to give you some tips about partying with foreigners. First, you should ask if it is a formal or casual '
-            }
-          ],
+          articleList: [],
+          imagesList: [],
           topicsList: [],
-          type: 'listening'
+          loading: false,
+          type: 'listening',
+          topic: '2'
         })
+        const global_abilities = {
+          "2": "动态诊断练习，冰果英语您对症下药",
+          "5": "轻松听，多听听增强语感",
+          "6": "全文听写，练基本功",
+          "13": "口译，在对话情景中当英文翻译",
+          "15": "跟我读，说从模仿开始",
+          "16": "人机对话，根据提示在情景中学对话",
+          "17": "口头作文，说上一段，让冰果英语给您专家意见",
+          "21": "动态诊断练习，冰果英语为您对症下药",
+          "29": "轻松读，多读才能积累语汇，增强语感",
+          "81": "写写练练提高英语思维能力，冰果智能评测系统立刻评判您的写作能力",
+          "2051": "句子翻译，练练翻译提高基本功",
+          "2053": "句子翻译，练练翻译提高基本功",
+          "2054": "句子翻译，练练翻译提高基本功",
+        }
         // 可独立调用的 fetchXMLtoJSON 工具函数
         async function fetchXMLtoJSON(url) {
           const res = await fetch(url);
           const xmlText = await res.text();
           const parser = new window.DOMParser();
           const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-          const items = Array.from(xmlDoc.querySelectorAll('item'));
+          
+          return xmlDoc
+        }
+        
+        const dealTopics = (xmlDoc) => {
+          const items = Array.from(xmlDoc.querySelectorAll('topics item'));
           // 取每个item下所有字段，自动转为JSON
           return items.map(item => {
             const obj = {};
@@ -136,10 +136,10 @@
             return obj;
           });
         }
-
         const fetchTopics = async () => {
           try {
-            const res = await fetchXMLtoJSON('./mock/topics.xml');
+            const text = await fetchXMLtoJSON('./mock/topics.xml');
+            const res = dealTopics(text);
             state.topicsList = res.map(item => {
               const pic = item.pic || '';
               return {
@@ -155,6 +155,96 @@
             state.topicsList = [];
           }
         }
+        
+        const handleGetArticles = (text) => {
+          const obj = {}
+          const online = text.querySelector('online');
+          obj.online = online ? online.textContent === 'true' : '';
+
+          const valid = text.querySelector('valid');
+          obj.valid = valid ? valid.textContent === 'true' : '';
+
+          const ip_valid = text.querySelector('ip_valid');
+          obj.ip_valid = ip_valid ? ip_valid.textContent === 'true' : '';
+
+          const school = text.querySelector('school');
+          obj.school = school ? school.textContent : '';
+
+          const ip_string = text.querySelector('ip_string');
+          obj.ip_string = ip_string ? ip_string.textContent : '';
+
+          const todos = Array.from(text.querySelectorAll('todos todo'))
+
+          obj.todos = todos.map(todo => {
+            const todoObj = {};
+            const items = []
+            Array.from(todo.children).forEach((child, index) => {
+              
+              if (child.tagName === 'item') {
+                const keys = Array.from(child.children)
+                const _subchild = {}
+                keys?.forEach(ii => {
+                  _subchild[ii.tagName] = ii?.textContent === 'true' ? true : ii?.textContent === 'false' ? false : ii.textContent
+                });
+                items.push(_subchild)
+              } else {
+                if (child.tagName === 'skill_type') {
+                  todoObj[child.tagName] = global_abilities[child.textContent]
+                } else {
+                  todoObj[child.tagName] = child.textContent === 'true' ? true : child.textContent === 'false' ? false : child.textContent;
+                }
+              }
+            });
+            todoObj.items = items
+            return todoObj;
+          });
+
+          return obj
+        }
+        const handleFetchArticles = async ({type, topic}) => {
+          const data = {
+            testService: 'ability',
+            ability: type,
+            topic: topic,
+            bingoBand: 1,
+            ran: Math.random()
+          }
+          try {
+            let params = new URLSearchParams(data).toString();
+            const res = await fetchXMLtoJSON('./mock/getNewAbilityMaterialsList.xml?' + params);
+            const articles = handleGetArticles(res);
+            state.articleList = articles?.todos
+          } catch (e) {
+            state.topicsList = [];
+          }
+        }
+        
+        const handleGetImages = async(topic) => {
+          try {
+            console.log('==topic==:\n', topic)
+            const res = await fetchXMLtoJSON(`./mock/topic_${topic}.xml`);
+            const items = Array.from(res.querySelectorAll('pics url'));
+            // 取每个item下所有字段，自动转为JSON
+            const list = items.map(item => {
+              return item.textContent
+            });
+            state.imagesList = list
+          } catch (e) {
+            state.topicsList = [];
+          }
+        }
+
+        watch(() => state.topic, (n) => {
+          handleGetImages(n)
+        }, {
+          immediate: true
+        })
+        watch(() => [state.topic, state.type], (n) => {
+          console.log('==watch==:\n', n);
+          handleFetchArticles({type: n[1], topic: n[0]});
+        }, { 
+          immediate: true
+        })
 
         onMounted(() => {
           fetchTopics();
