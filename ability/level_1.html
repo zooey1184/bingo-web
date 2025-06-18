@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../css/skilline.css" />
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_0s3sc7h6oaw9.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_muydnhqt0e.css">
   <script src="../js/toast.js"></script>
   <link rel="stylesheet" href="../css/toast.css">
   <script src="../js/bp_init.js"></script>
@@ -25,7 +25,8 @@
 
 <body>
   <div id="app">
-    <!-- <div class="bg-cream overflow-hidden">
+    <div id="toast-container"></div>
+    <div class="bg-cream overflow-hidden">
       <div style="max-width: 1200px; margin: 0 auto" class="pos-r navPane flex items-center flex-wrap justify-between">
         <div class="color-orange p-16 flex items-center">
           <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
@@ -37,19 +38,21 @@
         <div class="gap-16 px-16 flex items-center font-size-16 font-weight-300">
           <nav-pane></nav-pane>
           <div>
-            <button class="loginBtn">Login</button>
+            <button class="loginBtn" v-if="!state.onlineInfo?.online">Login</button>
+            <div class="schoolText" v-if="state.onlineInfo.school">{{state.onlineInfo.school}}</div>
           </div>
         </div>
       </div>
       <nav-bottom></nav-bottom>
     </div>
 
-    <level-type></level-type> -->
+    <level-type></level-type>
 
     <div class="flex articlePane"
       style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 0 auto;">
       <div style="width: 300px" class="flex-0">
-        <div v-for="item in state.topicsList" :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
+        <div v-for="item in state.topicsList" :class="{menuItemActive: state.topic === item.id}"
+          class="flex items-center menuItem">
           <img class="mr-8" :src="item.image" alt="">
           <div>
             <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">{{item.en_name}}</div>
@@ -63,16 +66,20 @@
             <div class="abilityNameContent">{{articles.name}}</div>
             <div class="abilityNameIntro">{{articles.skill_type}}</div>
           </div>
-          
+
           <div v-for="(item, index) in articles.items" class="flex articleItem items-center mb-16" :key="index">
             <div class="mr-16">
               <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
             </div>
             <div class="ml-16 flex-1">{{item.introduction}}</div>
-            <div>
-              <div>score</div>
-              <button>kaishi</button>
-              <button>chongshi</button>
+            <div class="pl-16" v-if="state.onlineInfo.online">
+              <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
+              <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
+              <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
+            </div>
+
+            <div v-else class="ml-16">
+              <button class="article_btn" @click="handleStart">开始</button>
             </div>
           </div>
         </div>
@@ -98,7 +105,14 @@
           topicsList: [],
           loading: false,
           type: 'listening',
-          topic: '2'
+          topic: '2',
+          onlineInfo: {
+            online: false,
+            valid: false,
+            ip_valid: false,
+            school: '',
+            ip_string: '',
+          }
         })
         const global_abilities = {
           "2": "动态诊断练习，冰果英语您对症下药",
@@ -121,10 +135,10 @@
           const xmlText = await res.text();
           const parser = new window.DOMParser();
           const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-          
+
           return xmlDoc
         }
-        
+
         const dealTopics = (xmlDoc) => {
           const items = Array.from(xmlDoc.querySelectorAll('topics item'));
           // 取每个item下所有字段，自动转为JSON
@@ -155,7 +169,7 @@
             state.topicsList = [];
           }
         }
-        
+
         const handleGetArticles = (text) => {
           const obj = {}
           const online = text.querySelector('online');
@@ -179,7 +193,7 @@
             const todoObj = {};
             const items = []
             Array.from(todo.children).forEach((child, index) => {
-              
+
               if (child.tagName === 'item') {
                 const keys = Array.from(child.children)
                 const _subchild = {}
@@ -201,7 +215,7 @@
 
           return obj
         }
-        const handleFetchArticles = async ({type, topic}) => {
+        const handleFetchArticles = async ({ type, topic }) => {
           const data = {
             testService: 'ability',
             ability: type,
@@ -213,13 +227,46 @@
             let params = new URLSearchParams(data).toString();
             const res = await fetchXMLtoJSON('./mock/getNewAbilityMaterialsList.xml?' + params);
             const articles = handleGetArticles(res);
+            state.onlineInfo = {
+              online: articles?.online,
+              valid: articles?.valid,
+              ip_valid: articles?.ip_valid,
+              school: articles?.school,
+              ip_string: articles?.ip_string
+            }
             state.articleList = articles?.todos
           } catch (e) {
             state.topicsList = [];
           }
         }
-        
-        const handleGetImages = async(topic) => {
+
+        const handleJump = (url) => {
+          if (!url) {
+            return;
+          }
+          if (url.startsWith('http')) {
+            window.open(url, '_blank');
+          } else {
+            window.location.href = url;
+          }
+        }
+
+        const handleStart = () => {
+          if (!state.onlineInfo.online) {
+            toast('请先登录');
+            return;
+          }
+          if (!state.onlineInfo.valid) {
+            toast('请先绑定学校');
+            return;
+          }
+          if (!state.onlineInfo.ip_valid) {
+            toast('请先绑定IP');
+            return;
+          }
+        }
+
+        const handleGetImages = async (topic) => {
           try {
             console.log('==topic==:\n', topic)
             const res = await fetchXMLtoJSON(`./mock/topic_${topic}.xml`);
@@ -241,8 +288,8 @@
         })
         watch(() => [state.topic, state.type], (n) => {
           console.log('==watch==:\n', n);
-          handleFetchArticles({type: n[1], topic: n[0]});
-        }, { 
+          handleFetchArticles({ type: n[1], topic: n[0] });
+        }, {
           immediate: true
         })
 
@@ -252,6 +299,8 @@
 
         return {
           state,
+          handleJump,
+          handleStart,
         }
       }
     })
