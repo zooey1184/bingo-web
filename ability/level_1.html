@@ -17,9 +17,10 @@
   <link rel="stylesheet" href="../css/skilline.css" />
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_muydnhqt0e.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_wvnpfzhaxpl.css">
   <script src="../js/toast.js"></script>
   <link rel="stylesheet" href="../css/toast.css">
+  <link rel="stylesheet" href="../css/loader.css">
   <script src="../js/bp_init.js"></script>
 </head>
 
@@ -35,24 +36,28 @@
           <div class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
         </div>
 
-        <div class="gap-16 px-16 flex items-center font-size-16 font-weight-300">
+        <div class="gap-8 px-16 flex items-center font-size-16 font-weight-300">
           <nav-pane></nav-pane>
           <div>
-            <button class="loginBtn" v-if="!state.onlineInfo?.online">Login</button>
-            <div class="schoolText" v-if="state.onlineInfo.school">{{state.onlineInfo.school}}</div>
+            <div v-if="!state.onlineInfo?.online" class="flex items-center gap-8">
+              <button class="loginBtn flex-0" @click="handleLogin">登录</button>
+              <button class="registerBtn flex-0" @click="handleLogin">注册</button>
+            </div>
+            <div class="schoolText" v-if="state.onlineInfo.online && state.onlineInfo.school">
+              {{state.onlineInfo.school}}</div>
           </div>
         </div>
       </div>
       <nav-bottom></nav-bottom>
     </div>
 
-    <level-type></level-type>
+    <level-type :type="state.type" @change="handleChangeType"></level-type>
 
     <div class="flex articlePane"
       style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 0 auto;">
       <div style="width: 300px" class="flex-0">
-        <div v-for="item in state.topicsList" :class="{menuItemActive: state.topic === item.id}"
-          class="flex items-center menuItem">
+        <div v-for="item in state.topicsList" @click="handlePickTopic(item)"
+          :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
           <img class="mr-8" :src="item.image" alt="">
           <div>
             <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">{{item.en_name}}</div>
@@ -60,34 +65,47 @@
           </div>
         </div>
       </div>
-      <div class="flex-1 articleContent" style="margin-left: 40px">
-        <div v-for="(articles, index) in state.articleList">
-          <div class="abilityName">
-            <div class="abilityNameContent">{{articles.name}}</div>
-            <div class="abilityNameIntro">{{articles.skill_type}}</div>
-          </div>
 
-          <div v-for="(item, index) in articles.items" class="flex articleItem items-center mb-16" :key="index">
-            <div class="mr-16">
-              <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+      <div class="flex-1 articleContent pos-r" style="margin-left: 40px">
+        <div class="pos-r">
+          <div v-for="(articles, index) in state.articleList">
+            <div class="abilityName">
+              <div class="abilityNameContent">{{articles.name}}</div>
+              <div class="abilityNameIntro">{{articles.skill_type}}</div>
             </div>
-            <div class="ml-16 flex-1">{{item.introduction}}</div>
-            <div class="pl-16" v-if="state.onlineInfo.online">
-              <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
-              <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
-              <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
-            </div>
-
-            <div v-else class="ml-16">
-              <button class="article_btn" @click="handleStart">开始</button>
+            <div v-for="(item, index) in articles.items" class="flex articleItem items-center mb-16" :key="index">
+              <div class="mr-16">
+                <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+              </div>
+              <div class="ml-16 flex-1">{{item.introduction}}</div>
+              <div class="pl-16" v-if="state.onlineInfo.online">
+                <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
+                <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
+                <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
+              </div>
+              <div v-else class="ml-16">
+                <button class="article_btn" @click="handleStart">开始</button>
+              </div>
             </div>
           </div>
         </div>
+        <div v-if="state.loading" class="loadingMask">
+          <div class="loading">
+            <div class="pos-r" style="height: 48px; height: 48px;">
+              <div class="loader"></div>
+            </div>
+            <span class="loadingText">加载中</span>
+          </div>
+        </div>
       </div>
+
     </div>
 
     <!-- 底部信息 -->
     <bottom-pane></bottom-pane>
+    <div id="backToTop" class="back-to-top" @click="scrollToTop" v-show="showBackToTop">
+      <span class="iconfont icon-cc-arrow-up font-size-24 font-weight-600"></span>
+    </div>
   </div>
   <!-- ************************ script start ******************** -->
   <!-- AOS init -->
@@ -103,7 +121,7 @@
           articleList: [],
           imagesList: [],
           topicsList: [],
-          loading: false,
+          loading: true,
           type: 'listening',
           topic: '2',
           onlineInfo: {
@@ -114,6 +132,7 @@
             ip_string: '',
           }
         })
+        const showBackToTop = ref(false);
         const global_abilities = {
           "2": "动态诊断练习，冰果英语您对症下药",
           "5": "轻松听，多听听增强语感",
@@ -137,6 +156,12 @@
           const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
 
           return xmlDoc
+        }
+
+        function handlePickTopic(item) {
+          console.log('==item==:\n', item)
+          state.topic = item.id;
+          // state.imagesList = [];
         }
 
         const dealTopics = (xmlDoc) => {
@@ -225,6 +250,7 @@
           }
           try {
             let params = new URLSearchParams(data).toString();
+            state.loading = true;
             const res = await fetchXMLtoJSON('./mock/getNewAbilityMaterialsList.xml?' + params);
             const articles = handleGetArticles(res);
             state.onlineInfo = {
@@ -235,8 +261,10 @@
               ip_string: articles?.ip_string
             }
             state.articleList = articles?.todos
+            state.loading = false;
           } catch (e) {
             state.topicsList = [];
+            state.loading = false;
           }
         }
 
@@ -286,6 +314,15 @@
         }, {
           immediate: true
         })
+
+        const handleLogin = () => {
+          const url = 'https://www.bingoenglish.net/lib/common/login.html'
+          window.open(url, '_blank');
+        }
+        const handleRegister = () => {
+          const url = 'https://www.bingoenglish.net/lib/common/registuser.html'
+          window.open(url, '_blank');
+        }
         watch(() => [state.topic, state.type], (n) => {
           console.log('==watch==:\n', n);
           handleFetchArticles({ type: n[1], topic: n[0] });
@@ -293,14 +330,34 @@
           immediate: true
         })
 
+        // 平滑滚动到顶部
+        const scrollToTop = () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        function handleChangeType(type) {
+          console.log('==type==:\n', type)
+          state.type = type;
+        }
+
         onMounted(() => {
           fetchTopics();
+
+          window.addEventListener('scroll', () => {
+            showBackToTop.value = window.scrollY > 100;
+          });
         });
 
         return {
           state,
           handleJump,
           handleStart,
+          handleRegister,
+          handleLogin,
+          showBackToTop,
+          scrollToTop,
+          handleChangeType,
+          handlePickTopic
         }
       }
     })

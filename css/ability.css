@@ -552,7 +552,7 @@ button:active {
 .loginBtn {
   background: linear-gradient(90deg, #fbbf24 0%, #fb7185 100%);
   color: #fff;
-  font-size: 1.08rem;
+  font-size: 0.9em;
   font-weight: 600;
   padding: 0.6em 2.2em;
   border: none;
@@ -589,7 +589,21 @@ button:active {
 }
 
 
-
+/* registerBtn 区分样式：主色更偏粉，边框更明显 */
+.registerBtn {
+  color: #e234ae;
+  font-size: 0.9em;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.18s cubic-bezier(.4,0,.2,1);
+}
+.registerBtn:hover {
+  opacity: 0.8;
+}
+.registerBtn:active {
+  opacity: 0.92;
+}
 
 
 
@@ -598,7 +612,7 @@ button:active {
 .navPane {
   margin-top: 32px;
   margin-bottom: 32px;
-  padding: 0 24px;
+  padding: 0 16px;
   position: relative;
   /* overflow: visible; */
   min-height: 90px;
@@ -623,7 +637,7 @@ button:active {
   transition: transform 0.18s;
 }
 .navPane .navItem > a.lev1 {
-  padding: 8px 18px;
+  padding: 8px 12px;
   border-radius: 8px;
   color: #b45309;
   font-weight: 600;
@@ -644,7 +658,7 @@ button:active {
   background: #fffdfa;
   border-radius: 12px;
   box-shadow: 0 8px 32px 0 rgba(251,191,36,0.13);
-  padding: 18px 24px;
+  padding: 16px 24px;
   z-index: 10;
   animation: fadeInNav 0.22s;
   top: calc(100% - 25px);
@@ -764,4 +778,63 @@ button:active {
   background: linear-gradient(90deg, #fb7185 0%, #fbbf24 100%);
   color: #fffbe8;
   box-shadow: 0 8px 32px 0 rgba(251,113,133,0.22);
+}
+
+
+.back-to-top {
+  position: fixed;
+  right: 32px;
+  bottom: 40px;
+  z-index: 9999;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #fbbf24 0%, #fb7185 100%);
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px 0 rgba(251,113,133,0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: 0.92;
+  transition: opacity 0.18s, transform 0.18s;
+}
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 8px 32px 0 rgba(251,113,133,0.22);
+}
+
+.loadingMask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.loadingText {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.activeType {
+  position: relative;
+  color: #1890ff;
+}
+.activeType::before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  width: 100%;
+  height: 4px;
+  background: #1890ff;
 }
