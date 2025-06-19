@@ -16,36 +16,29 @@
   <link rel="stylesheet" href="css/college-logo.css" />
 
   <link rel="stylesheet" href="js/swiper/bundle.min.css" />
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
   <script src="js/swiper/bundle.min.js"></script>
 </head>
 
 <body>
-  <div id="main" class="w-100p">
+  <div id="app" class="w-100p">
     <div id="top0" class="bg-orange z-index-9 sticky top-0">
       <div id="top_container">
         <div class="px-32 py-16 flex justify-between items-center">
           <div class="flex items-center">
             <img src="images/bingoenglish-logo.png" alt="" />
           </div>
-          <div class="color-black flex items-center gap-8">
-            <!-- <div class="iconBtn mr-16">
-              <i class="iconfont icon-help"></i>
-            </div> -->
+          <div class="color-black flex items-center gap-8" v-if="!state.onlineInfo?.online">
             <div class="color-light-black hover-color-blue cursor-pointer">登录</div>
             <div class="color-light-black">|</div>
             <div class="color-light-black hover-color-blue cursor-pointer">注册</div>
           </div>
+
+          <div v-else>用户: {{state.onlineInfo?.school}}</div>
         </div>
         <div id="top_container_logo_txt"></div>
         <div class="cleared"></div>
-
-        <!-- <div id="top_container_logo"></div>
-          <div id="top_container_login">
-            <div id="div_account"></div>
-          </div>
-          <div id="top_container_logo_txt"></div>
-          <div class="cleared"></div> -->
       </div>
     </div>
     <div id="top_container_menu">
@@ -707,7 +700,7 @@
     )
   );
 </script>
-<script type="text/javascript">
+<script type="module">
   try {
     var pageTracker = _gat._getTracker("UA-6385959-1");
     pageTracker._trackPageview();
@@ -740,4 +733,55 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  const { createApp, ref, reactive, onMounted } = Vue
+  const app = createApp({
+    setup() {
+      const state = reactive({
+        onlineInfo: {
+          school: '',
+          ip_valid: false,
+          online: false,
+          ip_string: ''
+        }
+      })
+      async function fetchXMLtoJSON(url) {
+        const res = await fetch(url);
+        const xmlText = await res.text();
+        const parser = new window.DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
+
+        return xmlDoc
+      }
+
+
+      async function handleGetUserInfo() {
+        try {
+          const text = await fetchXMLtoJSON('./ability/mock/getuserip.xml');
+          const school = text.querySelector('school');
+          const online = text.querySelector('online');
+          const ip_valid = text.querySelector('ip_valid');
+          const ip_string = text.querySelector('ip_string');
+          state.onlineInfo = {
+            school: school ? school.textContent : '',
+            ip_valid: ip_valid ? ip_valid.textContent === 'true' : false,
+            online: online ? online.textContent === 'true' : false,
+            ip_string: ip_string ? ip_string.textContent : ''
+          }
+        } catch (e) {
+          state.topicsList = [];
+        }
+      }
+      onMounted(() => {
+        handleGetUserInfo()
+      });
+
+      return {
+        state,
+      }
+    }
+  })
+
+  app.mount('#app')
+
 </script>

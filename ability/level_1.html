@@ -27,29 +27,12 @@
 <body>
   <div id="app">
     <div id="toast-container"></div>
-    <div class="bg-cream overflow-hidden">
-      <div style="max-width: 1200px; margin: 0 auto" class="pos-r navPane flex items-center flex-wrap justify-between">
-        <div class="color-orange p-16 flex items-center">
-          <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
-            <img src="../images/bingo-logo.png" style="width: 20px" alt="">
-          </div>
-          <div class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
-        </div>
-
-        <div class="gap-8 px-16 flex items-center font-size-16 font-weight-300">
-          <nav-pane></nav-pane>
-          <div>
-            <div v-if="!state.onlineInfo?.online" class="flex items-center gap-8">
-              <button class="loginBtn flex-0" @click="handleLogin">登录</button>
-              <button class="registerBtn flex-0" @click="handleLogin">注册</button>
-            </div>
-            <div class="schoolText" v-if="state.onlineInfo.online && state.onlineInfo.school">
-              {{state.onlineInfo.school}}</div>
-          </div>
-        </div>
-      </div>
+    <header-bar :online-info="state.onlineInfo">
+      <template #nav>
+        <nav-pane></nav-pane>
+      </template>
       <nav-bottom></nav-bottom>
-    </div>
+    </header-bar>
 
     <level-type :type="state.type" @change="handleChangeType"></level-type>
 
@@ -159,7 +142,6 @@
         }
 
         function handlePickTopic(item) {
-          console.log('==item==:\n', item)
           state.topic = item.id;
           // state.imagesList = [];
         }
@@ -296,7 +278,6 @@
 
         const handleGetImages = async (topic) => {
           try {
-            console.log('==topic==:\n', topic)
             const res = await fetchXMLtoJSON(`./mock/topic_${topic}.xml`);
             const items = Array.from(res.querySelectorAll('pics url'));
             // 取每个item下所有字段，自动转为JSON
@@ -315,16 +296,7 @@
           immediate: true
         })
 
-        const handleLogin = () => {
-          const url = 'https://www.bingoenglish.net/lib/common/login.html'
-          window.open(url, '_blank');
-        }
-        const handleRegister = () => {
-          const url = 'https://www.bingoenglish.net/lib/common/registuser.html'
-          window.open(url, '_blank');
-        }
         watch(() => [state.topic, state.type], (n) => {
-          console.log('==watch==:\n', n);
           handleFetchArticles({ type: n[1], topic: n[0] });
         }, {
           immediate: true
@@ -336,7 +308,6 @@
         };
 
         function handleChangeType(type) {
-          console.log('==type==:\n', type)
           state.type = type;
         }
 
@@ -352,8 +323,6 @@
           state,
           handleJump,
           handleStart,
-          handleRegister,
-          handleLogin,
           showBackToTop,
           scrollToTop,
           handleChangeType,
@@ -365,11 +334,13 @@
     import BottomPane from './bottom-pane.js'
     import NavBottom from './nav-bottom.js'
     import NavPane from './nav.js'
+    import HeaderBar from './header-bar.js'
 
     app.component('level-type', LevelType)
     app.component('bottom-pane', BottomPane)
     app.component('nav-bottom', NavBottom)
     app.component('nav-pane', NavPane)
+    app.component('header-bar', HeaderBar)
     app.mount('#app')
   </script>
   <script>

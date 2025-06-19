@@ -1,6 +1,6 @@
 export default {
   template: `
-    <div style="height: 30vh;" class="navPane pos-r flex items-center justify-center">
+    <div style="height: 30vh; z-index: 1" class=" pos-r flex items-center justify-center">
         <div class="absolute inset-0 z-0" style="pointer-events:none;">
           <div class="navPane-ball1" style="
           position:absolute;left:10%;top:20%;width:120px;height:120px;
