@@ -7,10 +7,9 @@
   <title>冰果英语</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="/st/js/jquery-1.2.6.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="/st/js/login_st2.js"></script>
-  <script type="text/javascript" src="/st/js/index_st2.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_0s3sc7h6oaw9.css">
-  <!-- <link href="css/main.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <script type="text/javascript" src="/st/js/login_st2.js"></script> -->
+  <!-- <script type="text/javascript" src="/st/js/index_st2.js"></script> -->
+  <link rel="stylesheet" href="./css/iconfont.css">
   <link rel="stylesheet" href="css/atom.css" type="text/css" />
   <link rel="stylesheet" href="css/view.css" />
   <link rel="stylesheet" href="css/college-logo.css" />
@@ -25,291 +24,36 @@
   <div id="app" class="w-100p">
     <div id="top0" class="bg-orange z-index-9 sticky top-0">
       <div id="top_container">
-        <div class="px-32 py-16 flex justify-between items-center">
-          <div class="flex items-center">
+        <div class="px-32 flex justify-between items-center" :class="{'py-16': width>980, 'py-8': width<=980}">
+          <div class="flex items-center" v-if="width>980">
             <img src="images/bingoenglish-logo.png" alt="" />
           </div>
-          <div class="color-black flex items-center gap-8" v-if="!state.onlineInfo?.online">
-            <div class="color-light-black hover-color-blue cursor-pointer">登录</div>
-            <div class="color-light-black">|</div>
-            <div class="color-light-black hover-color-blue cursor-pointer">注册</div>
+          <div class="bg-orange" v-else style="border-radius: 30px; padding: 12px;">
+            <img src="./images/bingo-logo.png" style="width: 20px" alt="">
           </div>
-
-          <div v-else>用户: {{state.onlineInfo?.school}}</div>
+          <div class="flex items-center gap-16 flex-1 justify-end">
+            <mnav v-if="width <= 980"></mnav>
+            <div class="color-black flex items-center gap-8" v-if="!state.onlineInfo?.online">
+              <div class="color-light-black hover-color-blue cursor-pointer">登录</div>
+              <div class="color-light-black">|</div>
+              <div class="color-light-black hover-color-blue cursor-pointer">注册</div>
+            </div>
+            <div v-else>用户: {{state.onlineInfo?.school}}</div>
+          </div>
         </div>
         <div id="top_container_logo_txt"></div>
         <div class="cleared"></div>
       </div>
     </div>
-    <div id="top_container_menu">
+    <div id="top_container_menu" v-if="width>980">
       <div class="bg-light-black color-white">
-        <div id="top_container_menu_inner" class="bg-light-black color-white flex w-100p flex-wrap items-center ">
-          <!-- 关于冰果 -->
-          <div class="navItem">
-            <a href="http://www.bingoenglish.com/about" class="lev1">关于冰果</a>
-            <div class="child">
-              <div class="flex h-100p p-24">
-                <div class="flex flex-col items-center justify-center nav-title-block">
-                  <div class="icon-nav-img1 imgNav"></div>
-                  <b class="mt-8 font-size-16">Bingo English</b>
-                </div>
-                <div class="pl-24 flex-1">
-                  <div class="nav-intro flex items-center justify-between">
-                    <!--<p>专注K12阶段中国学生的英语学习，提供优质学习内容和教学辅助工具，提升老师教学效率和学生听说读写译综合应用能力！</p>-->
-                    <p>专注中国学习者的英语学习，提供优质学习内容和教学辅助工具，提升老师教学效率和学生听说读写译综合应用能力！</p>
-                    <div class="flex items-center gap-8">
-                      <a class="buy-buy-buy btn bg-orange" href="/apply/agent">渠道合作</a>
-                      <a class="free-trial btn bg-red" href="/apply/school" style="margin-left:0;">产品购买</a>
-                    </div>
-                  </div>
-                  <ul class="nav2 mt-24">
-                    <li class="flex items-center">
-                      <b>了解冰果:</b>
-                      <span>
-                        <a class="flex items-center gap-4" href="http://www.bingoenglish.com/about">
-                          公司介绍
-                          <i class="iconfont icon-xiayige"></i>
-                        </a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>产品介绍:</b>
-                      <span style="width:180px;" class="flex items-center gap-4"><a
-                          href="http://www.bingoenglish.com/about/intelligent_grading"
-                          class="flex items-center gap-4">智能作文评阅系统<i class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:auto;" class="flex items-center gap-4"><a
-                          href="http://www.bingoenglish.com/about/online_learning"
-                          class="flex items-center gap-4">在线主题学习系统<i class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>合作伙伴:</b>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/apply/recruit">渠道合作<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/about/partner">合作院校<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 能力提高 -->
-          <div class="navItem">
-            <a href="https://www.bingoenglish.com/st/ability.html" class="lev1">能力提高</a>
-            <div class="child">
-              <div class="flex h-100p p-24">
-                <div class="flex flex-col items-center justify-center nav-title-block">
-                  <i class="icon-nav-img9 imgNav"></i>
-                  <b class="mt-8 font-size-16">English proficiency</b>
-                </div>
-                <div class="pl-24 flex-1">
-                  <div class="nav-intro flex items-center justify-between">
-                    <p>科学评测你的真实英语水平，并根据自身能力个性化学习，全面有效提升听说读写译综合应用能力。</p>
-                    <a class="free-trial btn bg-orange" href="http://www.bingoenglish.com/apply/school">产品购买</a>
-                  </div>
-                  <ul class="nav2 mt-24">
-                    <li class="flex items-center">
-                      <b>了解冰果等级:</b>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/about/online_learning">冰果等级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>水平自测:</b>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/w/firsttest/vocabulary.do">词汇测试<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/w/firsttest/dictation.do">听力测试<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/w/firsttest/reading.do">阅读测试<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>能力提高:</b>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/ability/level_1.html">冰果一级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/ability/level_2.html">冰果二级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/ability/level_3.html">冰果三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:150px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/ability/level_4.html">冰果四级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 大学英语 -->
-          <div class="navItem">
-            <a href="https://www.bingoenglish.com/st/cet4.html" class="lev1">大学英语</a>
-            <div class="child">
-              <div class="flex h-100p p-24">
-                <div class="flex flex-col items-center justify-center nav-title-block">
-                  <i class="icon-nav-img3 imgNav"></i>
-                  <b class="mt-8 font-size-16">College</b>
-                </div>
-                <div class="pl-24 flex-1">
-                  <div class="nav-intro flex items-center justify-between">
-                    <p>围绕14个生活主题的听说读写译能力训练，“小鱼快吃”让背单词好玩刺激，庞大真题和模拟题轻松备考！</p>
-                    <a class="free-trial btn bg-orange" href="http://www.bingoenglish.com/apply/school">产品购买</a>
-                  </div>
-                  <ul class="nav1">
-                    <li class="flex items-center">
-                      <b>听说读写译:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/ability.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet4/ability.html">四级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet6/ability.html">六级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/graduate/ability.html">考研<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/ability.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>轻松背单词:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/voc.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet4/voc.html">四级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet6/voc.html">六级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/graduate/voc.html">考研<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/voc.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>模拟备考:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/test.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet4/test.html">四级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/cet6/test.html">六级<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/graduate/test.html">考研<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/test.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 词汇 -->
-          <div class="navItem">词汇</div>
-          <!-- 休闲英语 -->
-          <div class="navItem" style="width:136px;">
-            <a style="width:136px;" href="http://www.bingoenglish.com/st/index/ent.html" class="lev1">休闲英语</a>
-            <div class="child">
-              <div class="flex h-100p p-24">
-                <div class="flex flex-col items-center justify-center nav-title-block">
-                  <i class="icon-nav-img8 imgNav"></i>
-                  <b class="mt-8 font-size-16">News</b>
-                </div>
-                <div class="pl-24 flex-1">
-                  <div class="nav-intro flex items-center justify-between">
-                    <p>精优适合大学生水平学习的内容，包括国外最新时事、新闻、热点、文化等，丰富眼界扩充知识面的同时提升英文能力。</p>
-                    <a class="free-trial btn bg-orange" href="javascript:void(0)">free</a>
-                  </div>
-                  <ul class="nav1">
-                    <li class="flex items-center">
-                      <b>涨知识:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/content/html/news/">国外头条<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/content/html/photo/">图文<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/content/html/video/">视频<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://www.bingoenglish.com/st/index/ent.html">台词填空<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 作文系统 -->
-          <div class="navItem">
-            <a href="http://writing.bingoenglish.com/" class="lev1">作文系统</a>
-            <div class="child">
-              <div class="flex h-100p p-24">
-                <div class="flex flex-col items-center justify-center nav-title-block">
-                  <i class="icon-nav-img2 imgNav"></i>
-                  <b class="mt-8 font-size-16">Writing</b>
-                </div>
-                <div class="pl-24 flex-1">
-                  <div class="nav-intro flex items-center justify-between">
-                    <p>为大学师生提供实时精准的英语作文评阅系统，帮助老师提高教学效率，帮助学生提升作文能力！</p>
-                    <a class="free-trial btn bg-orange" href="http://www.bingoenglish.com/apply/school">产品购买</a>
-                  </div>
-                  <ul class="nav2 mt-24">
-                    <li class="flex items-center">
-                      <b>老师入口:</b>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://writing.bingoenglish.com/www/index.php/teacher/home">布置作文<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://writing.bingoenglish.com/www/index.php/teacher/writing/all">查看作文<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>学生入口:</b>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://writing.bingoenglish.com/www/index.php/student/writing/show_writing_upload">提交新作文<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:180px;"><a class="flex items-center gap-4"
-                          href="http://writing.bingoenglish.com/www/index.php/student/history/show_writings">查看作文<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                    <li class="flex items-center">
-                      <b>日常练习:</b>
-                      <span style="width:180px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="http://writing.bingoenglish.com/www/index.php/instant/store">精选写作<i
-                            class="iconfont icon-xiayige"></i></a></span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <nav-pane></nav-pane>
       </div>
     </div>
+
     <div>
-
       <div id="content">
-
-        <div class="swiper pos-r">
+        <div class="swiper pos-r" :style="{height: width > 980 ? '510px' : '180px'}">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="swp1"></div>
@@ -327,58 +71,12 @@
           <div class="swiper-button-next"></div>
         </div>
 
-        <!-- 测试 -->
-        <!-- <div style="min-height: 65vh">
-          <div class="flex items-center justify-center gap-8" style="margin-top: 10vh">
-            <div class="font-size-32 font-weight-600 color-orange">冰果专家</div>
-            <div class="font-size-32 font-weight-600 color-dark-blue">智能诊断</div>
-          </div>
-          <div class="color-gray text-align-center mt-32 font-size-16">
-            <div>权威教授，全新理念</div>
-            <div class="mt-8">国家精品教材主编教授团队 + 最前沿的网络学习体验</div>
-          </div>
-
-          <div class="flex items-center justify-around gap-16" style="padding-bottom: 7vh; max-width: 1200px; margin: 0 auto; margin-top: 12vh;">
-            <a href="/st/eva/voc_eva.html" class="card-pane  pos-r ">
-              <div class="flex flex-col items-center ">
-                <div class="pos-a cardIcon">
-                  <svg t="1747064449651" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="9049" width="64" height="64"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#FEA914" p-id="9050"></path><path d="M554.288 291.312v91.008l0.096 1.344c0.8 6.048 6.96 9.92 12.72 8.048l1.44-0.576 21.84-10.928 21.84 10.928 1.248 0.512a9.856 9.856 0 0 0 12.88-7.776l0.128-1.552v-89.632a96.032 96.032 0 0 1 79.728 94.624v249.392a96 96 0 0 1-96 96H413.792a96 96 0 0 1-96-96V387.312a96 96 0 0 1 96-96h140.496z m-101.328 212.32a59.024 59.024 0 0 0-59.04 59.04v86.288l0.128 2a15.888 15.888 0 0 0 31.664-2v-27.264h54.496v27.264l0.144 2A15.888 15.888 0 0 0 512 648.96v-86.288l-0.08-3.248a59.04 59.04 0 0 0-58.96-55.792z m0 31.776c15.072 0 27.264 12.192 27.264 27.264v27.248h-54.528v-27.248l0.128-2.48a27.248 27.248 0 0 1 27.136-24.784z" fill="#FFFFFF" p-id="9051"></path><path d="M610.208 291.312c5.552 0 10.976 0.48 16.272 1.376v89.632a9.84 9.84 0 0 1-13.008 9.328l-1.248-0.512-21.84-10.928-21.84 10.928a9.84 9.84 0 0 1-14.16-7.472l-0.08-1.344-0.016-91.008h55.92z" fill="#FFFFFF" opacity=".5" p-id="9052"></path></svg>
-                </div>
-                <div class="color-dark-blue font-size-24 font-weight-600 mt-24">词汇测试</div>
-                <div class="color-dark-gray font-size-18 font-weight-200">Vocaulary</div>
-                <div class="color-gray text-align-center mt-16">在学习之前，也许你会想知道一个有趣的问题：我到底掌握了多少词汇？</div>
-              </div>
-            </a>
-            <a class="card-pane  pos-r " href="/st/cet4/test.html?target=writing">
-              <div class="flex flex-col items-center ">
-                <div class="pos-a cardIcon">
-                  <svg t="1747066103790" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="38052" width="64" height="64"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#F6625A" p-id="38053"></path><path d="M523.093333 656.725333V416.8192c-2.7648-51.3024 21.504-72.789333 65.1776-80.418133 33.28-6.2464 67.9424-7.6288 106.769067-11.776v306.449066s-88.064-6.946133-171.946667 25.6512z m-20.804266 0c-83.882667-32.597333-171.946667-25.6512-171.946667-25.6512V324.608c38.826667 4.164267 73.489067 5.546667 106.769067 11.776 43.690667 7.645867 67.959467 29.1328 65.877333 81.134933-0.682667-0.682667-0.682667 239.2064-0.682667 239.2064z m28.433066 16.64c60.3136-9.728 121.344-19.421867 188.586667-30.5152V368.981333H733.866667v285.661867c0 11.776-13.175467 33.28-20.804267 33.28h-170.564267c-4.846933 0-11.776-14.557867-11.776-14.557867z m-38.144 0s-6.929067 14.557867-11.776 14.557867h-169.864533c-6.946133 0-20.804267-21.504-20.804267-33.28V369.664h15.2576v273.8688c66.56 10.410667 126.8736 20.104533 187.1872 29.815467z" fill="#FFFFFF" p-id="38054"></path></svg>
-                </div>
-                <div class="color-dark-blue font-size-24 font-weight-600 mt-24">阅读测试</div>
-                <div class="color-dark-gray font-size-18 font-weight-200">Reading</div>
-                <div class="color-gray text-align-center mt-16">阅读一篇文章后，你能抓住作者的核心观点吗？也许该测试一下你的阅读理解能力了</div>
-              </div>
-            </a>
-            <a href="/st/eva/listening_eva.html" class="card-pane  pos-r ">
-              <div class="flex flex-col items-center">
-                <div class="pos-a cardIcon">
-                  <svg t="1747065901681" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15382" width="64" height="64"><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#00E28C" p-id="15383"></path><path d="M810.666667 613.333333a64 64 0 0 0-128 0v96a64 64 0 0 0 128 0v-96zM426.666667 613.333333a64 64 0 0 0-128 0v96a64 64 0 0 0 128 0v-96z" fill="#FFFBF5" p-id="15384"></path><path d="M768 570.666667a64 64 0 0 0-128 0v96a64 64 0 0 0 128 0v-96z" fill="#FFFBF5" p-id="15385"></path><path d="M704 538.666667a32 32 0 0 0-32 32v96a32 32 0 0 0 64 0v-96a32 32 0 0 0-32-32z m-96 32a96 96 0 0 1 192 0v96a96 96 0 0 1-192 0v-96z" fill="#FFFBF5" p-id="15386"></path><path d="M384 570.666667a64 64 0 0 0-128 0v96a64 64 0 0 0 128 0v-96z" fill="#FFFBF5" p-id="15387"></path><path d="M320 538.666667a32 32 0 0 0-32 32v96a32 32 0 0 0 64 0v-96a32 32 0 0 0-32-32z m-96 32a96 96 0 0 1 192 0v96a96 96 0 0 1-192 0v-96z" fill="#FFFBF5" p-id="15388"></path><path d="M256 506.666667a32 32 0 0 1 32 32v96a32 32 0 0 1-64 0v-96a32 32 0 0 1 32-32zM768 506.666667a32 32 0 0 1 32 32v96a32 32 0 0 1-64 0v-96a32 32 0 0 1 32-32z" fill="#FFFBF5" p-id="15389"></path><path d="M307.072 313.770667C360.704 253.397333 434.304 218.666667 512 218.666667c77.653333 0 151.296 34.730667 204.928 95.104 53.546667 60.202667 83.072 141.184 83.072 224.896a32 32 0 0 1-64 0c0-69.034667-24.405333-134.570667-66.901333-182.4-42.368-47.658667-98.986667-73.6-157.098667-73.6s-114.730667 25.941333-157.098667 73.6c-42.496 47.786667-66.901333 113.365333-66.901333 182.4a32 32 0 0 1-64 0c0-83.712 29.525333-164.693333 83.072-224.896z" fill="#FFFBF5" p-id="15390"></path></svg>
-                </div>
-                <div class="color-dark-blue font-size-24 font-weight-600 mt-24">听力测试</div>
-                <div class="color-dark-gray font-size-18 font-weight-200">Listening</div>
-                <div class="color-gray text-align-center mt-16">你是否有兴趣深入了解自己在听力理解中可能存在的薄弱环节？</div>
-              </div>
-            </a>
-          </div>
-        </div> -->
-
-
-        <div class=" bg-cyan-40 p-24">
+        <div class="bg-cyan-40 p-24">
           <div class="pos-r w-100p overflow-hidden">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
+            <div>
+              <div>
                 <div class="serverCard">
-                  <div class="serverCardContent cardContent1 flex gap-16">
+                  <div :class="{'flex': width> 980}" class="serverCardContent cardContent1 gap-16">
                     <img src="https://www.bingoenglish.com/assets/images/index/photoframe/man1.png"
                       style="margin-right: 6vw" alt="">
                     <div class="ml-24" style="padding-right: 5vw;">
@@ -395,51 +93,7 @@
                         <div class="color-black"><span class="color-red">14</span>个主题，<span
                             class="color-red">500</span>个句子，<span class="color-red">4500</span>个词汇</div>
 
-                        <div class="flex mt-24 justify-between gap-24">
-                          <div>
-                            <div class="goName">三级</div>
-                            <div class="mb-16">
-                              <div class="color-dark-gray line-height-18">核心提炼</div>
-                              <div class="color-dark-gray line-height-18">轻松应考</div>
-                            </div>
-                            <a href="/st/zj3.html">
-                              <div class="goBtn">GO</div>
-                            </a>
-                          </div>
-
-                          <div>
-                            <div class="goName">四级</div>
-                            <div class="mb-16">
-                              <div class="color-dark-gray line-height-18">紧贴考纲</div>
-                              <div class="color-dark-gray line-height-18">权威科学</div>
-                            </div>
-                            <a href="/st/cet4.html">
-                              <div class="goBtn">GO</div>
-                            </a>
-                          </div>
-
-                          <div>
-                            <div class="goName">六级</div>
-                            <div class="mb-16">
-                              <div class="color-dark-gray line-height-18">真题训练</div>
-                              <div class="color-dark-gray line-height-18">高效提升</div>
-                            </div>
-                            <a href="/st/cet6.html">
-                              <div class="goBtn">GO</div>
-                            </a>
-                          </div>
-
-                          <div>
-                            <div class="goName">考研</div>
-                            <div class="mb-16">
-                              <div class="color-dark-gray line-height-18">考研冲刺</div>
-                              <div class="color-dark-gray line-height-18">快速突破</div>
-                            </div>
-                            <a href="/st/graduate.html">
-                              <div class="goBtn">GO</div>
-                            </a>
-                          </div>
-                        </div>
+                        <test-cet :size="width"></test-cet>
                       </div>
                     </div>
                   </div>
@@ -450,241 +104,20 @@
         </div>
 
         <!-- 听听他们怎么说 -->
-        <div class="bg-white color-black">
-          <div class="flex flex-col justify-center items-center">
-            <div class="section-title">
-              听听TA们怎么说
-            </div>
-            <div class="section-desc">
-              What they say
-            </div>
-          </div>
-
-          <div style="max-width: 1000px; margin: 60px auto;" class="flex flex-wrap items-center justify-between">
-            <div class="per">
-              <img class="block w-100p" src="/images/index/card-man1.jpg">
-              <div class="icon-card-arrow"></div>
-              <div class="content">
-                <b>方富民</b>
-                <span>浙江大学外语学院副教授</span>
-                <p>
-                  “冰果作文批改系统是我英语教学的最好助手，学生们说冰果英语让英语学习从枯燥变得有趣！”
-                </p>
-              </div>
-            </div>
-            <div class="per">
-              <img src="/images/index/card-man2.jpg">
-              <div class="icon-card-arrow"></div>
-              <div class="content">
-                <b>周女士</b>
-                <span>学生家长</span>
-                <p>
-                  “冰果英语让我的孩子爱上学习英语，迅速提升了英语成绩！”
-                </p>
-              </div>
-            </div>
-            <div class="per">
-              <img src="/images/index/card-man3.jpg">
-              <div class="icon-card-arrow"></div>
-              <div class="content">
-                <b>Edwin</b>
-                <span>澳大利亚拉筹伯大学</span>
-                <p>
-                  “冰果英语从高中一直陪伴我，帮助我考取优异的成绩进入梦想的大学！”
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <renwu-pane></renwu-pane>
 
         <!-- 冰果优势 -->
-        <div class="advancePane">
-          <div class="flex flex-col justify-center items-center">
-            <div class="section-title color-orange">
-              冰果优势
-            </div>
-            <div class="section-desc">
-              Advantage
-            </div>
-          </div>
-
-          <div class="mt-40">
-            <div class="swiper2 pos-r">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="advanceItemPane">
-                    <div class="swp2-1"></div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swp2-2"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swp2-3"></div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="swp2-4"></div>
-                </div>
-              </div>
-
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 智能作文评阅系统 -->
-        <!-- <div class="my-48 flex justify-around gap-16" style="margin: 0 auto; margin-top: 10vh; max-width: 1000px;">
-          <div class="zuowenBg rounded-16 flex-0" style="width: 400px; height: 320px"></div>
-          <div>
-            <div class="font-size-32 color-orange text-align-center">智能作文评阅系统</div>
-            <div class="font-size-20 font-weight-200 color-dark-blue text-align-center">专为提升英语写作能力而生</div>
-
-            <div class="color-gray mt-16 line-height-28 font-weight-200 font-size-16" style="max-width: 400px;">
-              它以95%的高准确率，精准检测词汇、语法、拼写、搭配和句型，提供个性化建议和修正方案。系统生成学习报告，助力针对性提升。无论是初学者还是进阶学习者，都能在它的陪伴下，轻松攻克写作难题，让英语写作更规范、更流畅、更出色！
-            </div>
-
-            <div class="flex items-center justify-center mt-32">
-              <button class="button button-item">
-                <span class="button-bg">
-                  <span class="button-bg-layers">
-                    <span class="button-bg-layer button-bg-layer-1 -purple"></span>
-                    <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
-                    <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
-                  </span>
-                </span>
-                <span class="button-inner">
-                  <span class="button-inner-static">了解更多</span>
-                  <span class="button-inner-hover">了解更多</span>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- 能力提升 -->
-        <!-- <div style="margin: 12vh auto; max-width: 1200px;">
-          <div class="text-align-center font-size-32 color-dark-blue mt-32">能力提升</div>
-          <div class="flex items-center justify-around" style="margin-top: 10vh;">
-            <div class="serverPane">
-              <img src="/images/tsdxy.png" alt="">
-              <div class="content">
-                <div class="centerPane flex items-center flex-col justify-center">
-                  <div class="font-size-20 font-weight-600">听说读写译</div>
-                  <div class="roundBtn mt-16">开始学习</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="serverPane">
-              <img src="/images/translate.png" alt="">
-              <div class="content">
-                <div class="centerPane flex items-center flex-col justify-center">
-                  <div class="font-size-20 font-weight-600">翻译新题型</div>
-                  <div style="border: 1px solid transparent" class="roundBtn bg-blue mt-16">开始学习</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        <advance-pane :size="width"></advance-pane>
 
         <!-- 新编大学英语 -->
-        <div style="margin: 32px auto; max-width: 1200px;" class="p-32 ">
-          <!-- <div class="font-size-32 font-weight-600 color-dark-blue flex items-center justify-center text-align-center">新编大学英语 -->
-          <!-- </div> -->
-          <div class="overflow-hidden flex flex-wrap justify-between bg-red-10 rounded-16 mt-32 jiaocaiPane"
-            style="padding: 2vw">
-            <div class="flex mr-32 overflow-hidden">
-              <img src="/images/newEng.png" style="max-height: 150px;" alt="" srcset="">
-
-            </div>
-            <div class="flex flex-1 flex-wrap justify-between">
-              <div>
-                <div class="color-dark-gray font-weight-200">普通高等教育“十一五”国家级规划教材，</div>
-                <div class="color-dark-gray font-weight-200">教育部“2007年度普通高等教育精品教材”</div>
-                <div style="width: 140px"
-                  class="mt-16 mb-8 font-size-18 font-weight-400 flex items-center justify-between">浙江大学
-                  <div>编著</div>
-                </div>
-                <div style="width: 140px" class="font-size-18 font-weight-400 flex items-center justify-between">应惠兰
-                  <div>主编</div>
-                </div>
-              </div>
-              <div>
-                <div class="font-size-18 font-weight-200">新编大学英语用户</div>
-                <div class="engTitle mt-8 mb-16">New College English</div>
-                <div>
-                  <button style="width: 140px" class="custom-btn rounded-8 custom-primary-btn">进入</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <text-book :size="width"></text-book>
       </div>
     </div>
 
     <div class="cleared"></div>
 
     <!-- 底部信息 -->
-    <div id="bottom" class="w-100p">
-      <div class="page-footer">
-        <div class="flex items-center pt-24 justify-center title">
-          <div class="mr-16">合作伙伴</div>
-          <div><img src="/immg/zjdx_logo.png" style="height: 50px" alt=""></div>
-        </div>
-
-        <div class="text-align-center mt-48 font-size-14">
-          <div class="mb-16">杭州增慧网络科技有限公司</div>
-          <div>
-            <div>公司地址：中国杭州浙江大学国家大学科技园A栋东区422</div>
-            <div class="flex items-center gap-16 flex-wrap justify-center mt-8">
-              <div class="flex items-center"><i class="iconfont icon-lianxiwomen mr-4"></i>联系电话：0571-28991078</div>
-              |
-              <div class="flex items-center">
-                <i class="iconfont icon-kefu mr-4"></i>客服在线：<a target="_blank"
-                  href="http://wpa.qq.com/msgrd?v=3&amp;uin=996091820&amp;site=qq&amp;menu=yes">QQ
-                  996091820</a>
-              </div>
-              |
-              <div class="flex items-center"><i class="iconfont icon-youxiang mr-4"></i>客服邮箱：996091820@qq.com</div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="footer-header">
-          <div class="container pt-24 px-24 flex flex-wrap items-center flex-wrap justify-center gap-16">
-            <a href="/about">关于我们</a>
-            <span class="splice">|</span>
-            <a href="/st/agreement.html">服务条款</a>
-            <span class="splice">|</span>
-            <a href="/st/help.html">使用帮助</a>
-            <span class="splice">|</span>
-            <a href="/w/common/kefu.html">客服中心</a>
-          </div>
-        </div>
-        <div class="footer-body">
-          <div class="container pb-48 px-24">
-
-            <div class="text-align-center mt-48 font-size-12">
-              版权所有 © 2005 - 2025 杭州增慧网络科技有限公司保留所有权利.
-            </div>
-            <div class="FL-r text-align-center mt-8 font-size-12">
-              <a rel="nofollow" href="http://www.beian.miit.gov.cn/" target="_blank">浙ICP证B2-20140303号</a>
-              <a rel="nofollow" href="http://beian.miit.gov.cn/" target="_blank">浙ICP备14032562号-1</a>
-              <div class="text-align-center flex items-center justify-center mt-8">
-                <a class="beian flex items-center" target="_blank"
-                  href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002579">
-                  <img src="/images/beian.png" class="mr-8" />
-                  <p>浙公网安备 33010602002579号</p>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <bottom-pane></bottom-pane>
   </div>
 </body>
 
@@ -706,35 +139,11 @@
     pageTracker._trackPageview();
   } catch (err) { }
 
-  const swiper = new Swiper('.swiper', {
-    loop: true,
+  
 
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
-  const swiper2 = new Swiper('.swiper2', {
-    loop: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
-
+  
   const { createApp, ref, reactive, onMounted } = Vue
+  import useSize from './ability/useSize.js'
   const app = createApp({
     setup() {
       const state = reactive({
@@ -745,6 +154,7 @@
           ip_string: ''
         }
       })
+      const {width} = useSize()
       async function fetchXMLtoJSON(url) {
         const res = await fetch(url);
         const xmlText = await res.text();
@@ -774,14 +184,41 @@
       }
       onMounted(() => {
         handleGetUserInfo()
+
+        const swiper = new Swiper('.swiper', {
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
       });
 
       return {
         state,
+        width
       }
     }
   })
+  import AdvancePane from './components/advance/index.js'
+  import TextBook from './components/text-book/index.js'
+  import BottomPane from './ability/bottom-pane.js'
+  import NavPane from './components/nav/index.js'
+  import Mnav from './ability/nav-pane/mnav.js'
+  import RenwuPane from './components/renwu-pane.js'
+  import TestCet from './components/test-cet.js'
 
+  app.component('advance-pane', AdvancePane)
+  app.component('text-book', TextBook)
+  app.component('bottom-pane', BottomPane)
+  app.component('nav-pane', NavPane)
+  app.component('mnav', Mnav)
+  app.component('renwu-pane', RenwuPane)
+  app.component('test-cet', TestCet)
   app.mount('#app')
 
 </script>

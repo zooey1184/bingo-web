@@ -1,3 +1,5 @@
+@import url('../components/advance/style.css');
+@import url('../ability/nav-pane/style.css');
 * {
   margin: 0;
   padding: 0;
@@ -127,20 +129,21 @@ a {
   background-image: url('http://www.bingoenglish.com/assets/temp/banner1.jpg');
   background: url('http://www.bingoenglish.com/assets/temp/banner1.jpg') center center no-repeat;
   background-size: cover;
-  height: var(--swiperHeight);
+  height: 100%;
+  /* height: var(--swiperHeight); */
 }
 .swp2 {
   background: url('http://www.bingoenglish.com/assets/temp/banner5.jpg');
   background-position: center center;
   background-repeat: no-repeat;
 
-  height: var(--swiperHeight);
+  height: 100%;
 }
 .swp3 {
   background: url('http://www.bingoenglish.com/assets/temp/banner3.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  height: var(--swiperHeight);
+  height: 100%;
 }
 .serverPane {
   border-radius: 20px;
@@ -420,12 +423,6 @@ button:active {
   font-size: 20px;
 }
 
-.advancePane {
-  background-color: #FFF2E1;
-  margin-top: 10vh;
-  padding: 60px 0;
-}
-
 .per {
   position: relative;
   width: 288px;
@@ -589,4 +586,13 @@ button:active {
   padding: 30px;
   border-radius: 16px;
   background-color: #fff;
+}
+
+.eduItem_30 {
+  height: 100px;
+  transform:  perspective(600px) rotateY(35deg);
+}
+.eduItem_20 {
+  height: 100px;
+  transform:  perspective(600px) rotateY(20deg);
 }

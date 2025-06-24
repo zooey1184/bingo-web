@@ -15,50 +15,36 @@
   <link rel="stylesheet" href="css/atom.css" type="text/css" />
   <!-- <link rel="stylesheet" href="/css/skilline.css" /> -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_0s3sc7h6oaw9.css">
+  <link rel="stylesheet" href="./css/iconfont.css">
   <script src="./js/bp_init.js"></script>
+  <script src="./js/toast.js"></script>
+  <link rel="stylesheet" href="./css/toast.css">
 </head>
 
 <body>
   <div id="app" class="overflow-x-hidden">
     <div id="toast-container"></div>
-    <!-- <div class="navbar bg-cream">
-      <div style="height: 64px; max-width: 1200px; margin: 0 auto"
-        class="pos-r flex items-center flex-wrap justify-between">
-        <div class="color-orange flex items-center">
-          <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
-            <img src="/images/bingo-logo.png" style="width: 20px" alt="">
-          </div>
-          <div class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
-        </div>
-        <div class="gap-16 p-16 flex items-center font-size-16 font-weight-300">
-          <nav-pane></nav-pane>
-        </div>
-      </div>
-      <div ref="navRef" style="height: 10px"></div>
-    </div>
-
-    <banner></banner> -->
-    <header-bar :online-info="state.onlineInfo">
+    <header-bar :size="width" :online-info="state.onlineInfo">
       <template #nav>
-        <nav-pane></nav-pane>
+        <nav-pane :size="width"></nav-pane>
       </template>
       <banner></banner>
     </header-bar>
 
 
 
-    <div class="text-align-center mt-48">
-      <div class="font-size-24 font-weight-400 mb-16">领先的教学理念：以学习者为中心的主题教学模式</div>
-      <div class="font-size-20 font-weight-400 mb-16">听、说、读、写、译全面提高：翻译、写作的自动评阅、听力和阅读的智能诊断、口语情景对话等各种智能训练手段。</div>
-      <div class="font-size-20 font-weight-400 mb-16">口语陪练: 智能人机对话、口语翻译、口语作文、口语跟读等。</div>
+    <div class="text-align-center mt-48 px-24">
+      <div class="subTitleDesc font-weight-400 mb-16">领先的教学理念：以学习者为中心的主题教学模式</div>
+      <div class="subTitleDesc font-weight-400 mb-16">听、说、读、写、译全面提高：翻译、写作的自动评阅、听力和阅读的智能诊断、口语情景对话等各种智能训练手段。</div>
+      <div class="subTitleDesc font-weight-400 mb-16">口语陪练: 智能人机对话、口语翻译、口语作文、口语跟读等。</div>
     </div>
 
 
     <!-- 能力提升 -->
-    <div class="articlePane flex"
-      style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 15vh auto;">
-      <!-- <div class="pos-r">
+    <div class="text-align-center font-size-32 levelCardWrapTitle  color-dark-blue">能力提升</div>
+    <div class="articlePane flex levelCardWrap"
+      style="min-height: 50vh; max-width: 1200px; padding: 24px;">
+      <div class="pos-r">
         <div style="width: 300px" class="flex-0">
           <div v-for="item in state.topicsList" @click="handlePickTopic(item)"
             :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
@@ -69,7 +55,7 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <level-card class="flex-1"></level-card>
     </div>
@@ -87,7 +73,7 @@
 
     const { createApp, ref, reactive, onMounted } = Vue
 
-
+    import useSize from './ability/useSize.js'
     const app = createApp({
       setup() {
         const state = reactive({
@@ -100,6 +86,7 @@
             ip_string: ''
           }
         })
+        const {width} = useSize()
         const navRef = ref(null)
         async function fetchXMLtoJSON(url) {
           const res = await fetch(url);
@@ -159,6 +146,10 @@
             state.topicsList = [];
           }
         }
+
+        const handlePickTopic = () => {
+          toast('请先选择能力级别', {type: 'warning'});
+        }
         onMounted(() => {
           fetchTopics();
           handleGetUserInfo()
@@ -166,15 +157,17 @@
 
         return {
           state,
-          navRef
+          navRef,
+          handlePickTopic,
+          width
         }
       }
     })
 
-    import NavPane from './ability/nav.js'
+    import NavPane from './ability/nav-pane/index.js'
     import Banner from './ability/banner.js'
     import BottomPane from './ability/bottom-pane.js'
-    import LevelCard from './ability/level-card.js'
+    import LevelCard from './ability/level-card/index.js'
     import HeaderBar from './ability/header-bar.js'
 
     app.component('header-bar', HeaderBar)

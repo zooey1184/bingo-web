@@ -1,0 +1,64 @@
+.advancePane {
+  background-color: #3e3e3e;
+  margin-top: 10vh;
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .advancePane {
+    padding: 0 0 30px 0;
+  }
+  
+}
+.advancePaneText {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+.advancePaneTextM {
+  font-size: 14px !important;
+
+}
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+}
+.icon-a {
+  background-image: url('../../images/sprite-index.png');
+  width: 42px;
+  height: 42px;
+}
+.icon-b {
+  background-image: url('../../images/sprite-index.png');
+  width: 42px;
+  height: 42px;
+  background-position: -42px -42px;
+  margin-left: -6px;
+}
+.icon-c {
+  background-image: url('../../images/sprite-index.png');
+  width: 42px;
+  height: 42px;
+  background-position: -42px 0;
+}
+.icon-d {
+  background-image: url('../../images/sprite-index.png');
+  width: 42px;
+  height: 42px;
+  background-position: 0 -42px;
+  margin-left: -6px;
+}
+.icon-e {
+  background-image: url('../../images/sprite-index.png');
+  width: 42px;
+  height: 42px;
+  background-position: -84px 0;
+  margin-left: -6px;
+}
+
+.videoPane {
+  aspect-ratio: 16/9;
+}

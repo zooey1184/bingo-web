@@ -1,9 +1,9 @@
 export default {
   template: `
     <div class='p-24'>
-      <div class="text-align-center font-size-32 color-dark-blue">能力提升</div>
-      <div class="flex items-center justify-around" style="margin-top: 10vh;">
-        <div class="serverPane">
+      
+      <div class="serverPaneWrap">
+        <div class="serverPane flex-0">
           <img src="/images/tsdxy.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
@@ -13,7 +13,7 @@ export default {
           </div>
         </div>
 
-        <div class="serverPane">
+        <div class="serverPane flex-0">
           <img src="/images/translate.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
@@ -25,8 +25,8 @@ export default {
       </div>
 
 
-      <div class="flex items-center justify-around" style="margin-top: 10vh;">
-        <div class="serverPane">
+      <div class="serverPaneWrap">
+        <div class="serverPane flex-0">
           <img src="/images/3.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
@@ -37,7 +37,7 @@ export default {
           </div>
         </div>
 
-        <div class="serverPane">
+        <div class="serverPane flex-0">
           <img src="/images/4.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">

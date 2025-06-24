@@ -56,20 +56,24 @@
               <div class="abilityNameContent">{{articles.name}}</div>
               <div class="abilityNameIntro">{{articles.skill_type}}</div>
             </div>
-            <div v-for="(item, index) in articles.items" class="flex articleItem items-center mb-16" :key="index">
-              <div class="mr-16">
-                <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+            <template v-for="(item, index) in articles.items" :key="index">
+              <div class="flex articleItem items-center mb-16" v-if="index < 5 || articles.show">
+                <div class="mr-16">
+                  <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+                </div>
+                <div class="ml-16 flex-1">{{item.introduction}}</div>
+                <div class="pl-16" v-if="state.onlineInfo.online">
+                  <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
+                  <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
+                  <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
+                </div>
+                <div v-else class="ml-16">
+                  <button class="article_btn" @click="handleStart">开始</button>
+                </div>
               </div>
-              <div class="ml-16 flex-1">{{item.introduction}}</div>
-              <div class="pl-16" v-if="state.onlineInfo.online">
-                <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
-                <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
-                <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
-              </div>
-              <div v-else class="ml-16">
-                <button class="article_btn" @click="handleStart">开始</button>
-              </div>
-            </div>
+              
+            </template>
+            <div class="toggleMoreBtn" v-if="articles.items.length > 5" @click="articles.show = !articles.show">{{articles.show ? '收起' : '更多'}}</div>
           </div>
         </div>
         <div v-if="state.loading" class="loadingMask">

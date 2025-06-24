@@ -1,20 +1,26 @@
 export default {
+  props: {
+    size: {
+      type: Number,
+      default: 1920
+    }
+  },
   template: `
-        <div class="bg-cream">
-      <div style="margin: 0 auto; max-width: 1200px; padding: 0 24px;" class="flex">
+    <div class="bg-cream">
+      <div style="margin: 0 auto; max-width: 1200px; padding: 0 24px;" class="abilityHomeBanner">
         <div
           class="flex flex-col w-full lg:w-6/12 justify-center lg:pt-24 items-start text-center lg:text-left mb-5 md:mb-0">
           <h1 data-aos="fade-right" data-aos-once="true" class="my-4 text-5xl font-bold leading-tight text-darken">
             <span class="color-orange">Studying</span> Online is now much easier
           </h1>
-          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal text-2xl mb-8">
-            BingoEnglish
-            is an interesting platform that will teach you in more an interactive way</p>
+          <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal subTitle mb-8">
+            BingoEnglish is an interesting platform that will teach you in more an interactive way
+          </p>
 
         </div>
 
-        <div class="w-50p pos-r overflow-hidden" style="margin-top: 13vh" id="girl">
-          <img data-aos="fade-up" data-aos-once="true" style="width: 40vw;" class="mx-auto 2xl:-mb-20" src="img/girl.png" />
+        <div class="abilityHomeGirleWrap" id="girl">
+          <img data-aos="fade-up" data-aos-once="true" class=" abilityHomeGirle" src="img/girl.png" />
 
           <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
             class="absolute top-20 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4">
@@ -47,7 +53,7 @@ export default {
           </div>
           <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true"
             class="absolute bottom-14 -left-4 sm:left-2 sm:bottom-20 lg:bottom-24 lg:-left-4 floating">
-            <img class="bg-white bg-opacity-80 rounded-lg h-22 sm:h-28" src="img/ux-class.svg" alt="">
+            <img class="bg-white bg-opacity-80 rounded-lg gh-10" src="img/ux-class.svg" alt="">
           </div>
           <div data-aos="fade-up" data-aos-delay="600" data-aos-once="true"
             class="absolute bottom-20 md:bottom-48 lg:bottom-52 -right-6 lg:right-8 floating-4">

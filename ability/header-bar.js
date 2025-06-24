@@ -3,6 +3,10 @@ export default {
     onlineInfo: {
       type: Object,
       default: () => ({})
+    },
+    size: {
+      type: Number,
+      default: 1920
     }
   },
   methods: {
@@ -24,10 +28,10 @@ export default {
           <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
             <img src="../images/bingo-logo.png" style="width: 20px" alt="">
           </div>
-          <div class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
+          <div v-if='size > 980' class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
         </div>
 
-        <div class="gap-8 px-16 flex items-center font-size-16 font-weight-300">
+        <div class="gap-8 px-16 flex flex-1 justify-end items-center font-size-16 font-weight-300">
           <slot name='nav'></slot>
           <div>
             <div v-if="!onlineInfo?.online" class="flex items-center gap-8">
