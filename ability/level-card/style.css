@@ -10,7 +10,13 @@
   overflow: hidden;
   position: relative;
 }
-
+.levelTitle {
+  font-size: 24px;
+  font-weight: 600;
+}
+.levelBtn {
+  font-size: 16px;
+}
 .serverPane {
   border-radius: 20px;
   background-color: #b4b4b433;
@@ -64,5 +70,12 @@
   .serverPane {
     width: 100%;
     margin: 24px 0;
+  }
+  .levelTitle {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .levelBtn {
+    font-size: 13px;
   }
 }

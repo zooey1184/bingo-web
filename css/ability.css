@@ -24,7 +24,10 @@ a {
   border-left: 2px solid #bebebe80;
   height: 100%;
 }
-
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .navbar {
   /* background-image: url('/images/gaokao_1/banner.png'); */
   background-repeat: no-repeat;
@@ -351,8 +354,10 @@ button:active {
   padding: 18px 20px;
   margin-bottom: 20px;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.03);
-  display: flex;
   align-items: center;
+  font-size: 16px;
+  color: #334155;
+  line-height: 1.7;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 .articleItem:hover {
@@ -366,11 +371,6 @@ button:active {
   background: #e0e7ef;
   max-width: 200px;
 }
-.articlePane .ml-16 {
-  font-size: 16px;
-  color: #334155;
-  line-height: 1.7;
-}
 .levelCardWrap {
   padding-top: 48px;
   margin: 10px auto;
@@ -379,10 +379,23 @@ button:active {
   margin-top: 8vh;
   margin-bottom: 2vh;
 }
+.articlePaneWrap {
+  min-height: 50vh;
+  max-width: 1200px;
+  padding: 0 24px;
+  padding-top: 48px;
+  margin: 0 auto;
+}
+.articleContent {
+  margin-left: 40px;
+}
 @media (max-width: 900px) {
   .articlePane {
     flex-direction: column;
-    padding: 0 8px;
+  }
+  .articlePaneWrap {
+    padding: 16px;
+    padding-top: 16px;
   }
   .articleContent {
     margin-left: 0;
@@ -396,6 +409,17 @@ button:active {
   }
   .levelCardWrapTitle {
     margin-top: 3vh;
+  }
+  .articleItem {
+    display: block;
+    font-size: 13px;
+    line-height: 1.3;
+  }
+  .articleItem img {
+    aspect-ratio: 16/10;
+    border-radius: 10px;
+    background: #e0e7ef;
+    max-width: 90px;
   }
 }
 
@@ -679,4 +703,32 @@ button:active {
   height: 1px;
   background: #ddd;
   top: 10px;
+}
+
+.levelType_title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 900px) {
+  .levelType_title {
+    font-size: 12px;
+    margin-left: 4px;
+    padding-right: 4px;
+    font-weight: 500;
+  }
+  
+}
+
+.articleMenu {
+  position: fixed;
+  left: 5px;
+  bottom: 15px;
+  z-index: 9;
+  background-color: #142c4293;
+  color: #fff;
+  padding: 6px 9px;
+  border-radius: 20px;
 }

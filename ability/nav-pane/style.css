@@ -60,6 +60,13 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .topMenuIconWrap {
+    width: 40px;
+    height: 40px;
+  }
+  
+}
 .menuItem {
   position: relative;
   padding: 8px;

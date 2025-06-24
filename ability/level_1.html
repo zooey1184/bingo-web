@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="../css/skilline.css" />
 
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_2293465_wvnpfzhaxpl.css">
+  <link rel="stylesheet" href="../css/iconfont.css">
   <script src="../js/toast.js"></script>
   <link rel="stylesheet" href="../css/toast.css">
   <link rel="stylesheet" href="../css/loader.css">
@@ -27,18 +27,19 @@
 <body>
   <div id="app">
     <div id="toast-container"></div>
-    <header-bar :online-info="state.onlineInfo">
+    <header-bar :size="width" :online-info="state.onlineInfo">
       <template #nav>
-        <nav-pane></nav-pane>
+        <nav-pane :size="width"></nav-pane>
       </template>
       <nav-bottom></nav-bottom>
     </header-bar>
 
-    <level-type :type="state.type" @change="handleChangeType"></level-type>
-
-    <div class="flex articlePane"
-      style="min-height: 50vh; max-width: 1200px; padding: 0 24px; padding-top: 48px; margin: 0 auto;">
-      <div style="width: 300px" class="flex-0">
+    <level-type :size="width" :type="state.type" @change="handleChangeType"></level-type>
+    <div v-if="width < 980">
+      <topic-menu :topics-list="state.topicsList" @pick="handlePickTopic"></topic-menu>
+    </div>
+    <div class="flex articlePane articlePaneWrap" >
+      <div style="width: 300px" class="flex-0" v-if="width > 980">
         <div v-for="item in state.topicsList" @click="handlePickTopic(item)"
           :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
           <img class="mr-8" :src="item.image" alt="">
@@ -49,7 +50,7 @@
         </div>
       </div>
 
-      <div class="flex-1 articleContent pos-r" style="margin-left: 40px">
+      <div class="flex-1 articleContent pos-r">
         <div class="pos-r">
           <div v-for="(articles, index) in state.articleList">
             <div class="abilityName">
@@ -57,19 +58,32 @@
               <div class="abilityNameIntro">{{articles.skill_type}}</div>
             </div>
             <template v-for="(item, index) in articles.items" :key="index">
-              <div class="flex articleItem items-center mb-16" v-if="index < 5 || articles.show">
-                <div class="mr-16">
+              <div class=" articleItem items-center mb-16" v-if="index < 5 || articles.show">
+                <div class="mr-16" :class="{'flex justify-between items-center': width < 980}">
                   <img :src="state.imagesList[index%(state.imagesList.length)]" alt="">
+
+                  <template v-if="width < 980">
+                  <div class="pl-16" v-if="state.onlineInfo.online">
+                    <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
+                    <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
+                    <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
+                  </div>
+                  <div v-else class="ml-16">
+                    <button class="article_btn" @click="handleStart">开始</button>
+                  </div>
+                </template>
                 </div>
-                <div class="ml-16 flex-1">{{item.introduction}}</div>
-                <div class="pl-16" v-if="state.onlineInfo.online">
-                  <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
-                  <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
-                  <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
-                </div>
-                <div v-else class="ml-16">
-                  <button class="article_btn" @click="handleStart">开始</button>
-                </div>
+                <div :class="{'ml-16': width > 980}" class=" flex-1">{{item.introduction}}</div>
+                <template v-if="width > 980">
+                  <div class="pl-16" v-if="state.onlineInfo.online">
+                    <div class="font-size-12 color-purple text-align-center mb-4">得分: {{item.score}}</div>
+                    <button class="article_btn block mb-4" @click="handleJump(item.url)">开始</button>
+                    <button class="article_btn" @click="handleJump(item.redo_url)" v-if="item.finished">重试</button>
+                  </div>
+                  <div v-else class="ml-16">
+                    <button class="article_btn" @click="handleStart">开始</button>
+                  </div>
+                </template>
               </div>
               
             </template>
@@ -101,7 +115,7 @@
     AOS.init();
 
     const { createApp, ref, reactive, onMounted, watch } = Vue
-
+    import useSize from './useSize.js'
     const app = createApp({
       setup() {
         const state = reactive({
@@ -119,6 +133,7 @@
             ip_string: '',
           }
         })
+        const {width} = useSize()
         const showBackToTop = ref(false);
         const global_abilities = {
           "2": "动态诊断练习，冰果英语您对症下药",
@@ -147,6 +162,7 @@
 
         function handlePickTopic(item) {
           state.topic = item.id;
+          console.log('==state.topic==:\n', state.topic)
           // state.imagesList = [];
         }
 
@@ -325,6 +341,7 @@
 
         return {
           state,
+          width,
           handleJump,
           handleStart,
           showBackToTop,
@@ -337,14 +354,16 @@
     import LevelType from './level-type.js'
     import BottomPane from './bottom-pane.js'
     import NavBottom from './nav-bottom.js'
-    import NavPane from './nav.js'
+    import NavPane from './nav-pane/index.js'
     import HeaderBar from './header-bar.js'
+    import TopicMenu from './topic-menu.js'
 
     app.component('level-type', LevelType)
     app.component('bottom-pane', BottomPane)
     app.component('nav-bottom', NavBottom)
     app.component('nav-pane', NavPane)
     app.component('header-bar', HeaderBar)
+    app.component('topic-menu', TopicMenu)
     app.mount('#app')
   </script>
   <script>

@@ -1,17 +1,26 @@
 export default {
   props: {
-    type: String
+    type: String,
+    size: {
+      type: Number,
+      default: 1920
+    }
   },
   methods: {
     changeType(newType) {
       this.$emit('change', newType);
     }
   },
+  computed: {
+    getIconSize() {
+      return this.size > 980 ? '24px' : '20px';
+    }
+  },
   template: `
-    <div class="flex items-center gap-16 py-24 px-16 topMenu"
-      style="margin: 0 auto; max-width: 1200px; margin-bottom: 32px;">
+    <div class="flex items-center gap-16 py-24 px-16 topMenu wrap overflow-x-auto"
+      style="margin-bottom: 32px;">
       
-      <div class="flex items-center mr-32" @click='changeType("listening")' :class='{activeType: type === "listening"}'>
+      <div class="flex justify-center items-center" @click='changeType("listening")' :class='{activeType: type === "listening", "mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-blue-60">
           <svg t="1749656943195" class="icon" viewBox="0 0 1084 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="18177" width="24" height="24">
@@ -20,10 +29,10 @@ export default {
               fill="#ffffff" p-id="18178"></path>
           </svg>
         </div>
-        <div class="font-size-18 font-weight-600 ml-8 pr-8">LISTENING</div>
+        <div class="levelType_title">LISTENING</div>
       </div>
 
-      <div class="flex items-center mr-32" @click='changeType("speaking")' :class='{activeType: type === "speaking"}'>
+      <div class="flex justify-center items-center" @click='changeType("speaking")' :class='{activeType: type === "speaking","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-green-70" >
           <svg t="1749657085233" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="25891" width="32" height="32">
@@ -35,10 +44,10 @@ export default {
               fill="#ffffff" p-id="25893"></path>
           </svg>
         </div>
-        <div class="font-size-18 font-weight-600 ml-8 pr-8">SPEAKING</div>
+        <div class="levelType_title">SPEAKING</div>
       </div>
 
-      <div class="flex items-center mr-32" @click='changeType("reading")' :class='{activeType: type === "reading"}'>
+      <div class="flex justify-center items-center " @click='changeType("reading")' :class='{activeType: type === "reading","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-cyan-60">
           <svg t="1749719325235" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="4126" width="26" height="26">
@@ -47,10 +56,10 @@ export default {
               p-id="4127" fill="#ffffff"></path>
           </svg>
         </div>
-        <div class="font-size-18 font-weight-600  ml-8 pr-8">READING</div>
+        <div class="levelType_title">READING</div>
       </div>
 
-      <div class="flex items-center mr-32" @click='changeType("writing")' :class='{activeType: type === "writing"}'>
+      <div  class="flex justify-center items-center " @click='changeType("writing")' :class='{activeType: type === "writing","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-purple-60">
           <svg t="1749719378724" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="5280" width="32" height="32">
@@ -68,10 +77,10 @@ export default {
               fill="#ffffff" p-id="5284"></path>
           </svg>
         </div>
-        <div class="font-size-18 font-weight-600 ml-8 pr-8">WRITING</div>
+        <div class="levelType_title">WRITING</div>
       </div>
 
-      <div class="flex items-center mr-32" @click='changeType("daily")' :class='{activeType: type === "daily"}'>
+      <div class="flex justify-center items-center " @click='changeType("daily")' :class='{activeType: type === "daily","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-orange-60">
           <svg t="1749719479860" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="6433" width="32" height="32">
@@ -80,7 +89,7 @@ export default {
               p-id="6434" fill="#ffffff"></path>
           </svg>
         </div>
-        <div class="font-size-18 font-weight-600 ml-8 pr-8">TRANSITION</div>
+        <div class="levelType_title">TRANSITION</div>
       </div>
     </div>
   `,
