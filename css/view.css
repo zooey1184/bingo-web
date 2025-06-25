@@ -136,7 +136,7 @@ a {
   background: url('http://www.bingoenglish.com/assets/temp/banner5.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-
+  background-size: cover;
   height: 100%;
 }
 .swp3 {
@@ -144,6 +144,7 @@ a {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
+  background-size: cover;
 }
 .serverPane {
   border-radius: 20px;
