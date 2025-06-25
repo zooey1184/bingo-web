@@ -719,15 +719,14 @@ button:active {
     padding-right: 4px;
     font-weight: 500;
   }
-  
 }
 
 .articleMenu {
   position: fixed;
-  left: 5px;
+  left: 10px;
   bottom: 15px;
   z-index: 9;
-  background-color: #142c4293;
+  background-color: #d34d1893;
   color: #fff;
   padding: 6px 9px;
   border-radius: 20px;

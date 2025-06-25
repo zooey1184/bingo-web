@@ -31,7 +31,9 @@
       <banner></banner>
     </header-bar>
 
-
+    <div v-if="width < 980">
+      <topic-menu :topics-list="state.topicsList" @pick="handlePickTopic"></topic-menu>
+    </div>
 
     <div class="text-align-center mt-48 px-24">
       <div class="subTitleDesc font-weight-400 mb-16">领先的教学理念：以学习者为中心的主题教学模式</div>
@@ -45,7 +47,7 @@
     <div class="articlePane flex levelCardWrap"
       style="min-height: 50vh; max-width: 1200px; padding: 24px;">
       <div class="pos-r">
-        <div style="width: 300px" class="flex-0">
+        <div style="width: 300px" class="flex-0" v-if="width > 980">
           <div v-for="item in state.topicsList" @click="handlePickTopic(item)"
             :class="{menuItemActive: state.topic === item.id}" class="flex items-center menuItem">
             <img class="mr-8" :src="item.image" alt="">
@@ -57,7 +59,9 @@
         </div>
       </div>
 
-      <level-card class="flex-1"></level-card>
+      <div :style="{width: width > 980 ? '60%' : '100%', marginLeft: width > 980 ? '10%' : 0}">
+        <level-card class="flex-1"></level-card>
+      </div>
     </div>
 
     <!-- 底部信息 -->
@@ -169,12 +173,15 @@
     import BottomPane from './ability/bottom-pane.js'
     import LevelCard from './ability/level-card/index.js'
     import HeaderBar from './ability/header-bar.js'
+    import TopicMenu from './ability/topic-menu.js'
+
 
     app.component('header-bar', HeaderBar)
     app.component('level-card', LevelCard)
     app.component('nav-pane', NavPane)
     app.component('banner', Banner)
     app.component('bottom-pane', BottomPane)
+    app.component('topic-menu', TopicMenu)
     app.mount('#app')
   </script>
   <script>

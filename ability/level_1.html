@@ -125,12 +125,19 @@
           loading: true,
           type: 'listening',
           topic: '2',
+          bingoBand: 1,
           onlineInfo: {
             online: false,
             valid: false,
             ip_valid: false,
             school: '',
             ip_string: '',
+          },
+          testService: {
+            1: 'ability',
+            2: 'gaokao',
+            3: 'cet4',
+            4: 'cet6',
           }
         })
         const {width} = useSize()
@@ -244,10 +251,10 @@
         }
         const handleFetchArticles = async ({ type, topic }) => {
           const data = {
-            testService: 'ability',
+            testService:  state.testService[state.bingoBand],
             ability: type,
             topic: topic,
-            bingoBand: 1,
+            bingoBand: state.bingoBand, // 1,
             ran: Math.random()
           }
           try {

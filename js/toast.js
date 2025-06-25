@@ -1,6 +1,6 @@
 function toast(message, options = {}) {
   const type = options.type || 'info';
-  const duration = typeof options.duration === 'number' ? options.duration : (type === 'loading' ? 999999 : 2000);
+  const duration = typeof options.duration === 'number' ? options.duration : (type === 'loading' ? 999999 : 116000);
   const icons = {
     loading: `<span class="toast-loading-ani"></span>`,
     error: `<span class="toast-icon" style="color:#ff4d4f;"><i class='iconfont icon-error'></i></span>`,
@@ -26,14 +26,14 @@ function toast(message, options = {}) {
   // 轻微淡入
   requestAnimationFrame(() => {
     toastEl.style.opacity = 1;
-    toastEl.style.transform = 'translateY(0)';
+    toastEl.style.transform = 'translateX(-50%) translateY(0)';
   });
 
   // loading类型需手动关闭
   if (type !== 'loading') {
     setTimeout(() => {
       toastEl.style.opacity = 0;
-      toastEl.style.transform = 'translateY(-16px)';
+      toastEl.style.transform = 'translateY(-16px) ';
       setTimeout(() => toastEl.remove(), 260);
     }, duration);
   }
@@ -41,7 +41,7 @@ function toast(message, options = {}) {
   // 返回关闭函数
   return () => {
     toastEl.style.opacity = 0;
-    toastEl.style.transform = 'translateY(-16px)';
+    toastEl.style.transform = 'translateY(-16px) translateX(-50%)';
     setTimeout(() => toastEl.remove(), 260);
   };
 }

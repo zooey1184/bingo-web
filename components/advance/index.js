@@ -44,7 +44,7 @@ export default {
 
       <div class="mt-40">
         <div :class='{flex: size > 980}' class="flex flex-wrap gap-16 px-24 items-center justify-between">
-          <div :style='{width: size > 980 ? "65%" : "100%"}'>
+          <div :style='{width: size > 980 ? "60%" : "100%"}'>
             <video loop muted playsinline class="w-100p videoPane">
               <source src="../../images/1.mp4" type="video/mp4">
             </video>
