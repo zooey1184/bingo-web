@@ -1,3 +1,12 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.wrapLineLength": 120,
+  "html.format.unformatted": "wbr", // 可选，避免某些标签不格式化
+  "editor.formatOnSave": true // 可选，保存时自动格式化
 }

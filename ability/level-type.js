@@ -80,7 +80,7 @@ export default {
         <div class="levelType_title">WRITING</div>
       </div>
 
-      <div class="flex justify-center items-center " @click='changeType("daily")' :class='{activeType: type === "daily","mr-32": size > 980, "flex-col": size < 980}'>
+      <div class="flex justify-center items-center " @click='changeType("translation")' :class='{activeType: type === "daily","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-orange-60">
           <svg t="1749719479860" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="6433" width="32" height="32">
@@ -89,7 +89,7 @@ export default {
               p-id="6434" fill="#ffffff"></path>
           </svg>
         </div>
-        <div class="levelType_title">TRANSITION</div>
+        <div class="levelType_title">TRANSLATION</div>
       </div>
     </div>
   `,

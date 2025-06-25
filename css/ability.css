@@ -383,7 +383,7 @@ button:active {
   min-height: 50vh;
   max-width: 1200px;
   padding: 0 24px;
-  padding-top: 48px;
+  padding-top: 24px;
   margin: 0 auto;
 }
 .articleContent {
@@ -636,7 +636,13 @@ button:active {
   font-size: 1.5rem;
 }
 .subTitleDesc {
-  font-size: 1rem;
+  font-size: 24px;
+}
+@media screen and (max-width: 900px) {
+  .subTitleDesc {
+    font-size: 16px;
+  }
+  
 }
 .abilityHomeBanner {
   display: flex;
@@ -723,11 +729,28 @@ button:active {
 
 .articleMenu {
   position: fixed;
-  left: 10px;
-  bottom: 15px;
+  left: 15px;
+  bottom: 25px;
   z-index: 9;
-  background-color: #d34d1893;
+  background-color: #1890ff;
   color: #fff;
-  padding: 6px 9px;
+  padding: 8px 12px;
   border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: identifier 1.05s ease-in-out;
+}
+@keyframes identifier {
+  0% { transform: translateX(-80px);}
+  100% { transform: translateX(0);}
+  
+}
+
+.levelTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ec5915;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 4px;
+  margin-left: 8px;
 }

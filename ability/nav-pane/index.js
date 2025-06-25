@@ -56,7 +56,7 @@ export default {
                 </div>
                 <ul class="nav2 mt-24" v-if="item.subNavs && item.subNavs.length">
                   <li class="flex items-center" v-for="subNav in item.subNavs" :key="subNav.name">
-                    <b class='flex-0'>{{subNav.name}}:</b>
+                    <b class='flex-0'>{{subNav.name}} :</b>
                     <span v-for="(link, idx) in subNav.subNavs" :key="link.name + idx" style="min-width:150px;" class="flex items-center gap-4">
                       <a class="flex items-center gap-4" :href="link.url">
                         {{link.name}}
