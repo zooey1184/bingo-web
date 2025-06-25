@@ -1,35 +1,39 @@
-
-
 export default {
   data: () => ({
     list: [
       {
-        icon: 'icon-a',
-        text: '真正的学术权威'
+        icon: "icon-a",
+        text: "真正的学术权威",
       },
       {
-        icon: 'icon-b',
-        text: '基于话题的联想式学习方法'
+        icon: "icon-b",
+        text: "基于话题的联想式学习方法",
       },
       {
-        icon: 'icon-c',
-        text: '以用户为中心，量身定制学习内容和计划'
+        icon: "icon-c",
+        text: "以用户为中心，量身定制学习内容和计划",
       },
       {
-        icon: 'icon-d',
-        text: '丰富的英语娱乐内容'
+        icon: "icon-d",
+        text: "丰富的英语娱乐内容",
       },
       {
-        icon: 'icon-e',
-        text: '激励人心的学习方式'
-      }
-    ]
+        icon: "icon-e",
+        text: "激励人心的学习方式",
+      },
+    ],
   }),
   props: {
     size: {
       type: Number,
-      default: 1920
-    }
+      default: 1920,
+    },
+  },
+  methods: {
+    handlePlay() {
+      const video = document.querySelector("#video");
+      video.play();
+    },
   },
   template: `
     <div class="advancePane">
@@ -45,8 +49,9 @@ export default {
       <div class="mt-40">
         <div :class='{flex: size > 980}' class="flex flex-wrap gap-16 px-24 items-center justify-between">
           <div :style='{width: size > 980 ? "60%" : "100%"}'>
-            <video loop muted playsinline class="w-100p videoPane">
-              <source src="../../images/1.mp4" type="video/mp4">
+            <video id='video' @click='handlePlay' poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' loop playsinline class="w-100p videoPane">
+            <source src='../../images/bingo.mov' type='video/mov' >  
+            <source src="../../images/bingo.mp4" type="video/mp4">
             </video>
           </div>
           <div :style='{width: size > 980 ? "35%" : "100%"}'>
@@ -60,5 +65,5 @@ export default {
         </div>
       </div>
     </div>
-  `
-}
+  `,
+};
