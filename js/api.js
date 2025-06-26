@@ -41,7 +41,7 @@ export const logout = async () => {
 // 获取主题图片
 export const getTopicImages = async (topic) => {
   try {
-    const api = `../xml/onlinepic/topic_${topic}.xml`
+    const api = `/st/xml/onlinepic/topic_${topic}.xml`
     const res = await fetchXMLtoJSON(api);
     const items = Array.from(res.querySelectorAll('pics url'));
     // 取每个item下所有字段，自动转为JSON
@@ -68,7 +68,7 @@ const dealTopics = (xmlDoc) => {
 //  获取主题列表
 export const getTopicList = async () => {
   try {
-    const text = await fetchXMLtoJSON('../xml/topics.xml');
+    const text = await fetchXMLtoJSON('/st/xml/topics.xml');
     const res = dealTopics(text);
     return res.map(item => {
       const pic = item.pic || '';
@@ -152,8 +152,8 @@ const handleGetArticles = (text) => {
 export const getArticles = async (data) => {
   try {
     let params = new URLSearchParams(data).toString();
-    const api = `../ability/mock/getNewAbilityMaterialsList.xml?${params}`;
-    // const api = `/lib/mybingo/getNewAbilityMaterialsList.xml?${params}`;
+    // const api = `../ability/mock/getNewAbilityMaterialsList.xml?${params}`;
+    const api = `/lib/mybingo/getNewAbilityMaterialsList.xml?${params}`;
     const res = await fetchXMLtoJSON(api);
     const articles = handleGetArticles(res);
     return articles

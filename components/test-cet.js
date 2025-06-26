@@ -1,3 +1,7 @@
+/**
+ * 四六级测试面板
+ */
+
 export default {
   props: {
     size: {
@@ -33,7 +37,7 @@ export default {
       }
     ]
   }),
-  
+
   template: `
     <div :class='{"flex": size > 980}' class=" mt-24 justify-between gap-24">
       <div v-for="item in list" :key="item.name" class="flex-1">

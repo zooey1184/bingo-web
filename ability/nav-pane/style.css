@@ -78,7 +78,7 @@
 }
 
 .imgNav {
-  background-image: url('/st/images/sprite-nav-img.png');
+  background-image: url('../../images/sprite-nav-img.png');
   width: 94px;
   height: 94px;
 }

@@ -1,3 +1,5 @@
+// 自测
+
 export default {
   template: `
     <div style="min-height: 65vh">

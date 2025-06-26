@@ -50,8 +50,10 @@ export default {
         <div :class='{flex: size > 980}' class="flex flex-wrap gap-16 px-24 items-center justify-between">
           <div :style='{width: size > 980 ? "60%" : "100%"}'>
             <video id='video' @click='handlePlay' poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' playsinline class="w-100p videoPane">
-            <source src='/st/images/bingo.mov' type='video/mov' >  
-            <source src="/st/images/bingo.mp4" type="video/mp4">
+              <slot name='source'>
+                <source src='/st/images/bingo.mov' type='video/mov' >
+                <source src="/st/images/bingo.mp4" type="video/mp4">
+              </slot>
             </video>
           </div>
           <div :style='{width: size > 980 ? "35%" : "100%"}'>

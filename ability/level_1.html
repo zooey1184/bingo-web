@@ -10,23 +10,27 @@
     <!-- <script type="text/javascript" src="../st/js/login_st.js"></script> -->
     <!-- <script type="text/javascript" src="../st/js/ability/level_1.js"></script> -->
     <!-- <script type="text/javascript" src="../st/js/index/index_ability.js"></script> -->
-    <link rel="stylesheet" href="../css/ability.css" />
-    <link href="../css/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/atom.css" type="text/css" />
-    <link rel="stylesheet" href="../css/skilline.css" />
+    <link rel="stylesheet" href="../style/ability.css" />
+    <link href="../style/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/atom.css" type="text/css" />
+    <link rel="stylesheet" href="../style/skilline.css" />
 
     <script src="../js/vue.global.js"></script>
-    <link rel="stylesheet" href="../css/iconfont.css" />
+    <link rel="stylesheet" href="../style/iconfont.css" />
     <script src="../js/toast.js"></script>
-    <link rel="stylesheet" href="../css/toast.css" />
-    <link rel="stylesheet" href="../css/loader.css" />
+    <link rel="stylesheet" href="../style/toast.css" />
+    <link rel="stylesheet" href="../style/loader.css" />
     <script src="../js/bp_init.js"></script>
   </head>
 
   <body>
     <div id="app">
       <div id="toast-container"></div>
-      <header-bar :size="width" :online-info="state.onlineInfo">
+      <header-bar
+        logo="../assets/bingo-logo.png"
+        :size="width"
+        :online-info="state.onlineInfo"
+      >
         <template #nav>
           <nav-pane :size="width"></nav-pane>
         </template>
@@ -377,11 +381,13 @@
           };
         },
       });
+      import HeaderBar from "../components/header-bar/index.js";
+
       import LevelType from "./level-type.js";
-      import BottomPane from "./bottom-pane.js";
+      import BottomPane from "../components/footer-pane/index.js";
       import NavBottom from "./nav-bottom.js";
       import NavPane from "./nav-pane/index.js";
-      import HeaderBar from "./header-bar.js";
+
       import TopicMenu from "./topic-menu.js";
 
       app.component("level-type", LevelType);

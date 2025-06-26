@@ -21,8 +21,9 @@ export default {
   },
   template: `
     <div>
-      <div class="articleMenu" @click='handleToggleMenu'>
+      <div class="articleMenu flex items-center" @click='handleToggleMenu'>
         <span class="iconfont icon-menu"></span>
+        <span class='font-size-12 ml-4'>选择主题</span>
       </div>
 
       <Transition name='slide-fade'>

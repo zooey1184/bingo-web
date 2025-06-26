@@ -3,6 +3,10 @@ export default {
     size: {
       type: Number,
       default: 1920
+    },
+    girlImage: {
+      type: String,
+      default: '/st/img/girl.png'
     }
   },
   template: `
@@ -14,13 +18,13 @@ export default {
             <span class="color-orange">Studying</span> Online is now much easier
           </h1>
           <p data-aos="fade-down" data-aos-once="true" data-aos-delay="300" class="leading-normal subTitle mb-8">
-            BingoEnglish is an interesting platform that will teach you in more an interactive way
+            BingoEnglish is an interesting platform that will teach you in a more interactive way
           </p>
 
         </div>
 
         <div class="abilityHomeGirleWrap" id="girl">
-          <img data-aos="fade-up" data-aos-once="true" class=" abilityHomeGirle" src="/st/img/girl.png" />
+          <img data-aos="fade-up" data-aos-once="true" class="abilityHomeGirle" :src="girlImage" />
 
           <div data-aos="fade-up" data-aos-delay="300" data-aos-once="true"
             class="absolute top-20 -left-6 sm:top-32 sm:left-10 md:top-40 md:left-16 lg:-left-0 lg:top-52 floating-4">

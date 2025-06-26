@@ -3,12 +3,21 @@ export default {
     size: {
       type: Number,
       default: 1920
+    },
+    images: {
+      type: Array,
+      default: () => [
+        '/st/images/ability/l1.png',
+        '/st/images/ability/l2.png',
+        '/st/images/ability/l3.png',
+        '/st/images/ability/l4.png'
+      ]
     }
   },
   template: `
     <div class='px-24'>
       <div class="serverPane flex-0">
-        <img src="/st/images/ability/l1.png" alt="">
+        <img :src="images[0]" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果一级</div>
@@ -20,7 +29,7 @@ export default {
       </div>
 
       <div class="serverPane flex-0">
-        <img src="/st/images/ability/l2.png" alt="">
+        <img :src="images[1]" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果二级</div>
@@ -33,7 +42,7 @@ export default {
 
 
       <div class="serverPane flex-0">
-        <img src="/st/images/ability/l3.png" alt="">
+        <img  :src="images[2]" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果三级</div>
@@ -46,7 +55,7 @@ export default {
       </div>
 
       <div class="serverPane flex-0">
-        <img src="/st/images/ability/l4.png" alt="">
+        <img :src="images[3]" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果四级</div>
