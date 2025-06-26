@@ -175,7 +175,7 @@
 
   const { createApp, ref, reactive, onMounted } = Vue;
   import useSize from "./ability/useSize.js";
-  import { login } from "./api/index.js";
+  import { login } from "./js/api.js";
   const app = createApp({
     setup() {
       const state = reactive({
@@ -189,21 +189,6 @@
       const { width } = useSize();
 
       async function handleGetUserInfo() {
-        // try {
-        //   const text = await fetchXMLtoJSON('./ability/mock/getuserip.xml');
-        //   const school = text.querySelector('school');
-        //   const online = text.querySelector('online');
-        //   const ip_valid = text.querySelector('ip_valid');
-        //   const ip_string = text.querySelector('ip_string');
-        //   state.onlineInfo = {
-        //     school: school ? school.textContent : '',
-        //     ip_valid: ip_valid ? ip_valid.textContent === 'true' : false,
-        //     online: online ? online.textContent === 'true' : false,
-        //     ip_string: ip_string ? ip_string.textContent : ''
-        //   }
-        // } catch (e) {
-        //   state.topicsList = [];
-        // }
         const res = await login();
         if (res) {
           state.onlineInfo = res;
@@ -217,7 +202,6 @@
           pagination: {
             el: ".swiper-pagination",
           },
-          // Navigation arrows
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

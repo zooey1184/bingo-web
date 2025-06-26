@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>冰果英语</title>
     <!-- AOS -->
-    <link rel="stylesheet" href="/css/aos.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <!-- <script src="/st/js/jquery-1.2.6.js" type="text/javascript"></script> -->
     <!-- <script type="text/javascript" src="/st/js/login_st.js"></script> -->
     <!-- <script type="text/javascript" src="/st/js/index/index_ability.js"></script> -->
-    <link rel="stylesheet" href="/css/ability.css" />
-    <link href="/css/tailwind.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/atom.css" type="text/css" />
-    <link rel="stylesheet" href="/css/skilline.css" />
+    <link rel="stylesheet" href="./css/ability.css" />
+    <link href="./css/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/atom.css" type="text/css" />
+    <link rel="stylesheet" href="./css/skilline.css" />
     <script src="./js/vue.global.js"></script>
     <link rel="stylesheet" href="./css/iconfont.css" />
     <script src="./js/bp_init.js"></script>
@@ -102,7 +102,7 @@
       const { createApp, ref, reactive, onMounted } = Vue;
 
       import useSize from "./ability/useSize.js";
-      import { login, getTopicList } from "./api/index.js";
+      import { login, getTopicList } from "./js/api.js";
       const app = createApp({
         setup() {
           const state = reactive({

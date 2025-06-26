@@ -191,11 +191,7 @@
 
       const { createApp, ref, reactive, onMounted, watch } = Vue;
       import useSize from "./useSize.js";
-      import {
-        getTopicList,
-        getArticles,
-        getTopicImages,
-      } from "../api/index.js";
+      import { getTopicList, getArticles, getTopicImages } from "../js/api.js";
       const app = createApp({
         setup() {
           const state = reactive({
