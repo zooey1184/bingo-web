@@ -679,6 +679,17 @@ button:active {
   .gh-10 {
     height: 12vh;
   }
+  .registerBtn {
+    background: inherit;
+    padding: 4px 8px;
+    border: none
+  }
+  .loginBtn {
+    background: inherit;
+    padding: 4px 8px;
+    border: none;
+    color: #fe6ed3;
+  }
 }
 
 .toggleMoreBtn {
