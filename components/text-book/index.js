@@ -5,6 +5,15 @@ export default {
       default: 1920
     }
   },
+  methods: {
+    handleGoTextBook() {
+      {
+        const url = 'https://www.bingoenglish.com/nce/';
+        window.open(url, '_blank');
+        this.$emit('goTextBook');
+      }
+    },
+  },
   template: `
     <div style="margin: 32px auto; max-width: 1200px;" class="p-32 ">
       <div :class='{"flex flex-wrap": size > 980}' class="overflow-hidden  justify-between bg-red-10 rounded-16 mt-32 jiaocaiPane"
@@ -31,7 +40,7 @@ export default {
             <div class="font-size-18 font-weight-200">新编大学英语用户</div>
             <div class="engTitle mt-8 mb-16">New College English</div>
             <div>
-              <button style="width: 140px" class="custom-btn rounded-8 custom-primary-btn">进入</button>
+              <button @click='handleGoTextBook' style="width: 140px" class="custom-btn rounded-8 custom-primary-btn">进入</button>
             </div>
           </div>
         </div>

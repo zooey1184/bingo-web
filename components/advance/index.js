@@ -38,7 +38,7 @@ export default {
   template: `
     <div class="advancePane">
       <div class="flex flex-col justify-center items-center">
-        <div class="section-title color-white">
+        <div style='padding-top: 24px' class="section-title color-white">
           冰果优势
         </div>
         <div class="section-desc color-gray">
@@ -46,7 +46,7 @@ export default {
         </div>
       </div>
 
-      <div class="mt-40">
+      <div style='max-width: 1200px; margin: 0 auto; margin-top: 40px'>
         <div :class='{flex: size > 980}' class="flex flex-wrap gap-16 px-24 items-center justify-between">
           <div :style='{width: size > 980 ? "60%" : "100%"}'>
             <video id='video' @click='handlePlay' poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' playsinline class="w-100p videoPane">

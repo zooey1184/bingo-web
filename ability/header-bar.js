@@ -39,7 +39,8 @@ export default {
               <button class="registerBtn flex-0" @click='handleRegister'>注册</button>
             </div>
             <div class="schoolText" v-if="onlineInfo.online && onlineInfo.school">
-              {{onlineInfo.school}}</div>
+              {{onlineInfo.school}}
+            </div>
           </div>
         </div>
         <div style='height: 10px'></div>

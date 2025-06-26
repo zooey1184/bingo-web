@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/atom.css" type="text/css" />
     <link rel="stylesheet" href="../css/skilline.css" />
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/vue.global.js"></script>
     <link rel="stylesheet" href="../css/iconfont.css" />
     <script src="../js/toast.js"></script>
     <link rel="stylesheet" href="../css/toast.css" />
@@ -78,6 +78,7 @@
                 <template v-for="(item, index) in articles.items" :key="index">
                   <div
                     class="articleItem items-center mb-16"
+                    :class="{'flex': width > 980}"
                     v-if="index < 5 || articles.show"
                   >
                     <div
