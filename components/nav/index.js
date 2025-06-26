@@ -179,7 +179,9 @@ export default {
             </div>
           </div>
           <!-- 词汇 -->
-          <div class="navItem">词汇</div>
+          <div class="navItem">
+            <a style="width: 70px;" href="http://www.bingoenglish.com/st/index/ent.html" class="lev1">词汇</a>
+          </div>
           <!-- 休闲英语 -->
           <div class="navItem" style="width:136px;">
             <a style="width:136px;" href="http://www.bingoenglish.com/st/index/ent.html" class="lev1">休闲英语</a>

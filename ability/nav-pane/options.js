@@ -117,7 +117,7 @@ export default [
   },
   {
     name: '词汇',
-    url: 'http://www.bingoenglish.com/st/index/ent.html'
+    url: 'http://www.bingoenglish.com/st/index/voc.html'
   },
   {
     name: '休闲英语',

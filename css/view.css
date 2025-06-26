@@ -219,7 +219,7 @@ a {
 }
 
 .tsdxyBg {
-  background: url('/images/tsdxy.png');
+  background: url('/st/images/tsdxy.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -477,30 +477,7 @@ button:active {
   margin: 0 auto;
   overflow: hidden;
 }
-.swp2-1 {
-  background-image: url('/images/home/intro_1.jpg');
-  background: url('/images/home/intro_1.jpg') center center no-repeat;
-  background-size: contain;
-  height: var(--swp2Height);
-}
-.swp2-2 {
-  background-image: url('/images/home/intro_2.jpg');
-  background: url('/images/home/intro_2.jpg') center center no-repeat;
-  background-size: contain;
-  height: var(--swp2Height);
-}
-.swp2-3 {
-  background-image: url('/images/home/intro_3.jpg');
-  background: url('/images/home/intro_3.jpg') center center no-repeat;
-  background-size: contain;
-  height: var(--swp2Height);
-}
-.swp2-4 {
-  background-image: url('/images/home/intro_4.jpg');
-  background: url('/images/home/intro_4.jpg') center center no-repeat;
-  background-size: contain;
-  height: var(--swp2Height);
-}
+
 .gap-5vw {
   gap: 2vw;
 }
@@ -546,7 +523,7 @@ button:active {
 }
 
 .imgNav {
-  background-image: url('/images/sprite-nav-img.png');
+  background-image: url('/st/images/sprite-nav-img.png');
   width: 94px;
   height: 94px;
 }

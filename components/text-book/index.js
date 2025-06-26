@@ -19,10 +19,10 @@ export default {
       <div :class='{"flex flex-wrap": size > 980}' class="overflow-hidden  justify-between bg-red-10 rounded-16 mt-32 jiaocaiPane"
         style="padding: 2vw">
         <div class="flex mr-32 overflow-hidden">
-          <img src="/images/home/1.png" class='eduItem_20' alt="" srcset="">
-          <img src="/images/home/edu2.png" class='eduItem_20' alt="" style='margin-left: -10px' srcset="">
-          <img src="/images/home/3.png" class='eduItem_30' style='margin-left: -20px'  alt="" srcset="">
-          <img src="/images/home/4.png" class='eduItem_30' style='margin-left: -10px' alt="" srcset="">
+          <img src="/st/images/home/1.png" class='eduItem_20' alt="" srcset="">
+          <img src="/st/images/home/edu2.png" class='eduItem_20' alt="" style='margin-left: -10px' srcset="">
+          <img src="/st/images/home/3.png" class='eduItem_30' style='margin-left: -20px'  alt="" srcset="">
+          <img src="/st/images/home/4.png" class='eduItem_30' style='margin-left: -10px' alt="" srcset="">
         </div>
         <div :class='{"flex flex-1 flex-wrap justify-between": size > 980}'>
           <div>

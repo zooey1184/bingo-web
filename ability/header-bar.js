@@ -26,7 +26,7 @@ export default {
       <div style="max-width: 1200px; margin: 0 auto" class="pos-r navPane flex items-center flex-wrap justify-between">
         <div class="color-orange p-16 flex items-center">
           <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
-            <img src="../images/bingo-logo.png" style="width: 20px" alt="">
+            <img src="/st/images/bingo-logo.png" style="width: 20px" alt="">
           </div>
           <div v-if='size > 980' class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
         </div>

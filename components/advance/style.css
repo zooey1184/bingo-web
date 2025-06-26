@@ -27,32 +27,32 @@
   width: 50px;
 }
 .icon-a {
-  background-image: url('../../images/sprite-index.png');
+  background-image: url('/st/images/sprite-index.png');
   width: 42px;
   height: 42px;
 }
 .icon-b {
-  background-image: url('../../images/sprite-index.png');
+  background-image: url('/st/images/sprite-index.png');
   width: 42px;
   height: 42px;
   background-position: -42px -42px;
   margin-left: -6px;
 }
 .icon-c {
-  background-image: url('../../images/sprite-index.png');
+  background-image: url('/st/images/sprite-index.png');
   width: 42px;
   height: 42px;
   background-position: -42px 0;
 }
 .icon-d {
-  background-image: url('../../images/sprite-index.png');
+  background-image: url('/st/images/sprite-index.png');
   width: 42px;
   height: 42px;
   background-position: 0 -42px;
   margin-left: -6px;
 }
 .icon-e {
-  background-image: url('../../images/sprite-index.png');
+  background-image: url('/st/images/sprite-index.png');
   width: 42px;
   height: 42px;
   background-position: -84px 0;

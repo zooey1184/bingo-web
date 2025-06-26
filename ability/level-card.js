@@ -4,7 +4,7 @@ export default {
       
       <div class="serverPaneWrap">
         <div class="serverPane flex-0">
-          <img src="/images/tsdxy.png" alt="">
+          <img src="/st/images/tsdxy.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
               <div class="font-size-20 font-weight-600">冰果一级</div>
@@ -14,7 +14,7 @@ export default {
         </div>
 
         <div class="serverPane flex-0">
-          <img src="/images/translate.png" alt="">
+          <img src="/st/images/translate.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
               <div class="font-size-20 font-weight-600">冰果二级</div>
@@ -27,7 +27,7 @@ export default {
 
       <div class="serverPaneWrap">
         <div class="serverPane flex-0">
-          <img src="/images/3.png" alt="">
+          <img src="/st/images/3.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
               <div class="font-size-20 font-weight-600">冰果三级</div>
@@ -38,7 +38,7 @@ export default {
         </div>
 
         <div class="serverPane flex-0">
-          <img src="/images/4.png" alt="">
+          <img src="/st/images/4.png" alt="">
           <div class="content">
             <div class="centerPane flex items-center flex-col justify-center">
               <div class="font-size-20 font-weight-600">冰果四级</div>

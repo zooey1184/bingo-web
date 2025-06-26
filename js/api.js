@@ -75,7 +75,8 @@ export const getTopicList = async () => {
       return {
         id: item.id || '',
         pic: pic,
-        image: pic.replace(/^\/st/, '..'),
+        // image: pic.replace(/^\/st/, '..'),
+        image: pic,
         en_name: item.en_name || '',
         ch_long_name: item.ch_long_name || '',
         cn_long_name: item.cn_long_name || ''

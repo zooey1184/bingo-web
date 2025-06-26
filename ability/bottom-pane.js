@@ -4,7 +4,7 @@ export default {
       <div class="page-footer">
         <div class="flex items-center pt-24 justify-center title">
           <div class="mr-16">合作伙伴</div>
-          <div><img src="../immg/zjdx_logo.png" style="height: 50px" alt=""></div>
+          <div><img src="/st/immg/zjdx_logo.png" style="height: 50px" alt=""></div>
         </div>
 
         <div class="text-align-center mt-48 font-size-14">
@@ -49,7 +49,7 @@ export default {
               <div class="text-align-center flex items-center justify-center mt-8">
                 <a class="beian flex items-center" target="_blank"
                   href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002579">
-                  <img src="../images/beian.png" class="mr-8" />
+                  <img src="/st/images/beian.png" class="mr-8" />
                   <p>浙公网安备 33010602002579号</p>
                 </a>
               </div>

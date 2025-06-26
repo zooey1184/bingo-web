@@ -12,7 +12,7 @@ export default {
 
           <div style="max-width: 1000px; margin: 60px auto;" class="flex flex-wrap gap-16 items-center justify-around">
             <div class="per">
-              <img class="block w-100p" src="/images/index/card-man1.jpg">
+              <img class="block w-100p" src="/st/images/index/card-man1.jpg">
               <div class="icon-card-arrow"></div>
               <div class="content">
                 <b>方富民</b>
@@ -23,7 +23,7 @@ export default {
               </div>
             </div>
             <div class="per">
-              <img src="/images/index/card-man2.jpg">
+              <img src="/st/images/index/card-man2.jpg">
               <div class="icon-card-arrow"></div>
               <div class="content">
                 <b>周女士</b>
@@ -34,7 +34,7 @@ export default {
               </div>
             </div>
             <div class="per">
-              <img src="/images/index/card-man3.jpg">
+              <img src="/st/images/index/card-man3.jpg">
               <div class="icon-card-arrow"></div>
               <div class="content">
                 <b>Edwin</b>

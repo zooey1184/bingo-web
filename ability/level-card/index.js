@@ -8,7 +8,7 @@ export default {
   template: `
     <div class='px-24'>
       <div class="serverPane flex-0">
-        <img src="/images/ability/l1.png" alt="">
+        <img src="/st/images/ability/l1.png" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果一级</div>
@@ -20,7 +20,7 @@ export default {
       </div>
 
       <div class="serverPane flex-0">
-        <img src="/images/ability/l2.png" alt="">
+        <img src="/st/images/ability/l2.png" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果二级</div>
@@ -33,7 +33,7 @@ export default {
 
 
       <div class="serverPane flex-0">
-        <img src="/images/ability/l3.png" alt="">
+        <img src="/st/images/ability/l3.png" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果三级</div>
@@ -46,7 +46,7 @@ export default {
       </div>
 
       <div class="serverPane flex-0">
-        <img src="/images/ability/l4.png" alt="">
+        <img src="/st/images/ability/l4.png" alt="">
         <div class="content">
           <div class="centerPane flex items-center flex-col justify-center">
             <div class="levelTitle">冰果四级</div>
