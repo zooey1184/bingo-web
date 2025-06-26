@@ -89,3 +89,18 @@
   color: #fb7185;
   box-shadow: 0 6px 24px 0 rgba(251,191,36,0.13);
 }
+
+@media screen and (max-width: 980px) {
+  .loginBtn {
+    padding: 4px 8px;
+    background: inherit;
+    border: none;
+    color: #333;
+  }
+  .registerBtn {
+    padding: 4px 8px;
+    background-color: inherit;
+    border: none;
+    color: #333;
+  }
+}

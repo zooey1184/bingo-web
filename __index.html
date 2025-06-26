@@ -37,9 +37,9 @@
               <img src="./images/bingo-logo.png" style="width: 20px" alt="" />
             </div>
             <div class="flex items-center gap-16 flex-1 justify-end">
-              <mnav v-if="width <= 980"></mnav>
+              <mnav style="margin: 0" v-if="width <= 980"></mnav>
               <login-pane
-                :online-info="state.inlineInfo"
+                :online-info="state.onlineInfo"
                 :size="width"
               ></login-pane>
             </div>
@@ -73,8 +73,8 @@
             </div>
             <div class="swiper-pagination"></div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
           </div>
 
           <div class="bg-cyan-40 p-24">

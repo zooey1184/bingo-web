@@ -1,15 +1,15 @@
-import options from './options.js'
-console.log('==options==:\n', options)
+import options from "./options.js";
+
 export default {
-  name: 'ability-nav',
+  name: "ability-nav",
   data: () => ({
     navs: [...options],
-    showMenu: false
+    showMenu: false,
   }),
   methods: {
     handleToggleMenu() {
       this.showMenu = !this.showMenu;
-    }
+    },
   },
 
   template: `
@@ -48,5 +48,5 @@ export default {
         </Transition>
       </div>
     </div>
-  `
-}
+  `,
+};
