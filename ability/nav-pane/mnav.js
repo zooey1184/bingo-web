@@ -27,7 +27,7 @@ export default {
             <div style='overflow-y: auto; height: 100vh; padding: 16px;' class='color-white'>
               <div class='text-align-center font-size-24 font-weight-600 color-gold mb-16'>BingoEnglish</div>
               <div v-for='menu in navs' class='mb-24' :key='menu.name'>
-                <a :href="nav?.url">
+                <a :href="menu?.url">
                   <div class='navBtn mb-8'>{{menu.name}}</div>
                 </a>
 
