@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content>
 
-<online>false</online>
+<online>true</online>
 <valid>false</valid>
 <ip_valid>true</ip_valid>
 <school>夏</school>

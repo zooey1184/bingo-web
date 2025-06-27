@@ -20,7 +20,7 @@ export default {
     <div class="flex items-center gap-16 py-24 px-16 topMenu wrap overflow-x-auto"
       style="margin-bottom: 32px;">
       
-      <div class="flex justify-center items-center" @click='changeType("listening")' :class='{activeType: type === "listening", "mr-32": size > 980, "flex-col": size < 980}'>
+      <div class="flex justify-center items-center cursor-pointer" @click='changeType("listening")' :class='{activeType: type === "listening", "mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-blue-60">
           <svg t="1749656943195" class="icon" viewBox="0 0 1084 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="18177" width="24" height="24">
@@ -32,7 +32,7 @@ export default {
         <div class="levelType_title">LISTENING</div>
       </div>
 
-      <div class="flex justify-center items-center" @click='changeType("speaking")' :class='{activeType: type === "speaking","mr-32": size > 980, "flex-col": size < 980}'>
+      <div class="flex justify-center items-center cursor-pointer" @click='changeType("speaking")' :class='{activeType: type === "speaking","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-green-70" >
           <svg t="1749657085233" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="25891" width="32" height="32">
@@ -47,7 +47,7 @@ export default {
         <div class="levelType_title">SPEAKING</div>
       </div>
 
-      <div class="flex justify-center items-center " @click='changeType("reading")' :class='{activeType: type === "reading","mr-32": size > 980, "flex-col": size < 980}'>
+      <div class="flex justify-center items-center  cursor-pointer" @click='changeType("reading")' :class='{activeType: type === "reading","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-cyan-60">
           <svg t="1749719325235" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="4126" width="26" height="26">
@@ -59,7 +59,7 @@ export default {
         <div class="levelType_title">READING</div>
       </div>
 
-      <div  class="flex justify-center items-center " @click='changeType("writing")' :class='{activeType: type === "writing","mr-32": size > 980, "flex-col": size < 980}'>
+      <div  class="flex justify-center items-center  cursor-pointer" @click='changeType("writing")' :class='{activeType: type === "writing","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-purple-60">
           <svg t="1749719378724" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="5280" width="32" height="32">
@@ -80,7 +80,7 @@ export default {
         <div class="levelType_title">WRITING</div>
       </div>
 
-      <div class="flex justify-center items-center " @click='changeType("translation")' :class='{activeType: type === "daily","mr-32": size > 980, "flex-col": size < 980}'>
+      <div class="flex justify-center items-center cursor-pointer" @click='changeType("translation")' :class='{activeType: type === "daily","mr-32": size > 980, "flex-col": size < 980}'>
         <div class="topMenuIconWrap bg-orange-60">
           <svg t="1749719479860" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
             p-id="6433" width="32" height="32">

@@ -11,7 +11,6 @@
     <!-- <script type="text/javascript" src="../st/js/ability/level_1.js"></script> -->
     <!-- <script type="text/javascript" src="../st/js/index/index_ability.js"></script> -->
     <link rel="stylesheet" href="../style/ability.css" />
-    <link href="../style/tailwind.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../style/atom.css" type="text/css" />
     <link rel="stylesheet" href="../style/skilline.css" />
 
@@ -26,6 +25,7 @@
   <body>
     <div id="app">
       <div id="toast-container"></div>
+
       <header-bar
         logo="../assets/bingo-logo.png"
         :size="width"
@@ -114,7 +114,7 @@
                             重试
                           </button>
                         </div>
-                        <div v-else class="ml-16">
+                        <div v-else class="ml-16 flex-0">
                           <button class="article_btn" @click="handleStart">
                             开始
                           </button>
@@ -125,7 +125,7 @@
                       {{item.introduction}}
                     </div>
                     <template v-if="width > 980">
-                      <div class="pl-16" v-if="state.onlineInfo.online">
+                      <div class="pl-16 flex-0" v-if="state.onlineInfo.online">
                         <div
                           class="font-size-12 color-purple text-align-center mb-4"
                         >
@@ -145,7 +145,7 @@
                           重试
                         </button>
                       </div>
-                      <div v-else class="ml-16">
+                      <div v-else class="ml-16 flex-0">
                         <button class="article_btn" @click="handleStart">
                           开始
                         </button>
@@ -266,6 +266,7 @@
               // state.loading = false;
               state.loading = true;
               const articles = await getArticles(data);
+
               if (articles) {
                 state.onlineInfo = {
                   online: articles?.online,
@@ -275,6 +276,7 @@
                   ip_string: articles?.ip_string,
                 };
                 state.articleList = articles?.todos;
+                // console.log("==articles==:\n", state.onlineInfo, articles);
                 state.loading = false;
               } else {
                 state.articleList = [];

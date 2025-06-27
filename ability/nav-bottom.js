@@ -1,7 +1,7 @@
 export default {
   template: `
     <div style="height: 30vh; z-index: 1" class=" pos-r flex items-center justify-center">
-        <div class="absolute inset-0 z-0" style="pointer-events:none;">
+        <div class="pos-a z-index-1" style="pointer-events:none; top:0; left:0; right:0; bottom:0;">
           <div class="navPane-ball1" style="
           position:absolute;left:10%;top:20%;width:120px;height:120px;
           background:radial-gradient(circle at 60% 40%, #facc15cc 60%, transparent 100%);
@@ -23,11 +23,11 @@ export default {
           border-radius:50%;filter:blur(2px);">
           </div>
         </div>
-        <div class="z-10 text-center">
-          <div class="font-size-32 font-weight-700 text-gray-800 mb-8" style="letter-spacing:2px;">
+        <div class="z-index-2 text-center">
+          <div class="font-size-32 font-weight-700 text-align-center mb-8" style="letter-spacing:2px; color:rgb(44, 44, 44);">
             Welcome to Bingo English
           </div>
-          <div class="font-size-18 text-gray-500">
+          <div class="font-size-18  text-align-center" style="color: #666">
             科学提升你的英语能力，开启高效学习之旅
           </div>
         </div>

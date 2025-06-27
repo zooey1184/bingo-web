@@ -29,7 +29,7 @@ export default {
     <div class="bg-cream overflow-hidden">
       <div style="max-width: 1200px; margin: 0 auto" class="pos-r navPane flex items-center flex-wrap justify-between">
         <div class="color-orange p-16 flex items-center">
-          <div class="bg-orange" style="border-radius: 30px; padding: 12px;">
+          <div class="bg-orange flex items-center justify-center" style="border-radius: 30px; width: 44px; height: 44px">
             <img :src="logo" style="width: 20px" alt="">
           </div>
           <div v-if='size > 980' class="font-size-24 font-weight-600 ml-16">BingoEnglish</div>
