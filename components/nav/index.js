@@ -121,9 +121,7 @@ export default {
                   <ul class="nav1">
                     <li class="flex items-center">
                       <b>听说读写译:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/ability.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
+
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/cet4/ability.html">四级<i
                             class="iconfont icon-xiayige"></i></a></span>
@@ -133,15 +131,11 @@ export default {
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/graduate/ability.html">考研<i
                             class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/ability.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
+                    
                     </li>
                     <li class="flex items-center">
                       <b>轻松背单词:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/voc.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
+                      
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/cet4/voc.html">四级<i
                             class="iconfont icon-xiayige"></i></a></span>
@@ -151,15 +145,11 @@ export default {
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/graduate/voc.html">考研<i
                             class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/voc.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
+                      
                     </li>
                     <li class="flex items-center">
                       <b>模拟备考:</b>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/zj3/test.html">三级<i
-                            class="iconfont icon-xiayige"></i></a></span>
+                      
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/cet4/test.html">四级<i
                             class="iconfont icon-xiayige"></i></a></span>
@@ -169,9 +159,7 @@ export default {
                       <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
                           href="https://www.bingoenglish.com/st/graduate/test.html">考研<i
                             class="iconfont icon-xiayige"></i></a></span>
-                      <span style="width:100px;" class="flex items-center gap-4"><a class="flex items-center gap-4"
-                          href="https://www.bingoenglish.com/st/toeic/test.html">托业<i
-                            class="iconfont icon-xiayige"></i></a></span>
+                      
                     </li>
                   </ul>
                 </div>
@@ -263,5 +251,5 @@ export default {
           </div>
         </div>
   
-  `
-}
+  `,
+};

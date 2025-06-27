@@ -1,13 +1,16 @@
 export default {
   data: () => ({
     showMenu: false,
-    topic: '2'
   }),
   props: {
     topicsList: {
       type: Array,
-      default: () => []
-    }
+      default: () => [],
+    },
+    topic: {
+      type: String,
+      default: "2",
+    },
   },
   methods: {
     handleToggleMenu() {
@@ -15,9 +18,9 @@ export default {
     },
     handlePickTopic(item) {
       this.topic = item.id; // Update the current topic
-      this.$emit('pick', item);
+      this.$emit("pick", item);
       this.showMenu = false; // Close the menu after picking a topic
-    }
+    },
   },
   template: `
     <div>
@@ -45,5 +48,5 @@ export default {
       </Transition>
     </div>
   
-  `
-}
+  `,
+};

@@ -45,6 +45,7 @@
       <div v-if="width < 980">
         <topic-menu
           :topics-list="state.topicsList"
+          :topic="state.topic"
           @pick="handlePickTopic"
         ></topic-menu>
       </div>
