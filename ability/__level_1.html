@@ -49,7 +49,7 @@
         ></topic-menu>
       </div>
       <div class="articlePane articlePaneWrap">
-        <div class="levelTitle">冰果能力：<span>一级</span></div>
+        <div class="levelTitle">冰果能力：<span>{{getTitle}}</span></div>
         <div class="" :class="{'flex': width > 980}">
           <div style="width: 300px" class="flex-0" v-if="width > 980">
             <div
@@ -193,7 +193,7 @@
     <script type="module">
       AOS.init();
 
-      const { createApp, ref, reactive, onMounted, watch } = Vue;
+      const { createApp, computed, ref, reactive, onMounted, watch } = Vue;
       import useSize from "./useSize.js";
       import { getTopicList, getArticles, getTopicImages } from "../js/api.js";
       const app = createApp({
@@ -219,6 +219,15 @@
               3: "cet4",
               4: "cet6",
             },
+          });
+          const getTitle = computed(() => {
+            const obj = {
+              1: "一",
+              2: "二",
+              3: "三",
+              4: "四",
+            };
+            return `${obj[state.bingoBand]}级`;
           });
           const { width } = useSize();
           const showBackToTop = ref(false);
@@ -388,6 +397,7 @@
             scrollToTop,
             handleChangeType,
             handlePickTopic,
+            getTitle,
           };
         },
       });
