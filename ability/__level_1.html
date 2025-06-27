@@ -204,7 +204,7 @@
             topicsList: [],
             loading: true,
             type: "listening",
-            topic: "2",
+            topic: "",
             bingoBand: 1,
             onlineInfo: {
               online: false,
@@ -347,7 +347,9 @@
           watch(
             () => [state.topic, state.type],
             (n) => {
-              handleFetchArticles({ type: n[1], topic: n[0] });
+              if (n[0] && n[1]) {
+                handleFetchArticles({ type: n[1], topic: n[0] });
+              }
             },
             {
               immediate: true,
@@ -365,7 +367,13 @@
 
           onMounted(() => {
             fetchTopics();
-
+            const url = new URLSearchParams(window.location.search);
+            const topic = url.get("topic");
+            if (topic) {
+              state.topic = topic;
+            } else {
+              state.topic = "2"; // 默认选择第二个话题
+            }
             window.addEventListener("scroll", () => {
               showBackToTop.value = window.scrollY > 100;
             });

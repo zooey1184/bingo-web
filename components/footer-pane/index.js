@@ -28,7 +28,7 @@ export default {
 
         <div class="footer-header flex justify-center">
           <div class="container pt-24 px-24 flex flex-wrap items-center flex-wrap justify-center gap-16">
-            <a href="/about">关于我们</a>
+            <a href="https://www.bingoenglish.com/about">关于我们</a>
             <span class="splice">|</span>
             <a href="/st/agreement.html">服务条款</a>
             <span class="splice">|</span>
@@ -45,7 +45,7 @@ export default {
             </div>
             <div class="FL-r text-align-center mt-8 font-size-12">
               <a rel="nofollow" href="http://www.beian.miit.gov.cn/" target="_blank">浙ICP证B2-20140303号</a>
-              <a rel="nofollow" href="http://beian.miit.gov.cn/" target="_blank">浙ICP备14032562号-1</a>
+              <a rel="nofollow" href="http://beian.miit.gov.cn/" target="_blank">浙ICP备14032562号-2</a>
               <div class="text-align-center flex items-center justify-center mt-8">
                 <a class="beian flex items-center" target="_blank"
                   href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002579">

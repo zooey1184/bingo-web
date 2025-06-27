@@ -98,6 +98,7 @@
             './assets/l4.png',
           ]"
             class="flex-1"
+            :topic="state.topic"
           ></level-card>
         </div>
       </div>
@@ -126,6 +127,7 @@
               online: false,
               ip_string: "",
             },
+            topic: "2",
           });
           const { width } = useSize();
           const navRef = ref(null);
@@ -146,8 +148,10 @@
             }
           }
 
-          const handlePickTopic = () => {
-            toast("请先选择能力级别", { type: "warning" });
+          const handlePickTopic = (item) => {
+            state.topic = item.id;
+            // window.sessionStorage.setItem("bingo_level_topic", item.id);
+            // toast("请先选择能力级别", { type: "warning" });
           };
           onMounted(() => {
             fetchTopics();

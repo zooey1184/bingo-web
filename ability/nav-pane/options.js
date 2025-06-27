@@ -1,5 +1,9 @@
 export default [
   {
+    name: '首页',
+    url: 'https://www.bingoenglish.net',
+  },
+  {
     name: '关于冰果',
     url: 'http://www.bingoenglish.com/about',
     icon: 'icon-nav-img1',
@@ -86,31 +90,31 @@ export default [
       {
         name: '听说读写译',
         subNavs: [
-          { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/ability.html' },
+          // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/ability.html' },
           { name: '四级', url: 'https://www.bingoenglish.com/st/cet4/ability.html' },
           { name: '六级', url: 'https://www.bingoenglish.com/st/cet6/ability.html' },
           { name: '考研', url: 'https://www.bingoenglish.com/st/graduate/ability.html' },
-          { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/ability.html' }
+          // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/ability.html' }
         ]
       },
       {
         name: '轻松背单词',
         subNavs: [
-          { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/voc.html' },
+          // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/voc.html' },
           { name: '四级', url: 'https://www.bingoenglish.com/st/cet4/voc.html' },
           { name: '六级', url: 'https://www.bingoenglish.com/st/cet6/voc.html' },
           { name: '考研', url: 'https://www.bingoenglish.com/st/graduate/voc.html' },
-          { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/voc.html' }
+          // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/voc.html' }
         ]
       },
       {
         name: '模拟备考',
         subNavs: [
-          { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/test.html' },
+          // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/test.html' },
           { name: '四级', url: 'https://www.bingoenglish.com/st/cet4/test.html' },
           { name: '六级', url: 'https://www.bingoenglish.com/st/cet6/test.html' },
           { name: '考研', url: 'https://www.bingoenglish.com/st/graduate/test.html' },
-          { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/test.html' }
+          // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/test.html' }
         ]
       }
     ]
