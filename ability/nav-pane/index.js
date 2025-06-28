@@ -26,7 +26,6 @@ export default {
     },
     handleToggleMenu() {
       this.showMenu = !this.showMenu;
-      console.log('==this.showMenu==:\n', this.showMenu)
     }
   },
 
