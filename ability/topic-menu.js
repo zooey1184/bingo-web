@@ -1,6 +1,7 @@
 export default {
   data: () => ({
     showMenu: false,
+    topicActive: "2", // Default active topic
   }),
   props: {
     topicsList: {
@@ -12,12 +13,20 @@ export default {
       default: "2",
     },
   },
+  watch: {
+    topic: {
+      handler(newVal) {
+        this.topicActive = newVal; // Update the active topic when prop changes
+      },
+      immediate: true, // Ensure it runs immediately on component creation
+    }
+  },
   methods: {
     handleToggleMenu() {
       this.showMenu = !this.showMenu;
     },
     handlePickTopic(item) {
-      this.topic = item.id; // Update the current topic
+      this.topicActive = item.id; // Update the current topic
       this.$emit("pick", item);
       this.showMenu = false; // Close the menu after picking a topic
     },
@@ -36,7 +45,7 @@ export default {
           </div>
           <div class='pos-a h-100p w-100p p-48 overflow-y-auto'>
             <div v-for="item in topicsList" @click="handlePickTopic(item)"
-              :class="{menuItemActive: topic === item.id}" class="flex items-center menuItem">
+              :class="{menuItemActive: topicActive === item.id}" class="flex items-center menuItem">
               <img class="mr-8" :src="item.image" alt="">
               <div>
                 <div class="font-size-16 font-weight-600" style="color: rgb(31, 41, 55)">{{item.en_name}}</div>
