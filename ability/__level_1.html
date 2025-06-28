@@ -95,7 +95,7 @@
                         alt=""
                       />
                       <template v-if="width < 980">
-                        <div class="pl-16" v-if="state.onlineInfo.online">
+                        <div class="pl-16" v-if="state.onlineInfo.ip_valid">
                           <div
                             class="font-size-12 color-purple text-align-center mb-4"
                           >
@@ -126,7 +126,10 @@
                       {{item.introduction}}
                     </div>
                     <template v-if="width > 980">
-                      <div class="pl-16 flex-0" v-if="state.onlineInfo.online">
+                      <div
+                        class="pl-16 flex-0"
+                        v-if="state.onlineInfo.ip_valid"
+                      >
                         <div
                           class="font-size-12 color-purple text-align-center mb-4"
                         >
@@ -387,6 +390,7 @@
             window.addEventListener("scroll", () => {
               showBackToTop.value = window.scrollY > 100;
             });
+            document.title = `冰果英语：能力提高--Level${state.bingoBand}`;
           });
 
           return {
