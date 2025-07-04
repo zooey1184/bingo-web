@@ -130,11 +130,11 @@
   outline-offset: 2px;
 }
 .navPane .navItem {
-  margin-right: 18px;
+  margin-right: 16px;
   transition: transform 0.18s;
 }
 .navPane .navItem > a.lev1 {
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 8px;
   color: #b45309;
   font-weight: 600;
