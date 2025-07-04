@@ -10,6 +10,10 @@ export default {
     size: {
       type: Number,
       default: 1920
+    },
+    showHome: {
+      type: Boolean,
+      default: true,
     }
   },
   methods: {
@@ -32,42 +36,44 @@ export default {
   template: `
     <div id="top_container_menu_inner" class="flex flex-wrap items-center">
       <template v-if='size > 1000'>
-        <div class="navItem" v-for="item in navs" :key="item.name">
-          <a :href="item.url" class="lev1">{{item.name}}</a>
-          <div class="child" v-if="item.subName || item.desc || item.subNavs">
-            <div class="flex h-100p p-24">
-              <div class="flex flex-col items-center justify-center nav-title-block">
-                <i v-if="item.icon" :class="['imgNav', 'flex-0', item.icon]"></i>
-                <b class="mt-8 font-size-16">{{item.subName}}</b>
-              </div>
-              <div class="pl-24 flex-1">
-                <div class="nav-intro flex items-center justify-between" v-if="item.desc">
-                  <p>{{item.desc.content}}</p>
-                  <div class="flex items-center gap-8" v-if="item.desc.btnGroups && item.desc.btnGroups.length">
-                    <a
-                      v-for="btn in item.desc.btnGroups"
-                      :key="btn.name"
-                      class="btn"
-                      :class="btn.class"
-                      :href="btn.url"
-                    >{{btn.name}}</a>
-                  </div>
+        <template v-for="item in navs" :key="item.name">
+          <div class="navItem" v-if='item.name !== "首页" || showHome'>
+            <a :href="item.url" class="lev1">{{item.name}}</a>
+            <div class="child" v-if="item.subName || item.desc || item.subNavs">
+              <div class="flex h-100p p-24">
+                <div class="flex flex-col items-center justify-center nav-title-block">
+                  <i v-if="item.icon" :class="['imgNav', 'flex-0', item.icon]"></i>
+                  <b class="mt-8 font-size-16">{{item.subName}}</b>
                 </div>
-                <ul class="nav2 mt-24" v-if="item.subNavs && item.subNavs.length">
-                  <li class="flex items-center" v-for="subNav in item.subNavs" :key="subNav.name">
-                    <b class='flex-0'>{{subNav.name}} :</b>
-                    <span v-for="(link, idx) in subNav.subNavs" :key="link.name + idx" style="min-width:150px;" class="flex items-center gap-4">
-                      <a class="flex items-center gap-4" :href="link.url">
-                        {{link.name}}
-                        <i class="iconfont icon-xiayige"></i>
-                      </a>
-                    </span>
-                  </li>
-                </ul>
+                <div class="pl-24 flex-1">
+                  <div class="nav-intro flex items-center justify-between" v-if="item.desc">
+                    <p>{{item.desc.content}}</p>
+                    <div class="flex items-center gap-8" v-if="item.desc?.btnGroups && item.desc?.btnGroups?.length">
+                      <a
+                        v-for="btn in item.desc.btnGroups"
+                        :key="btn.name"
+                        class="btn"
+                        :class="btn.class"
+                        :href="btn.url"
+                      >{{btn.name}}</a>
+                    </div>
+                  </div>
+                  <ul class="nav2 mt-24" v-if="item.subNavs && item.subNavs.length">
+                    <li class="flex items-center" v-for="subNav in item.subNavs" :key="subNav.name">
+                      <b class='flex-0'>{{subNav.name}} :</b>
+                      <span v-for="(link, idx) in subNav.subNavs" :key="link.name + idx" style="min-width:150px;" class="flex items-center gap-4">
+                        <a class="flex items-center gap-4" :href="link.url">
+                          {{link.name}}
+                          <i class="iconfont icon-xiayige"></i>
+                        </a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
       </template>
       <div v-else class='flex-1'>
         <div class='m_menu_trigger' @click='handleToggleMenu'>
