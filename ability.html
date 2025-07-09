@@ -146,6 +146,13 @@
             const res = await login();
             if (res) {
               state.onlineInfo = res;
+              if (
+                res.ip_valid &&
+                window.location.hostname === "www.bingoenglish.net"
+              ) {
+                const location = window.location;
+                window.location.href = `//lib.bingoenglish.com${location.pathname}${location.search}`;
+              }
             }
           }
 

@@ -199,7 +199,13 @@
 
       const { createApp, computed, ref, reactive, onMounted, watch } = Vue;
       import useSize from "./useSize.js";
-      import { getTopicList, getArticles, getTopicImages } from "../js/api.js";
+      import {
+        getTopicList,
+        getArticles,
+        getTopicImages,
+        login,
+      } from "../js/api.js";
+
       const app = createApp({
         setup() {
           const state = reactive({
@@ -253,6 +259,20 @@
             }
           };
 
+          async function handleGetUserInfo() {
+            const res = await login();
+            if (res) {
+              state.onlineInfo = res;
+              if (
+                res.ip_valid &&
+                window.location.hostname === "www.bingoenglish.net"
+              ) {
+                const location = window.location;
+                window.location.href = `//lib.bingoenglish.com${location.pathname}${location.search}`;
+              }
+            }
+          }
+
           const handleFetchArticles = async ({ type, topic }) => {
             const data = {
               testService: state.testService[state.bingoBand],
@@ -262,34 +282,18 @@
               ran: Math.random(),
             };
             try {
-              // let params = new URLSearchParams(data).toString();
-              // state.loading = true;
-              // const res = await fetchXMLtoJSON(
-              //   "./mock/getNewAbilityMaterialsList.xml?" + params
-              // );
-              // const articles = handleGetArticles(res);
-              // state.onlineInfo = {
-              //   online: articles?.online,
-              //   valid: articles?.valid,
-              //   ip_valid: articles?.ip_valid,
-              //   school: articles?.school,
-              //   ip_string: articles?.ip_string,
-              // };
-              // state.articleList = articles?.todos;
-              // state.loading = false;
               state.loading = true;
               const articles = await getArticles(data);
 
               if (articles) {
-                state.onlineInfo = {
-                  online: articles?.online,
-                  valid: articles?.valid,
-                  ip_valid: articles?.ip_valid,
-                  school: articles?.school,
-                  ip_string: articles?.ip_string,
-                };
+                // state.onlineInfo = {
+                //   online: articles?.online,
+                //   valid: articles?.valid,
+                //   ip_valid: articles?.ip_valid,
+                //   school: articles?.school,
+                //   ip_string: articles?.ip_string,
+                // };
                 state.articleList = articles?.todos;
-                // console.log("==articles==:\n", state.onlineInfo, articles);
                 state.loading = false;
               } else {
                 state.articleList = [];

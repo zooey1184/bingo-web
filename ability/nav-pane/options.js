@@ -1,7 +1,7 @@
 export default [
   {
     name: '首页',
-    url: 'https://lib.bingoenglish.com',
+    url: '/',
   },
   // {
   //   name: '关于冰果',
@@ -40,7 +40,7 @@ export default [
   // },
   {
     name: '能力提高',
-    url: 'http://lib.bingoenglish.com/st/ability.html',
+    url: '/st/ability.html',
     icon: 'icon-nav-img9',
     subName: 'English proficiency',
     desc: {
@@ -53,7 +53,7 @@ export default [
       {
         name: '了解冰果等级',
         subNavs: [
-          { name: '冰果等级', url: 'http://lib.bingoenglish.com/st/ability.html' }
+          { name: '冰果等级', url: '/st/ability.html' }
         ]
       },
       {
@@ -62,25 +62,25 @@ export default [
           // { name: '词汇测试', url: 'http://www.bingoenglish.com/w/firsttest/vocabulary.do' },
           // { name: '听力测试', url: 'http://www.bingoenglish.com/w/firsttest/dictation.do' },
           // { name: '阅读测试', url: 'http://www.bingoenglish.com/w/firsttest/reading.do' }
-          { name: '词汇测试', url: 'http://lib.bingoenglish.com/lib/firsttest/vocabulary.do' },
-          { name: '听力测试', url: 'http://lib.bingoenglish.com/lib/firsttest/dictation.do' },
-          { name: '阅读测试', url: 'http://lib.bingoenglish.com/lib/firsttest/reading.do' }
+          { name: '词汇测试', url: '/lib/firsttest/vocabulary.do' },
+          { name: '听力测试', url: '/lib/firsttest/dictation.do' },
+          { name: '阅读测试', url: '/lib/firsttest/reading.do' }
         ]
       },
       {
         name: '能力提高',
         subNavs: [
-          { name: '冰果一级', url: 'https://lib.bingoenglish.com/st/ability/level_1.html' },
-          { name: '冰果二级', url: 'https://lib.bingoenglish.com/st/ability/level_2.html' },
-          { name: '冰果三级', url: 'https://lib.bingoenglish.com/st/ability/level_3.html' },
-          { name: '冰果四级', url: 'https://lib.bingoenglish.com/st/ability/level_4.html' }
+          { name: '冰果一级', url: '/st/ability/level_1.html' },
+          { name: '冰果二级', url: '/st/ability/level_2.html' },
+          { name: '冰果三级', url: '/st/ability/level_3.html' },
+          { name: '冰果四级', url: '/st/ability/level_4.html' }
         ]
       }
     ]
   },
   {
     name: '大学英语',
-    url: 'https://lib.bingoenglish.com/st/cet4.html',
+    url: '/st/cet4.html',
     icon: 'icon-nav-img3',
     subName: 'College',
     desc: {
@@ -94,9 +94,9 @@ export default [
         name: '听说读写译',
         subNavs: [
           // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/ability.html' },
-          { name: '四级', url: 'https://lib.bingoenglish.com/st/cet4/ability.html' },
-          { name: '六级', url: 'https://lib.bingoenglish.com/st/cet6/ability.html' },
-          { name: '考研', url: 'https://lib.bingoenglish.com/st/graduate/ability.html' },
+          { name: '四级', url: '/st/cet4/ability.html' },
+          { name: '六级', url: '/st/cet6/ability.html' },
+          { name: '考研', url: '/st/graduate/ability.html' },
           // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/ability.html' }
         ]
       },
@@ -104,9 +104,9 @@ export default [
         name: '轻松背单词',
         subNavs: [
           // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/voc.html' },
-          { name: '四级', url: 'https://lib.bingoenglish.com/st/cet4/voc.html' },
-          { name: '六级', url: 'https://lib.bingoenglish.com/st/cet6/voc.html' },
-          { name: '考研', url: 'https://lib.bingoenglish.com/st/graduate/voc.html' },
+          { name: '四级', url: '/st/cet4/voc.html' },
+          { name: '六级', url: '/st/cet6/voc.html' },
+          { name: '考研', url: '/st/graduate/voc.html' },
           // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/voc.html' }
         ]
       },
@@ -114,9 +114,9 @@ export default [
         name: '模拟备考',
         subNavs: [
           // { name: '三级', url: 'https://www.bingoenglish.com/st/zj3/test.html' },
-          { name: '四级', url: 'https://lib.bingoenglish.com/st/cet4/test.html' },
-          { name: '六级', url: 'https://lib.bingoenglish.com/st/cet6/test.html' },
-          { name: '考研', url: 'https://lib.bingoenglish.com/st/graduate/test.html' },
+          { name: '四级', url: '/st/cet4/test.html' },
+          { name: '六级', url: '/st/cet6/test.html' },
+          { name: '考研', url: '/st/graduate/test.html' },
           // { name: '托业', url: 'https://www.bingoenglish.com/st/toeic/test.html' }
         ]
       }
@@ -124,19 +124,19 @@ export default [
   },
   {
     name: '词汇',
-    url: 'https://lib.bingoenglish.com/st/index/voc.html'
+    url: '/st/index/voc.html'
   },
   {
     name: '新闻',
-    url: 'https://lib.bingoenglish.com/content/html/news/'
+    url: '/content/html/news/'
   },
   {
     name: '视频',
-    url: 'https://lib.bingoenglish.com/content/html/video/'
+    url: '/content/html/video/'
   },
   {
     name: '休闲英语',
-    url: 'https://lib.bingoenglish.com/st/index/ent.html',
+    url: '/st/index/ent.html',
     icon: 'icon-nav-img8',
     subName: 'News',
     desc: {
@@ -149,9 +149,9 @@ export default [
       {
         name: '涨知识',
         subNavs: [
-          // { name: '国外头条', url: 'https://lib.bingoenglish.com/content/html/news/' },
-          { name: '图文', url: 'https://lib.bingoenglish.com/content/html/photo/' },
-          // { name: '视频', url: 'https://lib.bingoenglish.com/content/html/video/' },
+          // { name: '国外头条', url: '/content/html/news/' },
+          { name: '图文', url: '/content/html/photo/' },
+          // { name: '视频', url: '/content/html/video/' },
 
           {
             name: '外教博客',
@@ -167,7 +167,7 @@ export default [
             name: '有趣',
             url: 'https://www.bingoenglish.net/content/html/funny/'
           },
-          { name: '台词填空', url: 'https://lib.bingoenglish.com/st/index/ent.html' },
+          { name: '台词填空', url: '/st/index/ent.html' },
 
         ]
       }

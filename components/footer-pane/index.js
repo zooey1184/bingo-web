@@ -1,4 +1,11 @@
 export default {
+  props: {
+    aboutUsURL: {
+      type: String,
+      // default: 'https://www.bingoenglish.com/about'
+      default: 'http://bingoenglish.net/st/aboutbingo.html'
+    }
+  },
   template: `
       <div id="bottom" class="w-100p">
       <div class="page-footer">
@@ -28,7 +35,7 @@ export default {
 
         <div class="footer-header flex justify-center">
           <div class="container pt-24 px-24 flex flex-wrap items-center flex-wrap justify-center gap-16">
-            <a href="https://www.bingoenglish.com/about">关于我们</a>
+            <a :href="aboutUsURL">关于我们</a>
             <span class="splice">|</span>
             <a href="/st/agreement.html">服务条款</a>
             <span class="splice">|</span>

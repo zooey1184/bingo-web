@@ -17,7 +17,9 @@ export default {
   methods: {
     handleGoTextBook() {
       {
-        const url = 'https://lib.bingoenglish.com/nce/';
+        // const url = 'https://lib.bingoenglish.com/nce/';
+        const host = window.location.host;
+        const url = `//${host}/nce/`;
         window.open(url, '_blank');
         this.$emit('goTextBook');
       }

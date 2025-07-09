@@ -21,7 +21,7 @@ export default {
   methods: {
     handlePickTopic(_level) {
       // const level = `https://www.bingoenglish.net/st/ability/__level_${_level}.html?topic=${this.topic}`;
-      const level = `https://lib.bingoenglish.com/st/ability/level_${_level}.html?topic=${this.topic}`;
+      const level = `/st/ability/level_${_level}.html?topic=${this.topic}`;
       window.open(level, '_self');
     }
   },
