@@ -420,13 +420,20 @@ font-weight:bold;
 	<tr>
 		<td colspan="4">
 			<img src="/st/images/aboutbingoimages/aboutbingo_02.jpg" width="485" height="30" alt=""></td>
-		<td colspan="2" rowspan="2"><script type="text/javascript">
+		<td colspan="2" rowspan="2">
+			<!-- <script type="text/javascript">
 AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','490','height','215','title','更多了解冰果','src','/st/images/aboutbingoimages/main','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','/st/images/aboutbingoimages/main' ); //end AC code
 </script><noscript><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="490" height="215" title="更多了解冰果">
           <param name="movie" value="/st/images/aboutbingoimages/main.swf">
           <param name="quality" value="high">
           <embed src="/st/images/aboutbingoimages/main.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="215"></embed>
-	    </object></noscript></td>
+	    </object></noscript> -->
+			<video id='video' style="width: 100%" @click='handlePlay' poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' playsinline class="w-100p videoPane">
+				<slot name='source'>
+					<source src="./images/1.mp4" type="video/mp4">
+				</slot>
+			</video>
+		</td>
   <td rowspan="3">
 			<img src="/st/images/aboutbingoimages/aboutbingo_04.jpg" width="25" height="260" alt=""></td>
 		<td>
@@ -493,7 +500,7 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
 				<div>公司地址：中国杭州浙江大学国家大学科技园A栋东区422</div>
 				<div>联系电话：0571-28991078</div>
 				<div>客服在线：QQ - 996091820</div>
-				<div>客服邮箱：bingoenglish@hotmail.com</div>
+				<div>客服邮箱：996091820@qq.com</div>
 			</div>
 			<!-- <img src="/st/images/aboutbingoimages/aboutbingo_15.jpg" alt="" width="1000" height="190" border="0" usemap="#Map"></td> -->
 <td>

@@ -3,7 +3,7 @@ export default {
     aboutUsURL: {
       type: String,
       // default: 'https://www.bingoenglish.com/about'
-      default: 'http://bingoenglish.net/st/aboutbingo.html'
+      default: 'http://www.bingoenglish.net/st/aboutbingo.html'
     }
   },
   template: `
