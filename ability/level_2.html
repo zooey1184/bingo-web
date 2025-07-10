@@ -81,7 +81,10 @@
               >
                 <div v-if="articles.items.length > 0">
                   <div class="abilityName">
-                    <div class="abilityNameContent">{{articles.name}}</div>
+                    <div class="abilityNameContent">
+                      {{articles.name === '翻译' ? (getTranslateTitle[index] ||
+                      articles.name) : articles.name}}
+                    </div>
                     <div class="abilityNameIntro">{{articles.skill_type}}</div>
                   </div>
                   <template
@@ -247,6 +250,8 @@
             };
             return `${obj[state.bingoBand]}级`;
           });
+
+          const getTranslateTitle = ["句子翻译", "英译汉", "汉译英"];
           const { width } = useSize();
           const showBackToTop = ref(false);
 
@@ -421,6 +426,7 @@
             handleChangeType,
             handlePickTopic,
             getTitle,
+            getTranslateTitle,
           };
         },
       });
