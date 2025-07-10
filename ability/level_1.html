@@ -75,27 +75,68 @@
           </div>
           <div class="flex-1 articleContent pos-r">
             <div class="pos-r">
-              <div v-for="(articles, index) in state.articleList">
-                <div class="abilityName">
-                  <div class="abilityNameContent">{{articles.name}}</div>
-                  <div class="abilityNameIntro">{{articles.skill_type}}</div>
-                </div>
-                <template v-for="(item, index) in articles.items" :key="index">
-                  <div
-                    class="articleItem items-center mb-16"
-                    :class="{'flex': width > 980}"
-                    v-if="index < 5 || articles.show"
+              <template
+                v-for="(articles, index) in state.articleList"
+                :key="index"
+              >
+                <div v-if="articles.items.length > 0">
+                  <div class="abilityName">
+                    <div class="abilityNameContent">{{articles.name}}</div>
+                    <div class="abilityNameIntro">{{articles.skill_type}}</div>
+                  </div>
+                  <template
+                    v-for="(item, index) in articles.items"
+                    :key="index"
                   >
                     <div
-                      class="mr-16"
-                      :class="{'flex justify-between items-center': width < 980}"
+                      class="articleItem items-center mb-16"
+                      :class="{'flex': width > 980}"
+                      v-if="index < 5 || articles.show"
                     >
-                      <img
-                        :src="state.imagesList[index%(state.imagesList.length)]"
-                        alt=""
-                      />
-                      <template v-if="width < 980">
-                        <div class="pl-16" v-if="state.onlineInfo.ip_valid">
+                      <div
+                        class="mr-16"
+                        :class="{'flex justify-between items-center': width < 980}"
+                      >
+                        <img
+                          :src="state.imagesList[index%(state.imagesList.length)]"
+                          alt=""
+                        />
+                        <template v-if="width < 980">
+                          <div class="pl-16" v-if="state.onlineInfo.ip_valid">
+                            <div
+                              class="font-size-12 color-purple text-align-center mb-4"
+                            >
+                              得分: {{item.score}}
+                            </div>
+                            <button
+                              class="article_btn block mb-4"
+                              @click="handleJump(item.url)"
+                            >
+                              开始
+                            </button>
+                            <button
+                              class="article_btn"
+                              @click="handleJump(item.redo_url)"
+                              v-if="item.finished"
+                            >
+                              重试
+                            </button>
+                          </div>
+                          <div v-else class="ml-16 flex-0">
+                            <button class="article_btn" @click="handleStart">
+                              开始
+                            </button>
+                          </div>
+                        </template>
+                      </div>
+                      <div :class="{'ml-16': width > 980}" class="flex-1">
+                        {{item.introduction}}
+                      </div>
+                      <template v-if="width > 980">
+                        <div
+                          class="pl-16 flex-0"
+                          v-if="state.onlineInfo.ip_valid"
+                        >
                           <div
                             class="font-size-12 color-purple text-align-center mb-4"
                           >
@@ -122,49 +163,16 @@
                         </div>
                       </template>
                     </div>
-                    <div :class="{'ml-16': width > 980}" class="flex-1">
-                      {{item.introduction}}
-                    </div>
-                    <template v-if="width > 980">
-                      <div
-                        class="pl-16 flex-0"
-                        v-if="state.onlineInfo.ip_valid"
-                      >
-                        <div
-                          class="font-size-12 color-purple text-align-center mb-4"
-                        >
-                          得分: {{item.score}}
-                        </div>
-                        <button
-                          class="article_btn block mb-4"
-                          @click="handleJump(item.url)"
-                        >
-                          开始
-                        </button>
-                        <button
-                          class="article_btn"
-                          @click="handleJump(item.redo_url)"
-                          v-if="item.finished"
-                        >
-                          重试
-                        </button>
-                      </div>
-                      <div v-else class="ml-16 flex-0">
-                        <button class="article_btn" @click="handleStart">
-                          开始
-                        </button>
-                      </div>
-                    </template>
+                  </template>
+                  <div
+                    class="toggleMoreBtn"
+                    v-if="articles.items.length > 5"
+                    @click="articles.show = !articles.show"
+                  >
+                    {{articles.show ? '收起' : '更多'}}
                   </div>
-                </template>
-                <div
-                  class="toggleMoreBtn"
-                  v-if="articles.items.length > 5"
-                  @click="articles.show = !articles.show"
-                >
-                  {{articles.show ? '收起' : '更多'}}
                 </div>
-              </div>
+              </template>
             </div>
             <div v-if="state.loading" class="loadingMask">
               <div class="loading">
@@ -309,11 +317,16 @@
             if (!url) {
               return;
             }
-            if (url.startsWith("http")) {
-              window.open(url, "_blank");
-            } else {
-              window.location.href = url;
-            }
+            // if (
+            //   url.startsWith("http") ||
+            //   url.startsWith("https") ||
+            //   url.startsWith("//")
+            // ) {
+            //   window.open(url, "_blank");
+            // } else {
+            //   window.location.href = url;
+            // }
+            window.open(url, "_blank");
           };
 
           const handleStart = () => {
@@ -384,6 +397,7 @@
 
           onMounted(() => {
             fetchTopics();
+            handleGetUserInfo();
             const url = new URLSearchParams(window.location.search);
             const topic = url.get("topic");
             if (topic) {
