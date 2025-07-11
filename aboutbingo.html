@@ -226,7 +226,12 @@ height:50px;
 
 #footer-links ul {
 }
-
+.videoPane {
+  aspect-ratio: 16/9;
+}
+.w-100p {
+	width: 100%;
+}
 #footer-links  ul li {
 	display:inline;
 	background:url(../images/icons/bullet/article_common.gif) left  150% no-repeat;
@@ -428,10 +433,8 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
           <param name="quality" value="high">
           <embed src="/st/images/aboutbingoimages/main.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="490" height="215"></embed>
 	    </object></noscript> -->
-			<video id='video' style="width: 100%" @click='handlePlay' poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' playsinline class="w-100p videoPane">
-				<slot name='source'>
-					<source src="./images/1.mp4" type="video/mp4">
-				</slot>
+			<video id='video' style="width: 100%" onclick="handlePlay()" poster='https://www.bingoenglish.com/assets/images/index/waiting-play.jpg' playsinline class="w-100p videoPane">
+				<source src="./images/1.mp4" type="video/mp4">
 			</video>
 		</td>
   <td rowspan="3">
@@ -546,6 +549,12 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+function handlePlay() {
+	console.log('==dddd==:\n')
+	const video = document.querySelector("#video");
+	video.play();
+}
 </script>
 
 <script>
